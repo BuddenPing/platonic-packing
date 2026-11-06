@@ -10,12 +10,12 @@
  "clearance": {
   "min_pair_gap_target": 1e-07,
   "wall_gap_target": 1e-07,
-  "min_pair_gap": 1.0000511585506189e-07,
+  "min_pair_gap": 1.0000511563301728e-07,
   "min_wall_gap": 1.0000003602961272e-07
  },
  "format": "[x, y, z, qw, qx, qy, qz] per piece: unit-edge copy of the canonical piece solid (solids.py) rotated by the scalar-first quaternion q and centred at (x, y, z); container = s_full x canonical unit-edge container solid, centred at the origin, canonical orientation",
  "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
- "date": "2026-10-28",
+ "date": "2026-11-06",
  "pieces": [
   [
    -1.2430156350130086,
@@ -174,10 +174,10 @@
    0.5303003528507058,
    -0.7755917645639334,
    0.6389234201857471,
-   0.16496686929441745,
-   0.37759991665732745,
-   0.7188253847611974,
-   0.5599056181165665
+   0.16496686929441748,
+   0.3775999166573275,
+   0.7188253847611975,
+   0.5599056181165666
   ],
   [
    -0.1474829822567276,
@@ -221,7 +221,7 @@
  "source": {
   "hash": "62f3224ea19e77e1",
   "clear": 1e-07,
-  "cap": 2.1745063433117
+  "cap": 2.1521087534289
  },
  "s_tight": 2.135178526663,
  "closed_form_conjecture": null,
