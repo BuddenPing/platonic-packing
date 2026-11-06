@@ -3564,13 +3564,13 @@ pr12incub_n98,pr12incub,prisms,prism12,cube,98,11.19615+,11.1961533144775,11.196
 pr12incub_n99,pr12incub,prisms,prism12,cube,99,11.19615+,11.1961533144775,11.196152442707,,10.34907,0.7898,True,True,False,records/pr12incub/pr12incub_n99.json
 pr12incub_n100,pr12incub,prisms,prism12,cube,100,11.46410+,11.4641026839666,11.464101665138,,10.38380,0.7431,True,True,False,records/pr12incub/pr12incub_n100.json
 ap4inap4_n02,ap4inap4,prisms,antiprism4,antiprism4,2,1.66419+,1.6641975940264,1.664197290498,,1.25992,0.4339,True,True,False,records/ap4inap4/ap4inap4_n02.json
-ap4inap4_n03,ap4inap4,prisms,antiprism4,antiprism4,3,1.97301+,1.973017314204,1.973016956111,,1.44225,0.3906,True,True,False,records/ap4inap4/ap4inap4_n03.json
+ap4inap4_n03,ap4inap4,prisms,antiprism4,antiprism4,3,1.97264+,1.9726494315757,1.972649083082,,1.44225,0.3908,True,True,False,records/ap4inap4/ap4inap4_n03.json
 ap4inap4_n04,ap4inap4,prisms,antiprism4,antiprism4,4,2.00000+,2.0000003567623,2.000000100000,,1.58740,0.5000,True,True,False,records/ap4inap4/ap4inap4_n04.json
-ap4inap4_n05,ap4inap4,prisms,antiprism4,antiprism4,5,2.20926+,2.209265852649,2.209265476124,,1.70998,0.4637,True,True,False,records/ap4inap4/ap4inap4_n05.json
-ap4inap4_n06,ap4inap4,prisms,antiprism4,antiprism4,6,2.29289+,2.292893610407,2.292893218813,(6 - √2)/2,1.81712,0.4977,True,True,False,records/ap4inap4/ap4inap4_n06.json
-ap4inap4_n07,ap4inap4,prisms,antiprism4,antiprism4,7,2.37356+,2.3735634936019,2.373563110369,,1.91293,0.5235,True,True,False,records/ap4inap4/ap4inap4_n07.json
-ap4inap4_n08,ap4inap4,prisms,antiprism4,antiprism4,8,2.40202+,2.4020206300945,2.402020253707,,2.00000,0.5772,True,True,False,records/ap4inap4/ap4inap4_n08.json
-ap4inap4_n09,ap4inap4,prisms,antiprism4,antiprism4,9,2.54219+,2.5421957132317,2.542195343812,,2.08008,0.5478,True,True,False,records/ap4inap4/ap4inap4_n09.json
+ap4inap4_n05,ap4inap4,prisms,antiprism4,antiprism4,5,2.17858+,2.1785818692596,2.178581501511,,1.70998,0.4836,True,True,False,records/ap4inap4/ap4inap4_n05.json
+ap4inap4_n06,ap4inap4,prisms,antiprism4,antiprism4,6,2.24592+,2.2459221621635,2.245921799598,,1.81712,0.5296,True,True,False,records/ap4inap4/ap4inap4_n06.json
+ap4inap4_n07,ap4inap4,prisms,antiprism4,antiprism4,7,2.36297+,2.362976179963,2.362975809545,,1.91293,0.5305,True,True,False,records/ap4inap4/ap4inap4_n07.json
+ap4inap4_n08,ap4inap4,prisms,antiprism4,antiprism4,8,2.38494+,2.3849429627158,2.384942574340,,2.00000,0.5897,True,True,False,records/ap4inap4/ap4inap4_n08.json
+ap4inap4_n09,ap4inap4,prisms,antiprism4,antiprism4,9,2.48904+,2.4890420412952,2.489041676411,(31 + 8√2)/17,2.08008,0.5836,True,True,False,records/ap4inap4/ap4inap4_n09.json
 ap4inap4_n10,ap4inap4,prisms,antiprism4,antiprism4,10,2.59007+,2.5900766031074,2.590076189470,,2.15443,0.5755,True,True,False,records/ap4inap4/ap4inap4_n10.json
 ap4inap4_n11,ap4inap4,prisms,antiprism4,antiprism4,11,2.74325+,2.7432558483366,2.743255403185,,2.22398,0.5328,True,True,False,records/ap4inap4/ap4inap4_n11.json
 ap4inap4_n12,ap4inap4,prisms,antiprism4,antiprism4,12,2.80778+,2.807780046219,2.807779603729,,2.28943,0.5421,True,True,False,records/ap4inap4/ap4inap4_n12.json

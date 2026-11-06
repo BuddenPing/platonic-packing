@@ -3,91 +3,88 @@
  "piece": "antiprism4",
  "container": "antiprism4",
  "n": 5,
- "s": 2.20926,
- "s_plus": "2.20926+",
- "s_full": 2.209265852649,
+ "s": 2.17858,
+ "s_plus": "2.17858+",
+ "s_full": 2.1785818692596,
  "measure": "edge length of the container divided by the edge length of the pieces",
  "clearance": {
   "min_pair_gap_target": 1e-07,
   "wall_gap_target": 1e-07,
-  "min_pair_gap": 1.0000020091877525e-07,
-  "min_wall_gap": 1.0000003292098825e-07
+  "min_pair_gap": 1.000002008385455e-07,
+  "min_wall_gap": 1.000000395823264e-07
  },
  "format": "[x, y, z, qw, qx, qy, qz] per piece: a copy of the canonical piece solid (src/solids.json, 50-digit coordinates in src/solids_hp.json) rotated by the scalar-first quaternion q and centred at (x, y, z); container = s_full x canonical container solid, centred at the origin, canonical orientation",
  "method": "generalized soft-to-rigid homotopy (r-rounding of the solid hardened under inward pressure), basin hopping, then sequential-LP / SLSQP tightening with per-pair separating planes",
- "date": "2026-10-13",
+ "date": "2026-11-06",
  "pieces": [
   [
-   -0.7110206597407727,
-   -0.3148469327149811,
-   -0.24339727665955066,
-   0.18922330389869949,
-   0.6654750309459557,
-   0.07099532687953423,
-   0.7185382300270515
+   0.06492142305262291,
+   0.6077458643605511,
+   -0.4206012196915113,
+   0.6910292319654179,
+   -0.05578579575101546,
+   -0.05578579575101765,
+   0.7185085180804306
   ],
   [
-   0.2668011082237551,
-   -0.6653849486980555,
-   -0.3146979044082536,
-   0.5903966524030421,
-   0.6559389087185418,
-   -0.44996382662879153,
-   0.13677900272331664
+   -9.991574783339842e-10,
+   0.8333830647567834,
+   0.4955325344716526,
+   0.7071067811865513,
+   6.7754821489061006e-15,
+   -1.0864351571526449e-14,
+   -0.7071067811865437
   ],
   [
-   -0.3152407060889534,
-   0.7144782723621189,
-   0.198287306470625,
-   0.6887942271397327,
-   -0.06281750750953931,
-   -0.6206696694079429,
-   -0.3693042578772986
+   0.5891463502556935,
+   -0.5893506548452352,
+   -0.4952895751883838,
+   2.909394853716778e-15,
+   0.3826834323650898,
+   0.9238795325112868,
+   -6.971194531003588e-15
   ],
   [
-   0.6880319735699857,
-   0.1333489097429112,
-   0.4056384843557929,
-   0.0819170367333452,
-   0.00746663436390372,
-   -0.07738804475875653,
-   0.9936020023090334
+   -0.6432801367449309,
+   -0.4237917089937527,
+   -0.22141579322932362,
+   0.7036073818838297,
+   -0.3293782669695377,
+   0.6265809043947758,
+   -0.06199177086155571
   ],
   [
-   0.627365146769612,
-   0.4198059457881582,
-   -0.41613556049011263,
-   0.037727456367416236,
-   -0.40313868104359185,
-   -0.9098131056606384,
-   -0.0910821368360555
+   0.47285664654686027,
+   -0.3817727735398358,
+   0.4345342437399187,
+   0.05869836240030128,
+   -0.9278878888731074,
+   0.3674063336127232,
+   -0.024313657795304307
   ]
  ],
  "record_id": "ap4inap4_n05",
  "title": "5 antiprism4s in a antiprism4",
  "family": "prisms",
  "source": {
-  "hash": "780893ff23131f16",
+  "hash": "5070d966f07a28e5",
   "clear": 1e-07,
-  "cap": 2.292893610407
+  "cap": 2.2459221621635
  },
- "s_tight": 2.209265476124,
+ "s_tight": 2.178581501511,
  "closed_form_conjecture": null,
  "volume_lower_bound": 1.7099759466766968,
- "found_by": "Alejandro Zarzuelo",
+ "found_by": "PingYou Ltd (arrows: subset relaxation, fixed-orientation LP and free tightening, with kicks; first reported 2026-11-06; this witness reproduced from catalogue records by their procedure, scripts/patterns/)",
  "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Archimedean, Catalan, prism and antiprism solids, basin-hopping search and certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
  "certificate": "exact certificate: certify_general.py (src/solids_exact.json)",
  "search": {
-  "move": "hop",
-  "seed": 779780797,
-  "var": "gentle",
-  "minDiff": 0.07761146459191536,
-  "expand": 0.017291200753696116,
-  "rh": 0.12259002034239853,
-  "focus": 0,
-  "from": "best",
-  "raw": 2.209769950457129,
-  "host": "laptop"
+  "move": "arrow",
+  "lineage": "PingYou Ltd",
+  "arrow": "subset N9->5",
+  "reported": "2026-11-06",
+  "reproduced_from_catalogue": true,
+  "script": "scripts/patterns/arrows_search.py, arrows_kick.py",
+  "raw": 2.1785815015105454
  },
- "density": 0.4636882217567291
+ "density": 0.4835577513455641
 }

@@ -3,109 +3,106 @@
  "piece": "antiprism4",
  "container": "antiprism4",
  "n": 7,
- "s": 2.37356,
- "s_plus": "2.37356+",
- "s_full": 2.3735634936019,
+ "s": 2.36297,
+ "s_plus": "2.36297+",
+ "s_full": 2.362976179963,
  "measure": "edge length of the container divided by the edge length of the pieces",
  "clearance": {
   "min_pair_gap_target": 1e-07,
   "wall_gap_target": 1e-07,
-  "min_pair_gap": 1.0000020093044504e-07,
-  "min_wall_gap": 1.0000003380916667e-07
+  "min_pair_gap": 1.0000020086042634e-07,
+  "min_wall_gap": 1.0000003503041199e-07
  },
  "format": "[x, y, z, qw, qx, qy, qz] per piece: a copy of the canonical piece solid (src/solids.json, 50-digit coordinates in src/solids_hp.json) rotated by the scalar-first quaternion q and centred at (x, y, z); container = s_full x canonical container solid, centred at the origin, canonical orientation",
  "method": "generalized soft-to-rigid homotopy (r-rounding of the solid hardened under inward pressure), basin hopping, then sequential-LP / SLSQP tightening with per-pair separating planes",
- "date": "2026-10-15",
+ "date": "2026-11-06",
  "pieces": [
   [
-   -0.5057376015776466,
-   0.6867816398525733,
-   -0.5775122089465693,
-   0.7071067811865476,
-   -1.9118106568686366e-17,
-   4.310901426009871e-17,
-   -0.7071067811865475
+   0.8574307055822243,
+   0.015047012105723885,
+   0.38661141612822325,
+   0.011273659916305502,
+   0.14713895961895573,
+   -0.02748653976986375,
+   -0.9886695713360569
   ],
   [
-   -0.06070734693591508,
-   -0.7058938418865036,
-   -0.49508683856480507,
-   0.7198140244634191,
-   -0.06470062794922293,
-   0.061874270067742966,
-   -0.6883699395182336
+   -0.12415237479602421,
+   0.6814879600909219,
+   -0.573060780420668,
+   4.901606455586668e-16,
+   -0.3826834277926804,
+   -0.9238795344052407,
+   -1.0410181015584407e-15
   ],
   [
-   0.900130082216222,
-   -0.010045841860352329,
-   0.49476258616629964,
-   0.6725850349933683,
-   0.07330734471641942,
-   0.011616512914640281,
-   -0.7362882998807612
+   -0.6814879738888884,
+   -0.5577890832794243,
+   -0.5730607804206682,
+   2.099113173128378e-17,
+   -0.3826834323650897,
+   0.9238795325112868,
+   5.717462808110073e-17
   ],
   [
-   -0.12093474189978168,
-   0.8830190470776763,
-   0.4836366289473978,
-   0.026961328207445186,
-   -0.9280846984374416,
-   -0.36564343093553614,
-   -0.06509040421800666
+   -0.8598058486344693,
+   0.012510728692603272,
+   0.39135949751066784,
+   0.6999527294978006,
+   -0.10033033673117264,
+   0.1003303367312401,
+   -0.6999527294977742
   ],
   [
-   0.7203543709976741,
-   0.24535149615237345,
-   -0.44119987321775933,
-   0.058130703917341306,
-   -0.4125362158009008,
-   -0.8981867260760739,
-   -0.14033993378754037
+   0.6814879769824131,
+   -0.6814879738888884,
+   -0.5730607804206677,
+   1.7494624202478696e-16,
+   -0.3826834323650901,
+   -0.9238795325112866,
+   -6.203726574796701e-17
   ],
   [
-   0.06382981562003498,
-   -0.8895660457031115,
-   0.4188119916390759,
-   0.11393339329391489,
-   0.9278178530922044,
-   -0.3520494244359169,
-   -0.047269611065107485
+   -0.010255445535271954,
+   -0.8598058486344794,
+   0.3913594975106877,
+   0.1310879022265535,
+   0.9145323135259441,
+   -0.37881168749088917,
+   0.05429838696527731
   ],
   [
-   -0.7124599657465014,
-   -0.19743142639976946,
-   0.4119199920262376,
-   0.2357063095664205,
-   -0.30080283660163126,
-   0.7273862862066225,
-   -0.5699731395088095
+   0.01446021743360867,
+   0.859805851728004,
+   0.3913594975106877,
+   2.5804275405262347e-17,
+   -4.806601781058147e-17,
+   -0.14188852292271328,
+   0.98988264307584
   ]
  ],
  "record_id": "ap4inap4_n07",
  "title": "7 antiprism4s in a antiprism4",
  "family": "prisms",
  "source": {
-  "hash": "5dc45661eecae60e",
+  "hash": "8cc0e65ab787f9b5",
   "clear": 1e-07,
-  "cap": 2.4020206300945
+  "cap": 2.3849429627158
  },
- "s_tight": 2.373563110369,
+ "s_tight": 2.362975809545,
  "closed_form_conjecture": null,
  "volume_lower_bound": 1.912931182772389,
- "found_by": "Alejandro Zarzuelo",
+ "found_by": "PingYou Ltd (arrows: subset relaxation, fixed-orientation LP and free tightening, with kicks; first reported 2026-11-06; this witness reproduced from catalogue records by their procedure, scripts/patterns/)",
  "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Archimedean, Catalan, prism and antiprism solids, basin-hopping search and certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
  "certificate": "exact certificate: certify_general.py (src/solids_exact.json)",
  "search": {
-  "move": "hop",
-  "seed": 1146179370,
-  "var": "gentle",
-  "minDiff": 0.07903134698662237,
-  "expand": 0.01973914978242209,
-  "rh": 0.11679844621633939,
-  "focus": 0,
-  "from": "best",
-  "raw": 2.375122787007913,
-  "host": "laptop"
+  "move": "arrow",
+  "lineage": "PingYou Ltd",
+  "arrow": "insert into n6 (subset N9->6; kick spin (1, 0, 16)) at [-0.021, 1.046, 0.532]; kick spin (0, 0, -12); kick spin (0, 0, -12); kick spin (0, 1, 6); kick spin (0, 0, 12)",
+  "reported": "2026-11-06",
+  "reproduced_from_catalogue": true,
+  "script": "scripts/patterns/arrows_search.py, arrows_kick.py",
+  "raw": 2.36297580954497
  },
- "density": 0.5234744374081505
+ "density": 0.5305422914413026
 }

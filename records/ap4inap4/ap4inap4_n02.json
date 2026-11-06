@@ -15,7 +15,7 @@
  },
  "format": "[x, y, z, qw, qx, qy, qz] per piece: a copy of the canonical piece solid (src/solids.json, 50-digit coordinates in src/solids_hp.json) rotated by the scalar-first quaternion q and centred at (x, y, z); container = s_full x canonical container solid, centred at the origin, canonical orientation",
  "method": "generalized soft-to-rigid homotopy (r-rounding of the solid hardened under inward pressure), basin hopping, then sequential-LP / SLSQP tightening with per-pair separating planes",
- "date": "2026-10-12",
+ "date": "2026-11-06",
  "pieces": [
   [
    -0.3905770543545005,
@@ -42,7 +42,7 @@
  "source": {
   "hash": "fd0fb12d5f5f84d9",
   "clear": 1e-07,
-  "cap": 1.973017314204
+  "cap": 1.9726494315757
  },
  "s_tight": 1.664197290498,
  "closed_form_conjecture": null,

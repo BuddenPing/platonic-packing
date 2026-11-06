@@ -1,0 +1,789 @@
+{
+ "records": 10404,
+ "families": 140,
+ "dims": {
+  "5": 279,
+  "3": 8514,
+  "4": 1404,
+  "6": 207
+ },
+ "lineage": {
+  "community": 2761,
+  "ascend": 1976,
+  "monotone": 1438,
+  "perturb": 1357,
+  "hop": 1170,
+  "largen-study": 689,
+  "tighten": 260,
+  "latcut": 142,
+  "symfresh": 134,
+  "literature": 112,
+  "fresh": 101,
+  "reinsert": 87,
+  "compose": 63,
+  "descend": 45,
+  "import": 38,
+  "bench-symfresh": 13,
+  "construction": 6,
+  "bench-fresh": 5,
+  "bench-hop": 4,
+  "bench-symfresh25": 2,
+  "bench-symchain": 1
+ },
+ "found_by": {
+  "Alejandro Zarzuelo": 6867,
+  "konoha-ily2": 1601,
+  "PingYou Ltd": 1493,
+  "PolyPack": 325,
+  "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre Pólik": 111,
+  "Ryan Xu": 3,
+  "Stian": 3,
+  "Erich Friedman": 1
+ },
+ "plateaus": {
+  "count": 861,
+  "records_in_plateaus": 3397,
+  "longest": [
+   [
+    "hc5inhc5",
+    2,
+    32,
+    2.0000003000003
+   ],
+   [
+    "cubincub",
+    39,
+    64,
+    4.0000005
+   ],
+   [
+    "pr3inpr3",
+    41,
+    64,
+    4.0000008660262
+   ],
+   [
+    "hc6inhc6",
+    2,
+    24,
+    2.0000003000003
+   ],
+   [
+    "dodintet",
+    64,
+    84,
+    20.59421373723
+   ],
+   [
+    "tcuintcu",
+    37,
+    56,
+    4.0000002071071
+   ],
+   [
+    "icoinoct",
+    66,
+    85,
+    8.4743921356673
+   ],
+   [
+    "dodinoct",
+    67,
+    85,
+    12.5853538528328
+   ],
+   [
+    "rdoinrdo",
+    75,
+    93,
+    5.0000004000005
+   ],
+   [
+    "cubincub",
+    82,
+    100,
+    5.0000014
+   ],
+   [
+    "tcuintcu",
+    76,
+    93,
+    5.0000002485285
+   ],
+   [
+    "pr6inpr6",
+    79,
+    95,
+    5.0000006000009
+   ],
+   [
+    "icoincub",
+    76,
+    91,
+    6.8541032134633
+   ],
+   [
+    "pr8l3incub",
+    85,
+    100,
+    12.0710684118663
+   ],
+   [
+    "pr12l3incub",
+    65,
+    80,
+    15.0000006000008
+   ]
+  ]
+ },
+ "composites": [
+  [
+   "kttinktt",
+   3,
+   4,
+   12,
+   2.777777956
+  ],
+  [
+   "kttinktt",
+   4,
+   16,
+   64,
+   4.629629993
+  ],
+  [
+   "kttinktt",
+   4,
+   4,
+   16,
+   2.777777956
+  ],
+  [
+   "pr3inpr3",
+   8,
+   8,
+   64,
+   4.0000003
+  ],
+  [
+   "pr3inpr3",
+   7,
+   8,
+   56,
+   4.000000011
+  ],
+  [
+   "pr3inpr3",
+   7,
+   7,
+   49,
+   4.0
+  ],
+  [
+   "pr3inpr3",
+   6,
+   8,
+   48,
+   4.0
+  ],
+  [
+   "pr3inpr3",
+   6,
+   7,
+   42,
+   4.0
+  ],
+  [
+   "rdoinrdo",
+   6,
+   6,
+   36,
+   4.0
+  ],
+  [
+   "cubincub",
+   7,
+   7,
+   49,
+   4.0
+  ],
+  [
+   "cubincub",
+   7,
+   8,
+   56,
+   4.0
+  ],
+  [
+   "cubincub",
+   8,
+   8,
+   64,
+   4.0
+  ],
+  [
+   "cubincub",
+   6,
+   7,
+   42,
+   4.0
+  ],
+  [
+   "cubincub",
+   6,
+   8,
+   48,
+   4.0
+  ],
+  [
+   "cubincub",
+   5,
+   8,
+   40,
+   4.0
+  ]
+ ],
+ "nested_constructions": [
+  "c120inc120_n22",
+  "c120inc120_n23",
+  "c120inc120_n24",
+  "c120inc120_n25",
+  "c16inc600_n22",
+  "c24inc24_n24",
+  "c24inc600_n06",
+  "c24inc600_n07",
+  "c24inc600_n08",
+  "c5inc8_n08",
+  "c600inc120_n09",
+  "c600inc120_n10",
+  "c600inc24_n40",
+  "c600inc600_n25",
+  "c600inc8_n15",
+  "c600inc8_n16",
+  "c600inc8_n17",
+  "c8inc120_n16",
+  "c8inc16_n16",
+  "c8inc24_n16",
+  "cubincub_n41",
+  "cubincub_n42",
+  "cubincub_n43",
+  "cubincub_n44",
+  "cubincub_n45",
+  "cubincub_n46",
+  "cubincub_n47",
+  "cubincub_n48",
+  "cubincub_n49",
+  "cubincub_n50",
+  "cubincub_n51",
+  "cubincub_n52",
+  "cubincub_n53",
+  "cubincub_n54",
+  "cubincub_n55",
+  "cubincub_n56",
+  "cubincub_n57",
+  "cubincub_n58",
+  "cubincub_n59",
+  "cubincub_n60",
+  "cubincub_n61",
+  "cubincub_n62",
+  "cubincub_n63",
+  "cubincub_n64",
+  "cubindod_n06",
+  "cubindod_n07",
+  "cubindod_n08",
+  "cubindod_n25",
+  "cubindod_n26",
+  "cubindod_n27",
+  "cubindod_n61",
+  "cubindod_n62",
+  "cubindod_n63",
+  "cubindod_n64",
+  "dodinoct_n13",
+  "hc5inop5_n31",
+  "hc5inop5_n32",
+  "icoincub_n08",
+  "icoinoct_n10",
+  "octincub_n70",
+  "octincub_n71",
+  "octincub_n72",
+  "tetindod_n03"
+ ],
+ "closed_forms": {
+  "count": 1624,
+  "fields": {
+   "Q": 895,
+   "Q(√2)": 266,
+   "Q(√3)": 185,
+   "Q(√5)": 148,
+   "Q(√2) +other": 58,
+   "Q(√5) nested": 26,
+   "Q(√2) nested": 16,
+   "Q(other) +other": 11,
+   "Q(other) nested": 8,
+   "Q(√3) +other": 3,
+   "Q(√2,√3) +other": 2,
+   "Q(√3) nested": 2,
+   "Q(√3,√5) +other": 2,
+   "Q(√2,√3)": 1,
+   "Q(√2,√3) nested": 1
+  }
+ },
+ "features3d": {
+  "records": 8514,
+  "symmetry_order": {
+   "1": 7738,
+   "2": 365,
+   "3": 62,
+   "4": 105,
+   "5": 3,
+   "6": 74,
+   "8": 51,
+   "10": 6,
+   "12": 32,
+   "16": 8,
+   "20": 1,
+   "24": 45,
+   "48": 19,
+   "120": 5
+  },
+  "orientation_classes": {
+   "1": 1241,
+   "2": 507,
+   "3": 357,
+   "4": 218,
+   "5": 100,
+   "6": 135,
+   "7": 89,
+   "8": 95,
+   "9": 106,
+   "10": 90,
+   "11": 103,
+   "12": 5473
+  },
+  "lattice_windows": 889,
+  "lattice_single_orientation": 685,
+  "lattice_rational_scale": 407,
+  "lattice_by_family": {
+   "cubincub": 53,
+   "tteintte": 49,
+   "icoincub": 45,
+   "icoinoct": 45,
+   "tcuintcu": 42,
+   "pr6inpr6": 39,
+   "pr12l3incub": 37,
+   "pr8l2incub": 34,
+   "dodintet": 33,
+   "dodinoct": 32,
+   "pr3inpr3": 32,
+   "pr8l3incub": 30,
+   "pr12incub": 29,
+   "dodincub": 28,
+   "rdoinrdo": 28,
+   "icointet": 20,
+   "octincub": 20,
+   "pr12l15incub": 19,
+   "pr8l15incub": 19,
+   "tocintoc": 19,
+   "pr6incub": 18,
+   "cubindod": 17,
+   "pr12l2incub": 14,
+   "octintet": 13,
+   "pr8inpr8": 13,
+   "cubintet": 10,
+   "octinoct": 10,
+   "pr5inpr5": 10,
+   "dodindod": 9,
+   "ap8incub": 8,
+   "pr3l2incub": 8,
+   "icoinico": 7,
+   "pr3incub": 6,
+   "pr3l15incub": 6,
+   "pr6l15incub": 6,
+   "pr6l2incub": 6,
+   "pr6l3incub": 6,
+   "pr8incub": 6,
+   "ap4incub": 5,
+   "cboincbo": 5,
+   "pr5l3incub": 5,
+   "ap12incub": 4,
+   "ap5inap5": 4,
+   "ktoinkto": 3,
+   "pr5l15incub": 3,
+   "ap4inap4": 2,
+   "ap6incub": 2,
+   "ap8inap8": 2,
+   "cubinoct": 2,
+   "dhcindhc": 2,
+   "idoinido": 2,
+   "pkdinpkd": 2,
+   "tdointdo": 2,
+   "tetintet": 2,
+   "ap12inap12": 1,
+   "ap6inap6": 1,
+   "ddoinddo": 1,
+   "ditindit": 1,
+   "dodinico": 1,
+   "dtcindtc": 1,
+   "kthinkth": 1,
+   "ktiinkti": 1,
+   "kttinktt": 1,
+   "pr12inpr12": 1,
+   "rcoinrco": 1,
+   "ridinrid": 1,
+   "rtcinrtc": 1,
+   "sncinsnc": 1,
+   "sndinsnd": 1,
+   "tidintid": 1
+  },
+  "layering": {
+   "more": 5683,
+   "<= n^(1/2)": 1280,
+   "<= n^(1/3)": 1035
+  },
+  "two_orientation_examples": [
+   [
+    "ap12inap12_n100",
+    [
+     50,
+     50
+    ],
+    5.2205742
+   ],
+   [
+    "ap12inap12_n21",
+    [
+     11,
+     10
+    ],
+    3.0343764
+   ],
+   [
+    "ap12inap12_n22",
+    [
+     14,
+     8
+    ],
+    3.3191043
+   ],
+   [
+    "ap12inap12_n25",
+    [
+     16,
+     9
+    ],
+    3.6543392
+   ],
+   [
+    "ap12inap12_n28",
+    [
+     18,
+     10
+    ],
+    3.8429146
+   ],
+   [
+    "ap12inap12_n48",
+    [
+     24,
+     24
+    ],
+    4.0789981
+   ],
+   [
+    "ap12inap12_n50",
+    [
+     25,
+     25
+    ],
+    4.2605069
+   ],
+   [
+    "ap12inap12_n51",
+    [
+     26,
+     25
+    ],
+    4.2630872
+   ],
+   [
+    "ap12inap12_n52",
+    [
+     27,
+     25
+    ],
+    4.2943613
+   ],
+   [
+    "ap12inap12_n55",
+    [
+     28,
+     27
+    ],
+    4.3572109
+   ],
+   [
+    "ap12inap12_n56",
+    [
+     28,
+     28
+    ],
+    4.3711984
+   ],
+   [
+    "ap12inap12_n57",
+    [
+     29,
+     28
+    ],
+    4.538572
+   ],
+   [
+    "ap12inap12_n58",
+    [
+     29,
+     29
+    ],
+    4.5535782
+   ],
+   [
+    "ap12inap12_n60",
+    [
+     30,
+     30
+    ],
+    4.5771595
+   ],
+   [
+    "ap12inap12_n94",
+    [
+     56,
+     38
+    ],
+    5.0000082
+   ],
+   [
+    "ap12inap12_n98",
+    [
+     58,
+     40
+    ],
+    5.1980276
+   ],
+   [
+    "ap12inap12_n99",
+    [
+     59,
+     40
+    ],
+    5.1980276
+   ],
+   [
+    "ap12incub_n33",
+    [
+     17,
+     16
+    ],
+    7.7716946
+   ],
+   [
+    "ap12incub_n34",
+    [
+     17,
+     17
+    ],
+    7.7716946
+   ],
+   [
+    "ap12incub_n35",
+    [
+     18,
+     17
+    ],
+    7.7716946
+   ]
+  ],
+  "symmetric_examples": [
+   [
+    "dodindod_n33",
+    120,
+    3.747091
+   ],
+   [
+    "dodinico_n13",
+    120,
+    4.0652478
+   ],
+   [
+    "icoinico_n12",
+    120,
+    2.6180342
+   ],
+   [
+    "ktiinkti_n12",
+    120,
+    2.6180341
+   ],
+   [
+    "tdointdo_n33",
+    120,
+    3.9338638
+   ],
+   [
+    "cubincub_n08",
+    48,
+    2.0000003
+   ],
+   [
+    "cubincub_n27",
+    48,
+    3.0000004
+   ],
+   [
+    "cubincub_n64",
+    48,
+    4.0000005
+   ],
+   [
+    "kthinkth_n08",
+    48,
+    2.5000001
+   ],
+   [
+    "octincub_n09",
+    48,
+    1.8856184
+   ],
+   [
+    "octincub_n72",
+    48,
+    3.7712367
+   ],
+   [
+    "octincub_n73",
+    48,
+    3.7712367
+   ],
+   [
+    "octinoct_n06",
+    48,
+    2.0000004
+   ],
+   [
+    "octinoct_n19",
+    48,
+    3.0000005
+   ],
+   [
+    "rdoinrdo_n06",
+    48,
+    2.0000002
+   ],
+   [
+    "rdoinrdo_n19",
+    48,
+    3.0000003
+   ],
+   [
+    "rdoinrdo_n79",
+    48,
+    5.0000004
+   ],
+   [
+    "rdoinrdo_n87",
+    48,
+    5.0000004
+   ],
+   [
+    "rdoinrdo_n93",
+    48,
+    5.0000004
+   ],
+   [
+    "tcuintcu_n27",
+    48,
+    3.4852815
+   ],
+   [
+    "tcuintcu_n56",
+    48,
+    4.0000002
+   ],
+   [
+    "tcuintcu_n64",
+    48,
+    4.7279223
+   ],
+   [
+    "tcuintcu_n93",
+    48,
+    5.0000002
+   ],
+   [
+    "tocintoc_n89",
+    48,
+    5.0000002
+   ],
+   [
+    "cubindod_n08",
+    24,
+    1.2360681
+   ]
+  ]
+ },
+ "inheritance": {
+  "families": 26,
+  "pairs": 6084,
+  "consecutive_pairs": 1014,
+  "consecutive_frozen": 140,
+  "frozen_any_gap": 357,
+  "partial_ge_0.8": 20,
+  "by_gap": {
+   "1": [
+    140,
+    1014
+   ],
+   "2": [
+    81,
+    1014
+   ],
+   "3": [
+    54,
+    1014
+   ],
+   "4": [
+    38,
+    1014
+   ],
+   "5": [
+    25,
+    1014
+   ],
+   "6": [
+    19,
+    1014
+   ]
+  },
+  "frozen_by_family": {
+   "cubincub": 83,
+   "ap12inap12": 50,
+   "dodinoct": 35,
+   "ap6inap6": 24,
+   "ap12incub": 22,
+   "icoincub": 21,
+   "ap5inap5": 16,
+   "dodintet": 15,
+   "dodincub": 14,
+   "ap8incub": 12,
+   "cubindod": 12,
+   "dodindod": 10,
+   "cubinoct": 8,
+   "ap8inap8": 7,
+   "cubintet": 7,
+   "ap4incub": 6,
+   "dodinico": 6,
+   "cboincbo": 3,
+   "cubinico": 2,
+   "ap4inap4": 1
+  }
+ }
+}

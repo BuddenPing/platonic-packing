@@ -1,6 +1,6 @@
 # Records: Archimedean, Catalan, prism and antiprism families
 
-_Generated 2026-11-06 04:40 CET from the running search._ s = container size ÷ piece size (edge ratio; for Catalan solids the ratio of the same canonical solid). Each entry: the record's container, with 10⁻⁷ clearance, truncated to 5 decimals, linking to the record file. Every record is proven by `certify_general.py` (exact number fields for the solids, rigorous interval arithmetic for the packing) and checked by `verify_general.py` (floating point). "≈ x" = conjectured closed form. The square prism is the cube and the triangular antiprism the octahedron: see the Platonic tables (cubes in a cube, octahedra in an octahedron, octahedra in a cube).
+_Generated 2026-11-06 11:19 CET from the running search._ s = container size ÷ piece size (edge ratio; for Catalan solids the ratio of the same canonical solid). Each entry: the record's container, with 10⁻⁷ clearance, truncated to 5 decimals, linking to the record file. Every record is proven by `certify_general.py` (exact number fields for the solids, rigorous interval arithmetic for the packing) and checked by `verify_general.py` (floating point). "≈ x" = conjectured closed form. The square prism is the cube and the triangular antiprism the octahedron: see the Platonic tables (cubes in a cube, octahedra in an octahedron, octahedra in a cube).
 
 ## Archimedean solids
 
@@ -827,13 +827,13 @@ _Generated 2026-11-06 04:40 CET from the running search._ s = container size ÷ 
 | n | Antiprism4s in an antiprism4 | Antiprism4s in a cube | Antiprism5s in an antiprism5 | Antiprism5s in a cube | Antiprism6s in an antiprism6 |
 |---:|---|---|---|---|---|
 | 2 | [1.66419+](ap4inap4/ap4inap4_n02.json) | [1.68179+](ap4incub/ap4incub_n02.json) | [1.77690+](ap5inap5/ap5inap5_n02.json) | [1.70130+](ap5incub/ap5incub_n02.json) | [1.92814+](ap6inap6/ap6inap6_n02.json) |
-| 3 | [1.97301+](ap4inap4/ap4inap4_n03.json) | [1.98138+](ap4incub/ap4incub_n03.json) | [1.87206+](ap5inap5/ap5inap5_n03.json) | [2.36217+](ap5incub/ap5incub_n03.json) | [2.00000+](ap6inap6/ap6inap6_n03.json) |
+| 3 | [1.97264+](ap4inap4/ap4inap4_n03.json) | [1.98138+](ap4incub/ap4incub_n03.json) | [1.87206+](ap5inap5/ap5inap5_n03.json) | [2.36217+](ap5incub/ap5incub_n03.json) | [2.00000+](ap6inap6/ap6inap6_n03.json) |
 | 4 | [2.00000+](ap4inap4/ap4inap4_n04.json) | [2.08853+](ap4incub/ap4incub_n04.json) | [2.00000+](ap5inap5/ap5inap5_n04.json) | [2.40131+](ap5incub/ap5incub_n04.json) | [2.00000+](ap6inap6/ap6inap6_n04.json) |
-| 5 | [2.20926+](ap4inap4/ap4inap4_n05.json) | [2.14745+](ap4incub/ap4incub_n05.json) | [2.07989+](ap5inap5/ap5inap5_n05.json) | [2.46868+](ap5incub/ap5incub_n05.json) | [2.15387+](ap6inap6/ap6inap6_n05.json) |
-| 6 | [2.29289+](ap4inap4/ap4inap4_n06.json) ≈ (6 - √2)/2 | [2.16540+](ap4incub/ap4incub_n06.json) | [2.19098+](ap5inap5/ap5inap5_n06.json) | [2.48924+](ap5incub/ap5incub_n06.json) | [2.24662+](ap6inap6/ap6inap6_n06.json) |
-| 7 | [2.37356+](ap4inap4/ap4inap4_n07.json) | [2.33990+](ap4incub/ap4incub_n07.json) | [2.33037+](ap5inap5/ap5inap5_n07.json) | [2.82448+](ap5incub/ap5incub_n07.json) | [2.30135+](ap6inap6/ap6inap6_n07.json) |
-| 8 | [2.40202+](ap4inap4/ap4inap4_n08.json) | [2.35500+](ap4incub/ap4incub_n08.json) | [2.38196+](ap5inap5/ap5inap5_n08.json) | [2.94057+](ap5incub/ap5incub_n08.json) | [2.46418+](ap6inap6/ap6inap6_n08.json) |
-| 9 | [2.54219+](ap4inap4/ap4inap4_n09.json) | [2.52268+](ap4incub/ap4incub_n09.json) | [2.58934+](ap5inap5/ap5inap5_n09.json) | [3.06854+](ap5incub/ap5incub_n09.json) | [2.57810+](ap6inap6/ap6inap6_n09.json) |
+| 5 | [2.17858+](ap4inap4/ap4inap4_n05.json) | [2.14745+](ap4incub/ap4incub_n05.json) | [2.07989+](ap5inap5/ap5inap5_n05.json) | [2.46868+](ap5incub/ap5incub_n05.json) | [2.15387+](ap6inap6/ap6inap6_n05.json) |
+| 6 | [2.24592+](ap4inap4/ap4inap4_n06.json) | [2.16540+](ap4incub/ap4incub_n06.json) | [2.19098+](ap5inap5/ap5inap5_n06.json) | [2.48924+](ap5incub/ap5incub_n06.json) | [2.24662+](ap6inap6/ap6inap6_n06.json) |
+| 7 | [2.36297+](ap4inap4/ap4inap4_n07.json) | [2.33990+](ap4incub/ap4incub_n07.json) | [2.33037+](ap5inap5/ap5inap5_n07.json) | [2.82448+](ap5incub/ap5incub_n07.json) | [2.30135+](ap6inap6/ap6inap6_n07.json) |
+| 8 | [2.38494+](ap4inap4/ap4inap4_n08.json) | [2.35500+](ap4incub/ap4incub_n08.json) | [2.38196+](ap5inap5/ap5inap5_n08.json) | [2.94057+](ap5incub/ap5incub_n08.json) | [2.46418+](ap6inap6/ap6inap6_n08.json) |
+| 9 | [2.48904+](ap4inap4/ap4inap4_n09.json) ≈ (31 + 8√2)/17 | [2.52268+](ap4incub/ap4incub_n09.json) | [2.58934+](ap5inap5/ap5inap5_n09.json) | [3.06854+](ap5incub/ap5incub_n09.json) | [2.57810+](ap6inap6/ap6inap6_n09.json) |
 | 10 | [2.59007+](ap4inap4/ap4inap4_n10.json) | [2.58168+](ap4incub/ap4incub_n10.json) | [2.59372+](ap5inap5/ap5inap5_n10.json) | [3.08101+](ap5incub/ap5incub_n10.json) | [2.66824+](ap6inap6/ap6inap6_n10.json) |
 | 11 | [2.74325+](ap4inap4/ap4inap4_n11.json) | [2.60679+](ap4incub/ap4incub_n11.json) | [2.76833+](ap5inap5/ap5inap5_n11.json) | [3.12955+](ap5incub/ap5incub_n11.json) ≈ (3 + 3√3 + 3√5 + √15)/6 | [2.80920+](ap6inap6/ap6inap6_n11.json) |
 | 12 | [2.80778+](ap4inap4/ap4inap4_n12.json) | [2.60894+](ap4incub/ap4incub_n12.json) | [2.77690+](ap5inap5/ap5inap5_n12.json) | [3.12955+](ap5incub/ap5incub_n12.json) ≈ (3 + 3√3 + 3√5 + √15)/6 | [2.90457+](ap6inap6/ap6inap6_n12.json) |

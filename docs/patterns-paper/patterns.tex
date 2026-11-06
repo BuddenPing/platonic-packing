@@ -1,0 +1,278 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array,graphicx,microtype,tabularx}
+\usepackage{xcolor,hyperref,xurl}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,
+ pdftitle={Deletion, Arrows, Windows and Composition},
+ pdfauthor={Alejandro Zarzuelo Urdiales}}
+\setlength{\emergencystretch}{2em}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\code}[1]{\texttt{\nolinkurl{#1}}}
+\newcommand{\lean}[1]{\texttt{#1}}
+\newcommand{\repo}{https://github.com/alejandrozu/platonic-packing}
+\input{macros.tex}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Deletion, Arrows, Windows and Composition:\\a Classification of Structural Patterns in \nRecords{} Certified Polytope Packings}
+\author{Alejandro Zarzuelo Urdiales}
+\date{6 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The Polyhedra-in-Polyhedra catalogue holds \nRecords{} certified packings of $n$ congruent convex polytopes in a scaled container, across \nFamilies{} problem families in dimensions 3--6. Records are found by many searches and contributors, but they are far from structureless. We classify the recurring patterns into nine classes: deletion and plateaus, subset relaxation (``arrows''), insertion and completion, composition and recursion, lattice windows, layers and orientation classes, symmetry, algebraic contact scales, and extremal (provably optimal) configurations. For each class we give a precise mechanism, prove it in Lean~4 with Mathlib where it is a theorem about packings, and measure its prevalence over the whole catalogue. The general theorems are deletion, scale monotonicity, composition $s(nm)\le s(n)\,s(m)$, separator certificates and Voronoi windows. Exact instances are formalized at their exact scales: every finite FCC window of rhombic dodecahedra (19, 44 and 93 pieces at scales 3, 4 and 5), the 56-piece Cartesian shell of truncated cubes at scale 4, and the triakis-tetrahedron recursion $4^k$ pieces at $(5/3)^k$. About a third of all records (\nPlateauRecords{}) lie on \nPlateaus{} plateaus of constant scale. \nLattice{} 3D records are lattice windows, and \nSymNontrivial{} have nontrivial configuration symmetry. PingYou Ltd recently described arrows: select bodies of a larger packing, then hold orientations fixed and move centres (an exact linear program), and finally release all coordinates. Applied to catalogue records alone, the same procedure reproduces three of their new square-antiprism bounds digit for digit, including a kicked variant for $n=6$.
+\end{abstract}
+
+\section{Introduction}
+
+A \emph{finite container packing} asks for the smallest scale $s(n)$ of a container $C$ holding $n$ congruent copies of a body $K$ with disjoint interiors. The Polyhedra-in-Polyhedra catalogue~\cite{archive} records, for \nFamilies{} pairs $(K,C)$ of Platonic, Archimedean and Catalan solids, prisms, antiprisms and regular polytopes in dimensions 4--6, the best certified packing found for each $n$ up to 100: \nThreeD{} records in 3D and \nFourD{}, \nFiveD{} and \nSixD{} in dimensions 4, 5 and 6. Every record carries an exact certificate of containment and pairwise separation. The packings come from soft-to-rigid continuation~\cite{nakajima2026,zarzueloMethods}, basin hopping, lattice cuts, composition, published constructions~\cite{berthold2026} and many community contributions, prominently those of PingYou Ltd, \code{konoha-ily2} and PolyPack.
+
+Looking at the catalogue as data, the records are far from independent optima. They come in plateaus where $s(n)$ does not change. They are finite windows of lattice tilings, or compositions of smaller packings. They inherit large rigid blocks from neighbouring records. They show layered and symmetric arrangements, and their scales satisfy short algebraic equations. PingYou Ltd recently made two such observations explicit: an illustrated account of sixteen exact constructions and their number patterns~\cite{pingSixteen}, and ``arrows'' that recover smaller square-antiprism packings from a larger one~\cite{pingArrows}. This paper turns these observations into a classification with three layers:
+
+\begin{enumerate}
+\item \textbf{Mechanisms.} Each pattern class is a construction rule. Where the rule is a statement about packings, we prove it once in Lean~4~\cite{mathlib} for all bodies, containers and dimensions (Section~\ref{sec:formal}).
+\item \textbf{Exact instances.} Catalogue records that realize a mechanism exactly are formalized at their exact scales, rather than the clearance-padded scales of the certified records.
+\item \textbf{Prevalence.} Each class is measured over the whole catalogue by reproducible scripts (\code{scripts/patterns/}), and every number in this paper is generated from their output.
+\end{enumerate}
+
+Table~\ref{tab:taxonomy} summarizes the nine classes. The remaining sections treat them in turn, then classify the families (Section~\ref{sec:families}) and state the limits of the claims (Section~\ref{sec:limits}).
+
+\begin{table}[t]
+\centering\small
+\begin{tabularx}{\textwidth}{>{\raggedright}p{2.6cm} >{\raggedright}X >{\raggedright}p{3.6cm} >{\raggedright\arraybackslash}p{3.4cm}}
+\toprule
+Class & Mechanism & Formal statement (Lean) & Prevalence \\
+\midrule
+P1 Deletion, plateaus & $m\le n$ pieces of an $n$-packing are an $m$-packing & \lean{Packing.restrict} & \nPlateaus{} plateaus, \nPlateauRecords{} records; \nMonotone{} records built by deletion \\
+P2 Arrows & subset, then F (fixed orientations, LP), then P (free) & \lean{Packing.restrict}, \lean{Packing.of\_separators} & 3 of PingYou's square-antiprism bounds reproduced from records \\
+P3 Insertion, completion & $(n-1)$-packing plus a piece in a hole & (constructive only) & \nAscend{} records built by insertion \\
+P4 Composition & $s_{C}(Q,n)\,s_{Q}(P,m)$ bounds $s_C(P,nm)$ & \lean{Packing.compose}, \lean{Packing.pow} & \nComposites{} exact composites, \nNested{} nested records \\
+P5 Lattice windows & Voronoi cells of distinct points & \lean{voronoi\_packing}, \lean{lattice\_window} & \nLattice{} windows (\nLatticeRational{} at rational scale) \\
+P6 Layers, orientation classes & a few layers, few orientations & (descriptive) & \nOneOrient{} single-orientation records \\
+P7 Symmetry & invariance under container symmetries & (descriptive) & \nSymNontrivial{} symmetric 3D records \\
+P8 Algebraic scales & contact equations close the scale & (exact certificates) & \nClosedForms{} closed forms \\
+P9 Extremal & lower bound meets construction & centre lemmas, volume & proven optimal records (Section~\ref{sec:extremal}) \\
+\bottomrule
+\end{tabularx}
+\caption{The nine pattern classes. Prevalence counts are over all \nRecords{} records, or over the \nFeat{} 3D records where a geometric feature is needed.}
+\label{tab:taxonomy}
+\end{table}
+
+\section{Setting}
+
+Let $E$ be a finite-dimensional real inner product space, $K,C\subseteq E$ and $s\ge 0$. A \emph{packing} of $n$ copies of $K$ in $s\,C$ is a family of affine isometries $g_1,\dots,g_n$ of $E$ with $g_i(K)\subseteq sC$ and $\operatorname{int} g_i(K)\cap \operatorname{int} g_j(K)=\emptyset$ for $i\neq j$. This is the structure \lean{Packing K C s n} of the Lean development (\code{lean-optimality/PackingOptimality/Basic.lean}). Reflections are allowed, so lower bounds proved for it hold for the catalogue's rotation-only packings. The catalogue measures $s$ as the ratio of container to piece edge (or linear size for Catalan solids). A record $r$ stores $s_{\mathrm{full}}(r)$, carrying a clearance of at least $10^{-7}$ between pieces and walls, and an exact certificate. The touching limit $s_{\mathrm{tight}}$ is what the patterns below are about.
+
+\section{Deletion, plateaus and frozen subsets (P1)}\label{sec:deletion}
+
+The simplest mechanism is deletion: any $m\le n$ pieces of an $n$-packing form an $m$-packing in the same container, so $s(m)\le s(n)$ (\lean{Packing.restrict}). The catalogue enforces this monotonicity: when a search finds $s(n+1)<s(n)$, the $(n+1)$-packing minus one piece replaces the $n$-record. \nMonotone{} records arose this way, and \nDescend{} more from an explicit deletion move.
+
+\paragraph{Plateaus.} A plateau is a maximal run $n_0<\dots<n_1$ with $s(n_0)=\dots=s(n_1)$. The catalogue has \nPlateaus{} plateaus containing \nPlateauRecords{} records. The longest are $s=2$ for $2\le n\le 32$ five-cubes and $2\le n\le 24$ six-cubes (Hosono's centre lemma~\cite{hosono}). Others are $s=4$ for $39\le n\le 64$ cubes and $41\le n\le 64$ triangular prisms (grid tilings), $s=4$ for $37\le n\le 56$ truncated cubes (the Cartesian shell, Section~\ref{sec:windows}) and $s=5$ for $75\le n\le 93$ rhombic dodecahedra. A plateau ends at a \emph{window number}, the largest count a rigid construction holds at that scale. Most plateaus are deletions of a single lattice window or tiling.
+
+\paragraph{Frozen subsets.} Deletion predicts a sharper relation between records. For records $k<N$ of one family, let $f(k,N)$ be the largest fraction of the $k$ pieces that can be matched one-to-one with pieces of the $N$-packing after a single container symmetry and translation, with matching centres and identical placed vertex sets (orientation included, up to the piece's own symmetry; tolerance $0.02$ edges; \code{scripts/patterns/inherit.py}). Then $f=1$ means record $k$ is literally $k$ pieces of record $N$, moved rigidly. Over \nInhPairs{} pairs with $N-k\le 6$ in \nInhFamilies{} families, \nInhFrozen{} pairs are frozen ($f=1$), \nInhConsFrozen{} of them consecutive ($N=k+1$). Figure~\ref{fig:inherit} shows the cube family. Frozen blocks appear exactly on the plateaus and on the $k^3$ grids. Between them, consecutive records share almost nothing rigidly: each was re-optimized after the deletion.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_inherit_cubincub.pdf}
+\caption{Subset inheritance in cubes in a cube. Dark cells: record $k$ is a rigid subset of record $N$. The plateaus $s=2$ ($n\le 8$), $s=3$ ($15\le n\le 27$) and $s=4$ ($39\le n\le 64$) appear as solid blocks.}
+\label{fig:inherit}
+\end{figure}
+
+\section{Arrows: subset relaxation and kicks (P2)}\label{sec:arrows}
+
+PingYou Ltd observed that a larger packing contains good smaller ones that are \emph{not} rigid subsets: selecting six or eight square antiprisms of their 19-piece packing and relaxing them recovers their 6- and 8-piece bounds~\cite{pingArrows}. They specified the relaxation as two steps, with the unit bodies fixed throughout:
+
+\begin{description}
+\item[F] hold every orientation fixed and minimize the scale over the centres, re-selecting pair separation planes;
+\item[P] minimize the scale with centres and rotations free, by a sequential linear program.
+\end{description}
+
+Arrows combine these with discrete moves: deletion (keep a subset), insertion (add a body at an affine guess or at the hub, the mean of the centres), and kicks (rotate one body about its own axis, or a group of bodies about an axis through their centroid, by $\pm 6^\circ$ to $\pm 16^\circ$), each followed by F then P.
+
+\paragraph{F is an exact linear program.} With orientations $R_i$ fixed and one unit axis $u_{ij}$ chosen for each pair, write $h_i(u)=\max_{x\in K}\langle u,R_i x\rangle$. Every constraint is then linear in the centres $c_i$ and the scale $s$:
+\begin{equation}\label{eq:F}
+\langle N_f,c_i\rangle+h_i(N_f)\le \beta_f\,s\quad\text{(walls)},\qquad
+\langle u_{ij},c_i\rangle+h_i(u_{ij})\le \langle u_{ij},c_j\rangle-h_j(-u_{ij})\quad\text{(pairs)},
+\end{equation}
+where $\{x:\langle N_f,x\rangle\le\beta_f\}$ are the container's facets. Any feasible point is a packing, since each pair is split by a plane: this is \lean{Packing.of\_separators}, proved for arbitrary bodies. Its optimum is therefore a certified packing for that choice of axes. F iterates by re-selecting each pair's best separating axis at the current point; the point stays feasible, so the scale never increases (\code{scripts/patterns/fp.py}).
+
+\paragraph{Reproduction from catalogue records.} We ran arrows on the square-antiprism family $\mathrm{ap4}$ using only catalogue records as sources. The searches tried subsets of records $N\le 20$ chosen as caps along container directions, nearest clusters and random connected clusters, then insertion and kicks from the improved packings (\code{scripts/patterns/arrows\_search.py}, \code{arrows\_kick.py}). Table~\ref{tab:arrows} lists the results. For $n=3$, $5$ and $6$ the arrows reach PingYou's new bounds to every digit they published, from different sources: their 19-piece packing is not in the catalogue. For $n=6$ the subset alone stops at $2.2500$. A single kick, a $16^\circ$ spin of one body about its own axis followed by F and P, reaches their value, which they had obtained by selecting six bodies of their 19-piece packing. Coincident values from different starting points indicate the same rigid contact configuration, reached along different arrows.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{rllll}
+\toprule
+$n$ & catalogue record & arrow from catalogue records & scale reached & PingYou Ltd~\cite{pingArrows} \\
+\midrule
+3 & 1.973017314 & subset $\{4,6,12\}$ of $N=15$, F, P & 1.9726490831 & 1.972649083082090 \\
+5 & 2.209265853 & subset of $N=9$, F, P & 2.1785815015 & 2.178581501510501 \\
+6 & 2.292893610 & subset of $N=9$, F, P; spin $16^\circ$, F, P & 2.2459217996 & 2.245921799598007 \\
+@@ARROWROWS@@
+\bottomrule
+\end{tabular}
+\caption{Arrows on square antiprisms in a square antiprism, from catalogue records only. ``Scale reached'' is the touching limit after F and P. The certified records add $10^{-7}$ clearance.}
+\label{tab:arrows}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.9\textwidth]{fig_arrow.pdf}
+\caption{An arrow: three square antiprisms of the 15-piece record, then F and P, reach $S_3=1.9726490831$.}
+\label{fig:arrow}
+\end{figure}
+
+\section{Insertion and completion (P3)}
+
+The converse of deletion adds a piece to an $(n-1)$-packing, in its largest hole, and re-sharpens (\nAscend{} records). A rigid version is \emph{completion}: a construction with empty corners or gaps receives additional pieces at the same or slightly larger scale. PingYou's 61 truncated cubes~\cite{pingSixteen} complete the 56-piece Cartesian shell (Section~\ref{sec:windows}) with five corner pieces. The 40 wall and contact inequalities of their contact system sum to $5(2+\sqrt2)(S-1)\ge 60$, so $S\ge 13-6\sqrt2$, and the construction attains it. That bound holds for the declared contact system, not for all packings. Insertion arrows (PingYou's $N6\to N7$ and $N8\to N9$, the latter with a hub body of orientation $\operatorname{diag}(1,-1,-1)$) are completion followed by F and P.
+
+\section{Composition and recursion (P4)}\label{sec:compose}
+
+Scales are ratios, so they multiply.
+
+\begin{theorem}[\lean{Packing.compose}]\label{thm:compose}
+If $n$ copies of $Q$ pack in $s\,C$ and $m$ copies of $P$ pack in $t\,Q$ with $t\ne 0$, then $nm$ copies of $P$ pack in $(st)\,C$. In particular, for $K=P=Q=C$, $s(nm)\le s(n)\,s(m)$ (\lean{Packing.selfCompose}) and $s(n^k)\le s(n)^k$ (\lean{Packing.pow}).
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+Conjugating $g$ by the dilation $x\mapsto tx$ gives $\hat g=x\mapsto t\,g(0)+\vec g(x)$ with $\hat g(tA)=t\,g(A)$. The pieces $\hat g_i(h_j(P))\subseteq t\,g_i(Q)\subseteq (st)\,C$ are disjoint within one $g_i$ because $\hat g_i$ is an isometry. Across $i\ne i'$ they are disjoint because the interiors of $t\,g_i(Q)$ and $t\,g_{i'}(Q)$ are.
+\end{proof}
+
+Nested composition is how \nNested{} records were built (\code{scripts/compose3d.py}, \code{compose\_nd.py}; the whole-body inclusion idea is PingYou's contribution~\cite{ping79}). In the self-similar families, \nComposites{} records equal a product $s(n)s(m)$ exactly. They include the cube and prism tilings ($64=8\cdot 8$ at scale 4) and the rhombic-dodecahedron record $36=6\cdot6$ at 4. The cleanest is the triakis tetrahedron, where PingYou recognized the 16- and 64-piece records as the 4-piece packing squared and cubed~\cite{pingSixteen}.
+
+\begin{theorem}[\lean{triakis\_recursion}]\label{thm:triakis}
+For every $k\ge0$, $4^k$ triakis tetrahedra pack in a triakis tetrahedron of scale $(5/3)^k$.
+\end{theorem}
+
+\begin{proof}
+Write the catalogue's triakis tetrahedron as $\{x:\langle m,x\rangle\le 9\sqrt2/4\}$ over its twelve integer face normals $m$ (of type $(1,3,1)$). Place piece $i$ at $R_iK+(\sqrt2/2)\sigma_i$ with $\sigma_i\in\{(-1,1,1),(-1,-1,-1),(1,1,-1),(1,-1,1)\}$ and rotations $R_i$ with entries $\pm\frac13,\pm\frac23$. Containment in $\frac53K$ is a linear consequence of the face inequalities. The six pairs touch along the planes $x_a\pm x_b=0$. This gives the 4-piece packing at $5/3$ (\lean{Triakis.ktt4}); Theorem~\ref{thm:compose} gives the powers.
+\end{proof}
+
+\section{Lattice windows and tilings (P5)}\label{sec:windows}
+
+\begin{theorem}[\lean{voronoi\_disjoint}, \lean{voronoi\_packing}]
+If $A$ lies in the Voronoi half-space of $p$ against $q$ and $B$ in that of $q$ against $p$ ($p\ne q$), then $A$ and $B$ have disjoint interiors. Hence copies $g_i(K)$ lying in the Voronoi cells of distinct centres $c_i$, inside $sC$, form a packing. For a lattice $\Lambda$ whose Voronoi cell contains $K$, any finite set of translates of $K$ by points of $\Lambda$ that fit in $sC$ is a packing (\lean{lattice\_window}).
+\end{theorem}
+
+The proof separates $A$ and $B$ by the bisector $\langle q-p,x\rangle=(\|q\|^2-\|p\|^2)/2$. The theorem turns every lattice window into a finite containment check, and it covers multi-orientation windows whose pieces lie in the Voronoi cells of their centres. We formalize two families completely (\code{Windows.lean}):
+
+\begin{itemize}
+\item \textbf{Rhombic dodecahedra.} $R=\{|x_i|+|x_j|\le1\}$ is the Voronoi cell of $D_3$, the FCC lattice. For $x\in R$ and $v\in D_3$ one has $2\langle x,v\rangle\le\|v\|^2$. The support function of $R$ is $\max(\|v\|_\infty,\|v\|_1/2)$, and both terms are at most $\|v\|^2/2$ on $D_3\setminus0$ (\lean{rd\_voronoi}). Every window $\{w\in D_3:|2w_i+e_i|+|2w_j+e_j|\le M\}$ packs in $(M/2+1)R$ (\lean{rdo\_window}). The catalogue's records of 19, 44 and 93 pieces at scales 3, 4 and 5 are such windows: the FCC shell $1+12+6$ and the palindromic window $2+8+12+12+8+2$ of PingYou~\cite{pingSixteen}, and the 93-piece record. They are proved at the exact scales, and by deletion every smaller count at the same scale.
+\item \textbf{Truncated cubes.} The unit-edge truncated cube $T$ lies in the Voronoi cell $[-a,a]^3$ of $2a\Z^3$, with $a=(1+\sqrt2)/2$. The $4\times4\times4$ grid minus its eight corners packs 56 copies in $4T$ (\lean{tcu56}): PingYou's Cartesian shell $56=4^3-2^3$, the end of the plateau $37\le n\le56$.
+\end{itemize}
+
+Over the 3D catalogue, \nLattice{} records are lattice windows: every orientation class with at least four pieces sits on a lattice, with at most four classes. \nLatticeOne{} of them have a single orientation, and \nLatticeRational{} sit at a rational scale. Figure~\ref{fig:windows} shows how the window numbers terminate the plateaus. Two-orientation windows include PingYou's truncated-tetrahedron windows: 35 = 19 + 16 at $11/3$ and 71 = 40 + 31 at $13/3$, the two counts being coefficients of $(1+x+x^2)^4$ and $(1+x+x^2+x^3)^4$~\cite{pingSixteen}.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_windows.pdf}
+\caption{Record scales against $n$. Plateaus end at lattice window numbers: 19, 44 and 93 FCC windows of rhombic dodecahedra at scales 3, 4 and 5, and the 56-piece Cartesian shell of truncated cubes at scale 4 (all proved in Lean at the exact scales).}
+\label{fig:windows}
+\end{figure}
+
+\section{Layers and orientation classes (P6)}
+
+Many records are stacks of a few layers, with only a few orientations of the pieces up to the piece's own symmetry. Over the 3D catalogue, \nOneOrient{} records use a single orientation and \nTwoOrient{} use exactly two (Figure~\ref{fig:sym}b). Layer inventories along a container direction give the number patterns PingYou highlights. Examples are $29=9+11+9$ and $30=9+12+9$ cubes in a dodecahedron, whose shared row phase forces the scales $5/\varphi^2$ and $23-13\varphi$. Others are $32=8+6\cdot4$ cubes in an icosahedron at $8/\varphi^2$, $44=6+6+32$ octagonal prisms at $4+2\sqrt2$, and $20=2\times2\times5$ dodecagonal prisms at $15/2$~\cite{pingSixteen}. The extraction is in \code{scripts/patterns/features.py}. It groups centres into layers along each container facet normal, and pieces into orientation classes when $R_i^{-1}R_j$ is a proper symmetry of the piece.
+
+\section{Symmetry (P7)}
+
+The configuration symmetry group of a record is the set of container symmetries, reflections included, that map the set of placed pieces onto itself. It is computed exactly on placed vertex sets at tolerance $10^{-4}$ edges. Of the \nFeat{} 3D records, \nSymTrivial{} are asymmetric and \nSymNontrivial{} have a nontrivial group (Figure~\ref{fig:sym}a). The fully symmetric records (orders 24, 48 and 120) are all windows or shells. Symmetric seeding (\nSymfresh{} records) was one of the search moves, but most symmetric records come from lattice cuts and contributed constructions. Relaxation from a symmetric start rarely keeps the symmetry.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_sym_orient.pdf}
+\caption{(a) Orders of configuration symmetry groups of the \nFeat{} 3D records (log scale). (b) Number of orientation classes.}
+\label{fig:sym}
+\end{figure}
+
+\section{Algebraic scales (P8)}
+
+A rigid record is a solution of its contact system: equalities between support functions of touching pieces and walls. Its scale is then algebraic. \nClosedForms{} records carry a conjectured closed form matched to $10^{-11}$: \nRational{} rational, \nSqrtTwo{} in $\Q(\sqrt2)$, \nSqrtThree{} in $\Q(\sqrt3)$ and \nSqrtFive{} in $\Q(\sqrt5)$, the rest in nested or biquadratic fields. The field reflects the geometry of the contacts. Golden scales come from dodecahedral and icosahedral walls, silver ratios $\delta=1+\sqrt2$ from square antiprisms (PingYou's $S_2\le(5-\delta)/\sqrt\delta$, $S_9\le1+2/(11-4\delta)$, $S_{20}\le3+1/(\delta+2)$~\cite{pingArrows}), and $\sqrt3$ from hexagonal and dodecagonal prisms. A closed form is an exact statement only once the contact system is solved and certified; PingYou's ``six-equation'', ``77-equation'' and ``115-equation'' contact constructions are such certificates~\cite{pingArrows}.
+
+\section{Extremal patterns: proven optimality (P9)}\label{sec:extremal}
+
+At the extreme of the classification are records whose scale is matched by a lower bound. Three mechanisms occur.
+\begin{itemize}
+\item \textbf{Volume tilings.} $k^d$ cubes and $k^3$ triangular prisms at scale $k$ (\code{Cubes.lean}, \code{Prisms.lean}).
+\item \textbf{Centre lemmas for $n=2$ and plateaus.} If every piece at scale below $s$ contains the container's centre, then $s(2)\ge s$. Proven instances include the cube centre lemma in dimensions 3 and 4 (plateaus $s=2$ for $2\le n\le 8$ cubes and $2\le n\le 16$ tesseracts), and the octahedron lemma (2 octahedra in a cube, $\sqrt2$).
+\item \textbf{Elementary bounds.} The facet-width and two-ball lemmas prove optimality of 2 tetrahedra in a cube, octahedron, dodecahedron and icosahedron; 2 five-simplices in a 5-cube (the Paley construction); 2 five-cells in a 24-cell; and 2 16-, 24-, 120- and 600-cells in a tesseract or 16-cell.
+\end{itemize}
+These results are recorded in \code{docs/OPTIMALITY.md}. They also explain several plateau starts: the plateau begins where the lower bound is tight.
+
+\section{Classification by family}\label{sec:families}
+
+Table~\ref{tab:families} classifies the records by family group. Prisms and antiprisms, and the Platonic pairs, are dominated by plateaus and lattice windows: their pieces tile or nearly tile. The Catalan and Archimedean families are mostly irregular, with fewer windows and almost no frozen subsets. Their records are individually tightened contact configurations, where arrows are the natural tool. In dimensions 4--6, plateaus and closed forms are common, coming from grids, composites and the $n=2$ centre lemmas. Figure~\ref{fig:lineage} shows how the records were produced.
+
+\begin{table}[t]
+\centering\scriptsize
+\resizebox{\textwidth}{!}{\input{table_families.tex}}
+\caption{Pattern prevalence by family group: records on a plateau, with a closed form, with nontrivial symmetry, that are lattice windows, with a single orientation class, and frozen-subset pairs $f(k,N)=1$ ($N-k\le6$). Geometric features are computed for 3D only.}
+\label{tab:families}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.86\textwidth]{fig_lineage.pdf}
+\caption{The last move in each record's lineage. Deletion and insertion together produced a third of the catalogue.}
+\label{fig:lineage}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_gallery.pdf}
+\caption{Pattern classes in records. Top: an FCC shell, a Cartesian shell and the triakis recursion (all proved in Lean at the exact scale). Bottom: a two-orientation window (orientation classes in blue and orange), a cube tiling, and a proven-optimal $n=2$ record.}
+\label{fig:gallery}
+\end{figure}
+
+\section{Formalization}\label{sec:formal}
+
+All theorems cited above are in \code{lean-optimality/} (Lean 4.31, Mathlib). The continuous-integration audit checks that every one depends only on the axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+
+\begin{center}\small
+\begin{tabularx}{\textwidth}{l >{\raggedright}X >{\raggedright\arraybackslash}p{4.2cm}}
+\toprule
+Module & Theorems & Content \\
+\midrule
+\code{Basic.lean} & \lean{Packing.restrict} & deletion \\
+\code{Patterns.lean} & \lean{Packing.mono}, \lean{compose}, \lean{selfCompose}, \lean{pow} & scale monotonicity, composition \\
+ & \lean{of\_separators}, \lean{smulBoth} & separator certificates (F), rescaling \\
+ & \lean{voronoi\_disjoint}, \lean{voronoi\_packing}, \lean{lattice\_window} & Voronoi windows \\
+\code{Windows.lean} & \lean{rdo\_window}, \lean{tcu\_window}, \lean{rdo19/44/93}, \lean{tcu56} & exact FCC and cubic windows \\
+\code{Triakis.lean} & \lean{ktt4}, \lean{triakis\_recursion}, \lean{ktt16}, \lean{ktt64} & the recursion $4^k$ at $(5/3)^k$ \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The formal results are of two kinds. The mechanisms are proved for arbitrary bodies and containers: deletion, monotonicity, composition, separator certificates and Voronoi windows. The exact instances are specific packings at exact algebraic scales; the catalogue certifies their padded counterparts by exact arithmetic. Descriptive classes (layers, orientation classes, symmetry) are measurements, not theorems.
+
+\section{Limitations}\label{sec:limits}
+
+The classification is empirical: a record can belong to several classes, and the thresholds (tolerances, the cap of four orientation classes for windows, the gap $N-k\le6$ for inheritance) are choices. The arrows reported here reproduce known values. In this round they produced no bound below those PingYou Ltd has announced; their records await their own submission. Closed forms are conjectures until their contact systems are solved exactly. The formal layer proves the mechanisms and the listed instances, not the optimality of the windows. Only the records in Section~\ref{sec:extremal} are proven optimal.
+
+\section*{Acknowledgements}
+The arrows of Section~\ref{sec:arrows}, their F and P steps, and many of the number patterns of Sections~\ref{sec:compose}--\ref{sec:windows} are due to PingYou Ltd~\cite{pingSixteen,pingArrows}. Their constructions also include the corner completion, golden shells and layers, finite Welsh windows, FCC shells and windows, the Cartesian shell, and mixed, quadratic-field and column layers. The catalogue combines searches and contributions by PingYou Ltd, \code{konoha-ily2} (Hirotaka Nakano), PolyPack (Michael Sinko), Berthold, Kamp, Mexi, Pokutta and P\'olik~\cite{berthold2026}, Hiroaki Hosono~\cite{hosono}, Stian, Ryan Xu and others. Soft-to-rigid continuation is due to Yohei Nakajima~\cite{nakajima2026}. AI coding and drafting tools, including Claude (Anthropic), assisted implementation, analysis, formalization and manuscript preparation under human direction. The Lean build and the exact certificates, not the tools, are the evidence for the formal and certified claims.
+
+\begin{thebibliography}{99}
+\bibitem{archive} A. Zarzuelo Urdiales and contributors. \emph{Polyhedra in Polyhedra: certified finite packings}. \url{https://github.com/alejandrozu/platonic-packing}, \url{https://polyhedrainpolyhedra.wiki}, 2026.
+\bibitem{zarzueloMethods} A. Zarzuelo Urdiales. \emph{Certified finite packings of Platonic solids: a generalized soft-to-rigid search and its computational development}. 2026. \url{https://doi.org/10.5281/zenodo.23306098}.
+\bibitem{zarzueloPatterns} A. Zarzuelo Urdiales. \emph{Finite polyhedral fits: discrete scale jumps, orientational domains, and contact structure in 351 certified constructions}. 2026. \url{https://doi.org/10.5281/zenodo.23306126}.
+\bibitem{nakajima2026} Y. Nakajima. \emph{Soft-to-Rigid: Shape Continuation as an Alternative Search for Packing Congruent Shapes}. arXiv:2610.14463v1, 2026. \url{https://arxiv.org/abs/2610.14463}.
+\bibitem{berthold2026} T. Berthold, D. Kamp, G. Mexi, S. Pokutta and I. P\'olik. \emph{Out-of-the-Box Global Optimization for Packing Problems: New Models and Improved Solutions}. arXiv:2605.04850, 2026.
+\bibitem{hosono} H. Hosono. \emph{square-packing}: computer-assisted optimality proofs for cube packings. \url{https://github.com/wand125/square-packing}, 2026.
+\bibitem{pingSixteen} PingYou Ltd. \emph{Sixteen constructions, exact structure} (illustrated notes on number patterns in the catalogue), 5 November 2026.
+\bibitem{pingArrows} PingYou Ltd. \emph{Published packings vs.\ strongest verified constructions: square antiprisms, $N=1$--20}, and \emph{The four arrows, specified as numerical procedures}, 6 November 2026.
+\bibitem{ping79} PingYou Ltd. Whole-body polytope inclusion construction, contribution \#79, 2026. \url{https://github.com/alejandrozu/platonic-packing/issues/79}.
+\bibitem{mathlib} The mathlib Community. The Lean mathematical library. In \emph{CPP 2020}, 367--381.
+\bibitem{conwaySloane} J. H. Conway and N. J. A. Sloane. \emph{Sphere Packings, Lattices and Groups}, 3rd ed. Springer, 1999.
+\end{thebibliography}
+
+\end{document}

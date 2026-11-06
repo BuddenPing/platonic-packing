@@ -37,6 +37,10 @@ def credit_of(bs, default='Alejandro Zarzuelo'):
         return f"{bs.get('source')} (published packing, imported as a starting point; not improved yet)"
     if bs.get('move') == 'tighten' and lin:
         return f"{lin} (re-tightened by the search)"
+    if bs.get('move') == 'arrow' and lin:
+        return (f"{lin} (arrows: subset relaxation, fixed-orientation LP and free tightening, with kicks; first "
+                f"reported {bs.get('reported', '')}; this witness reproduced from catalogue records by their "
+                f"procedure, scripts/patterns/)")
     if bs.get('move') == 'monotone' and lin:
         return f"{lin} (their packing for n + 1 minus one piece)"
     if lin:
