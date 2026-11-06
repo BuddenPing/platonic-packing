@@ -24,6 +24,20 @@ Machine-readable list: [`optimality.json`](optimality.json). Lean proofs: [`lean
 | 5 cubes in a cube (`cubincub_n05`) | 2 | cube centre lemma (d = 3) + grid | `cubincub_n05` |
 | 6 cubes in a cube (`cubincub_n06`) | 2 | cube centre lemma (d = 3) + grid | `cubincub_n06` |
 | 7 cubes in a cube (`cubincub_n07`) | 2 | cube centre lemma (d = 3) + grid | `cubincub_n07` |
+| 2 tesseracts in a tesseract (`c8inc8_n02`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n02` |
+| 3 tesseracts in a tesseract (`c8inc8_n03`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n03` |
+| 4 tesseracts in a tesseract (`c8inc8_n04`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n04` |
+| 5 tesseracts in a tesseract (`c8inc8_n05`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n05` |
+| 6 tesseracts in a tesseract (`c8inc8_n06`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n06` |
+| 7 tesseracts in a tesseract (`c8inc8_n07`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n07` |
+| 8 tesseracts in a tesseract (`c8inc8_n08`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n08` |
+| 9 tesseracts in a tesseract (`c8inc8_n09`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n09` |
+| 10 tesseracts in a tesseract (`c8inc8_n10`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n10` |
+| 11 tesseracts in a tesseract (`c8inc8_n11`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n11` |
+| 12 tesseracts in a tesseract (`c8inc8_n12`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n12` |
+| 13 tesseracts in a tesseract (`c8inc8_n13`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n13` |
+| 14 tesseracts in a tesseract (`c8inc8_n14`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n14` |
+| 15 tesseracts in a tesseract (`c8inc8_n15`) | 2 | cube centre lemma (d = 4) + grid | `c8inc8_n15` |
 
 The five records with k^d cubes are instances of one theorem, `cubes_in_cube_optimal`: in every dimension d ≥ 1, the smallest cube
 holding k^d unit cubes has side exactly k. The proof works for any rigid motions, reflections included, and only
@@ -62,7 +76,33 @@ The geometric step (`centre3`) takes an image vertex in each coordinate directio
 is within (s − wᵢ)/2 of s/2 in coordinate i, where wᵢ is the cube's width along that axis. Pulled back through
 the isometry and combined with `core`, the container's centre lies strictly inside the unit cube.
 
-## 2. Proven with computer assistance elsewhere, not in Lean (71 records)
+**Tesseracts in a tesseract, n = 2–15 (`Tesseracts.lean`).** Side 2 is optimal for every n from 2 to 16, by the
+same plateau argument with the **cube centre lemma in dimension 4** (`centre4`). The result s₄(2) = 2 is
+Hiroaki Hosono's; his proof is computer-assisted away from the axes. The Lean proof here has no computer search.
+The lemma follows from Lemma F in dimension 4 (`LemmaF4.lemmaF4`), whose two regions are proved as follows. Fix
+a column j and write xᵢ = |Rᵢⱼ| and S = Σᵢ xᵢ.
+
+1. **Near an axis (some xᵢ² ≥ 2/3): Hosono's argument, ported unchanged.** A polar-decomposition step reduces
+   F_j ≤ 1 to Lemma F in dimension 3. It is his Lean file (`NearAxis.lean`, MIT, credited), with our
+   `CubeCentre.core` discharging its 3D hypothesis (`lemmaF3`).
+2. **Elsewhere (every xᵢ² ≤ 2/3): new, elementary.**
+   - **Zero-sum bound.** For each other column k, the vector zᵢ = RᵢⱼRᵢₖ has zero sum, so ‖z‖₁ ≥ √2‖z‖₂.
+   - **Cauchy–Schwarz.** It gives ‖z‖₂ ≥ Σᵢ xᵢRᵢₖ² (`pair_bound`).
+   - **Summing over k ≠ j** with the row norms gives F_j ≤ 2S − 1 − √2 Σᵢ xᵢ(1 − xᵢ²).
+   - **The remaining inequality** is Σᵢ φ(xᵢ) ≥ −2, with φ(t) = √2(t − t³) − 2t, Σxᵢ² = 1 and xᵢ² ≤ 2/3. Each
+     coordinate is small (xᵢ² ≤ 2/5), middle (2/5 to 3/5) or big (≥ 3/5). On each range φ lies above an
+     explicit line in t², a one-variable cubic inequality with an exact certificate (`phi_small`, `phi_large`,
+     `phi_large2`). At most two coordinates exceed 2/5, and `linarith` closes all 81 combinations
+     (`far_poly`). The tightest margin is ≈ 0.0008, near p = (2/3, 1/9, 1/9, 1/9).
+
+The final step, from Lemma F to the centre lemma, is proved once for every dimension
+(`CentreGeneral.centre_of_lemmaF`).
+
+Hosono's spectral bound replaces √2 Σᵢ xᵢ(1 − xᵢ²) by √2 Tr √(diag(p) − ppᵀ). That needs matrix square roots, and
+it is what extends to 5D. The elementary bound here is weaker and fails in 5D, where its minimum on the far
+region is about −0.10.
+
+## 2. Proven with computer assistance elsewhere, not in Lean (57 records)
 
 Hiroaki Hosono (wand125) has computer-assisted proofs of the following results. Each was checked by two
 independent checkers, and none has been peer reviewed. They are in
@@ -71,7 +111,7 @@ independent checkers, and none has been peer reviewed. They are in
 
 | Result | Records | Method |
 |---|---|---|
-| s_d(2) = 2 for d = 4, 5, 6 | `c8inc8_n02`–`n15`, `hc5inhc5_n02`–`n31`, `hc6inhc6_n02`–`n24` (67 records, side 2) | the cube centre lemma in dimension d (see below), then the plateau argument |
+| s_d(2) = 2 for d = 5, 6 (d = 4 is now in Lean, section 1) | `hc5inhc5_n02`–`n31`, `hc6inhc6_n02`–`n24` (53 records, side 2) | the cube centre lemma in dimension d (see below), then the plateau argument |
 | s₃(9) = s₃(10) = 2 + 1/√2 | `cubincub_n09`, `cubincub_n10` | an 8-point lemma by interval branch and bound ([`problems/cubes-in-cube`](https://github.com/wand125/square-packing/tree/main/problems/cubes-in-cube)) |
 | s₃(25) = s₃(26) = 3 | `cubincub_n25`, `cubincub_n26` | a closed counting measure by interval branch and bound ([`closed-measure`](https://github.com/wand125/square-packing/tree/main/problems/cubes-in-cube/closed-measure)) |
 
@@ -84,17 +124,13 @@ proves that implication (`cube_plateau_of_centre_lemma`). Status by dimension:
 - **d = 3.** Proven in Lean here (`CubeCentre.core`, section 1). Hosono proved it earlier with computer
   assistance: a hand proof near the axes plus interval checks elsewhere, and later a 5-simplex spectral
   certificate. The Lean proof here uses no computer search.
-- **d = 4, 5, 6.** Hosono, [`problems/cubes-n-dim`](https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim).
-  - **Near an axis:** a polar-decomposition step reduces the claim to Lemma F one dimension down. It is
-    formalized in Lean there for any dimension, with that lower-dimensional Lemma F as a hypothesis.
-  - **Elsewhere:** a spectral bound with exact rational certificates: 557 simplices in 4D, 21,502 in 5D and
-    about 2.8 million in 6D. 4D also has an interval branch-and-bound proof.
+- **d = 4.** Proven in Lean here (section 1). Hosono proved it earlier with computer assistance.
+- **d = 5, 6.** Hosono, [`problems/cubes-n-dim`](https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim).
+  - **Near an axis:** the same polar-decomposition step, which is formalized for any dimension, with
+    Lemma F one dimension down as its hypothesis.
+  - **Elsewhere:** a spectral bound with exact rational certificates: 21,502 simplices in 5D and about
+    2.8 million in 6D.
 - **All d.** Open.
-
-**Towards Lean in 4D.** Hosono's Lean theorem `near_region` takes Lemma F in dimension 3 as a hypothesis, and that
-lemma is now `CubeCentre.core`. Combining the two developments, which use different Lean and Mathlib versions,
-would put the 4D near-axis region in Lean. The far region, with its 557-simplex certificate, would then be the
-only part of s₄(2) = 2 still outside Lean.
 
 **Numerical check here.** The maximum of the left side of Lemma F over all rotations is exactly 1, attained at
 axis-aligned placements, in every dimension d = 2–6 (`scripts/optimality/center_lemma.py`, `center_nd.py`).
@@ -143,8 +179,9 @@ argument.
 
 ## 4. Next targets
 
-- Lean proofs for the 71 records of section 2. The nearest target is s₄(2) = 2 (14 records): Hosono's near-axis
-  step plus `CubeCentre.core`, and a Lean check of the 557-simplex far-region certificate.
+- s₅(2) = 2 in Lean (30 records). The near-axis step is already in Lean and needs Lemma F in 4D, which is now
+  proven. The far region needs more than the elementary bound: Hosono's spectral bound with its certificate, or
+  a new idea.
 - n = 2: certify s_c rigorously for one pair, for example 2 octahedra in a cube at √2. That needs a rigorous
   global bound over all rotations.
 - Plateaus starting above n = 2, which need new ideas:

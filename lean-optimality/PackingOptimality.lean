@@ -2,3 +2,7 @@ import PackingOptimality.Basic
 import PackingOptimality.Cubes
 import PackingOptimality.Prisms
 import PackingOptimality.CubeCentre
+import PackingOptimality.NearAxis
+import PackingOptimality.LemmaF4
+import PackingOptimality.CentreGeneral
+import PackingOptimality.Tesseracts

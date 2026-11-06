@@ -101,101 +101,101 @@
   },
   {
    "record_id": "c8inc8_n02",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n02"
   },
   {
    "record_id": "c8inc8_n03",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n03"
   },
   {
    "record_id": "c8inc8_n04",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n04"
   },
   {
    "record_id": "c8inc8_n05",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n05"
   },
   {
    "record_id": "c8inc8_n06",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n06"
   },
   {
    "record_id": "c8inc8_n07",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n07"
   },
   {
    "record_id": "c8inc8_n08",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n08"
   },
   {
    "record_id": "c8inc8_n09",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n09"
   },
   {
    "record_id": "c8inc8_n10",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n10"
   },
   {
    "record_id": "c8inc8_n11",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n11"
   },
   {
    "record_id": "c8inc8_n12",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n12"
   },
   {
    "record_id": "c8inc8_n13",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n13"
   },
   {
    "record_id": "c8inc8_n14",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n14"
   },
   {
    "record_id": "c8inc8_n15",
-   "status": "proven with computer assistance (external, not in Lean)",
+   "status": "proven",
    "value": "2",
-   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
+   "argument": "cube centre lemma in dimension 4 (Lemma F: near-axis step of Hiroaki Hosono, ported; elementary far-region bound) + common-point lemma + grid",
+   "lean": "lean-optimality/PackingOptimality/Tesseracts.lean#c8inc8_n15"
   },
   {
    "record_id": "hc5inhc5_n02",
