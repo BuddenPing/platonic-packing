@@ -47,3 +47,10 @@ import PackingOptimality
 #print axioms PackingOptimality.OctInCube.lemmaO
 #print axioms PackingOptimality.OctInCube.centre_oct
 #print axioms PackingOptimality.octincub_n02
+#print axioms PackingOptimality.FacetWidth.centre_of_facet_width
+#print axioms PackingOptimality.tetincub_n02
+#print axioms PackingOptimality.BallBound.centre_ball_box
+#print axioms PackingOptimality.BallBound.centre_ball_l1
+#print axioms PackingOptimality.Polytopes4.c16inc8_n02
+#print axioms PackingOptimality.Polytopes4.c24inc8_n02
+#print axioms PackingOptimality.Polytopes4.c24inc16_n02

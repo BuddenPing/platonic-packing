@@ -8,3 +8,7 @@ import PackingOptimality.CentreGeneral
 import PackingOptimality.Tesseracts
 import PackingOptimality.OctBands
 import PackingOptimality.OctInCube
+import PackingOptimality.FacetWidth
+import PackingOptimality.TetInCube
+import PackingOptimality.BallBound
+import PackingOptimality.Polytopes4

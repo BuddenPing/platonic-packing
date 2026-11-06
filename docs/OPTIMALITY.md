@@ -108,6 +108,10 @@ region is about −0.10.
 | Record | Optimal side | Lean theorem |
 |---|---|---|
 | 2 octahedra in a cube (`octincub_n02`) | √2 | `octincub_n02` (`OctInCube.lean`) |
+| 2 tetrahedra in a cube (`tetincub_n02`) | 2√2/3 | `tetincub_n02` (`TetInCube.lean`) |
+| 2 16-cells in a tesseract (`c16inc8_n02`) | 3√2/4 | `Polytopes4.c16inc8_n02` |
+| 2 24-cells in a tesseract (`c24inc8_n02`) | 3√2/2 | `Polytopes4.c24inc8_n02` |
+| 2 24-cells in a 16-cell (`c24inc16_n02`) | 3 | `Polytopes4.c24inc16_n02` |
 
 **2 octahedra in a cube, side √2.** For n = 2 and a centrally symmetric container, s(2) is the smallest scale at
 which one piece fits beside the centre; the piece and its point reflection then form the packing. The lower bound
@@ -120,6 +124,20 @@ contains the centre.
   It lies below ten other exact lines for larger r² (`OctBands.lean`). Σrᵢ² = 3 lets at most one row be large.
 - **Equality.** It holds for the reflection H = I − (2/3)𝟙𝟙ᵀ. The packing places H(octahedron) + (√2/6)(1, 1, 1)
   and its point reflection in the two opposite corners of the cube, separated by the hexagonal plane x + y + z = 0.
+
+**Two elementary lower bounds for n = 2**, each proven once in Lean for any dimension:
+- **Facet width** (`FacetWidth.centre_of_facet_width`). If a polytope piece misses the container's centre, one of
+  its facet planes separates them. The opposite vertex is then at least the piece's width in that direction away
+  from the centre, so s(2) ≥ min_f w_f / R_C, with R_C the container's circumradius. For 2 tetrahedra in a cube
+  this is height/(√3/2) = 2√2/3. The packing translates the tetrahedron by (√2/12)(1, 1, 1), putting its apex at
+  a corner and its base in the plane x + y + z = 0, and adds its point reflection.
+- **Two balls** (`BallBound`). Each piece contains its inscribed ball (radius k), and two disjoint balls of
+  radius k need s ≥ 2k(1 + 1/√d) in a hypercube, and s ≥ k(1 + √d)/ρ in the cross-polytope {‖x‖₁ ≤ ρ}. The
+  16-cell, 24-cell, 120-cell and 600-cell attain this bound in the tesseract, and the 24-cell, 120-cell and
+  600-cell in the 16-cell. The three cases proven so far use a translation, or, for 16-cells, the reflection
+  I − ½𝟙𝟙ᵀ, followed by the point reflection.
+
+These lower bounds are elementary. What is new is that the records attain them exactly.
 
 ## 2. Proven with computer assistance elsewhere, not in Lean (57 records)
 

@@ -608,8 +608,11 @@
   },
   {
    "record_id": "tetincub_n02",
-   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
-   "value": "0.942809105"
+   "status": "proven",
+   "value": "2√2/3",
+   "argument": "facet-width lemma + translation construction",
+   "lean": "lean-optimality/PackingOptimality/TetInCube.lean#tetincub_n02",
+   "novel": true
   },
   {
    "record_id": "tetinoct_n02",
@@ -718,6 +721,30 @@
    "value": "3",
    "argument": "closed counting measure (n = 25) + monotonicity, interval branch and bound, two independent checkers, not peer reviewed (Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-in-cube/closed-measure)",
    "lean": null
+  },
+  {
+   "record_id": "c16inc8_n02",
+   "status": "proven",
+   "value": "3√2/4",
+   "argument": "two-ball lemma (hypercube) + reflection construction",
+   "lean": "lean-optimality/PackingOptimality/Polytopes4.lean#c16inc8_n02",
+   "novel": true
+  },
+  {
+   "record_id": "c24inc8_n02",
+   "status": "proven",
+   "value": "3√2/2",
+   "argument": "two-ball lemma (hypercube) + translation construction",
+   "lean": "lean-optimality/PackingOptimality/Polytopes4.lean#c24inc8_n02",
+   "novel": true
+  },
+  {
+   "record_id": "c24inc16_n02",
+   "status": "proven",
+   "value": "3",
+   "argument": "two-ball lemma (cross-polytope) + translation construction",
+   "lean": "lean-optimality/PackingOptimality/Polytopes4.lean#c24inc16_n02",
+   "novel": true
   }
  ]
 }
