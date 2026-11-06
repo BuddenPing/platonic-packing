@@ -120,6 +120,7 @@ region is about −0.10.
 | 2 600-cells in a tesseract (`c600inc8_n02`) | (6√2 + 3√10)/4 | `Cells600.c600inc8_n02` |
 | 2 600-cells in a 16-cell (`c600inc16_n02`) | (6 + 3√5)/2 | `Cells600.c600inc16_n02` |
 | 2 5-simplices in a 5-cube (`sx5inhc5_n02`) | 2√3/5 | `sx5inhc5_n02` (`Simplex5.lean`) |
+| 2 5-cells in a 24-cell (`c5inc24_n02`) | √10/4 | `c5inc24_n02` (`C5inC24.lean`) |
 
 **2 octahedra in a cube, side √2.** For n = 2 and a centrally symmetric container, s(2) is the smallest scale at
 which one piece fits beside the centre; the piece and its point reflection then form the packing. The lower bound
@@ -152,6 +153,9 @@ contains the centre.
   vertices are the rows of the order-5 Paley matrix, M_ij = χ(j − i) with χ the quadratic character mod 5,
   divided by √10. The rows have entries 0, ±1, sum zero and pairwise inner product −1, so they form a regular
   simplex of edge 1 with every coordinate at most 1/√10 < √3/5.
+  For 2 5-cells in a 24-cell (√10/4), the apex is the vertex (√5/4)(1, 1, 0, 0) and the base tetrahedron lies in
+  y₀ + y₁ = 0. Three of its vertices sit at 15°, 135° and 255° in the (y₂, y₃)-plane; the 15° rotation from the
+  axes is what makes them fit, with largest coordinate (3√2 + √6)/12 ≈ 0.5577 ≤ √5/4 ≈ 0.5590.
 - **Two balls** (`BallBound`). Each piece contains its inscribed ball (radius k), and two disjoint balls of
   radius k need s ≥ 2k(1 + 1/√d) in a hypercube, and s ≥ k(1 + √d)/ρ in the cross-polytope {‖x‖₁ ≤ ρ}. The
   16-cell, 24-cell, 120-cell and 600-cell attain this bound in the tesseract, and the 24-cell, 120-cell and

@@ -794,6 +794,14 @@
    "argument": "facet-width lemma + apex at a corner, base = order-5 Paley matrix rows / √10 in the hyperplane Σx = 0",
    "lean": "lean-optimality/PackingOptimality/Simplex5.lean#sx5inhc5_n02",
    "novel": true
+  },
+  {
+   "record_id": "c5inc24_n02",
+   "status": "proven",
+   "value": "√10/4",
+   "argument": "facet-width lemma + apex at a 24-cell vertex, base tetrahedron in the hyperplane through the centre, rotated 15° from the axes",
+   "lean": "lean-optimality/PackingOptimality/C5inC24.lean#c5inc24_n02",
+   "novel": true
   }
  ]
 }

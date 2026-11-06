@@ -18,3 +18,4 @@ import PackingOptimality.Cells120
 import PackingOptimality.Cells600
 import PackingOptimality.TetInIco
 import PackingOptimality.Simplex5
+import PackingOptimality.C5inC24
