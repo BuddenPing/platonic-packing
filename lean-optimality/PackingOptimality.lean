@@ -12,3 +12,4 @@ import PackingOptimality.FacetWidth
 import PackingOptimality.TetInCube
 import PackingOptimality.BallBound
 import PackingOptimality.Polytopes4
+import PackingOptimality.TetInOct

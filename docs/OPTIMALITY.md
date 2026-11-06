@@ -109,6 +109,7 @@ region is about −0.10.
 |---|---|---|
 | 2 octahedra in a cube (`octincub_n02`) | √2 | `octincub_n02` (`OctInCube.lean`) |
 | 2 tetrahedra in a cube (`tetincub_n02`) | 2√2/3 | `tetincub_n02` (`TetInCube.lean`) |
+| 2 tetrahedra in an octahedron (`tetinoct_n02`) | 2/√3 | `tetinoct_n02` (`TetInOct.lean`) |
 | 2 16-cells in a tesseract (`c16inc8_n02`) | 3√2/4 | `Polytopes4.c16inc8_n02` |
 | 2 24-cells in a tesseract (`c24inc8_n02`) | 3√2/2 | `Polytopes4.c24inc8_n02` |
 | 2 24-cells in a 16-cell (`c24inc16_n02`) | 3 | `Polytopes4.c24inc16_n02` |

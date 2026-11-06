@@ -616,8 +616,11 @@
   },
   {
    "record_id": "tetinoct_n02",
-   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
-   "value": "1.154700618"
+   "status": "proven",
+   "value": "2/√3",
+   "argument": "facet-width lemma + Householder reflection construction",
+   "lean": "lean-optimality/PackingOptimality/TetInOct.lean#tetinoct_n02",
+   "novel": true
   },
   {
    "record_id": "tetindod_n02",

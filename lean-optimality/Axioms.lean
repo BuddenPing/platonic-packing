@@ -54,3 +54,4 @@ import PackingOptimality
 #print axioms PackingOptimality.Polytopes4.c16inc8_n02
 #print axioms PackingOptimality.Polytopes4.c24inc8_n02
 #print axioms PackingOptimality.Polytopes4.c24inc16_n02
+#print axioms PackingOptimality.tetinoct_n02
