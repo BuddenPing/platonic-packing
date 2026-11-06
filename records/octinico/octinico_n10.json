@@ -3,130 +3,130 @@
  "piece": "octahedron",
  "container": "icosahedron",
  "n": 10,
- "s": 1.66689,
- "s_plus": "1.66689+",
- "s_full": 1.6668905182645,
+ "s": 1.66687,
+ "s_plus": "1.66687+",
+ "s_full": 1.6668797912126,
  "measure": "edge length of the container divided by the edge length of the pieces",
  "clearance": {
   "min_pair_gap_target": 1e-07,
   "wall_gap_target": 1e-07,
-  "min_pair_gap": 1.0001531064451896e-07,
-  "min_wall_gap": 1.0000000627563566e-07
+  "min_pair_gap": 2.4493776709655357e-07,
+  "min_wall_gap": 1.00000003833145e-07
  },
  "format": "[x, y, z, qw, qx, qy, qz] per piece: unit-edge copy of the canonical piece solid (solids.py) rotated by the scalar-first quaternion q and centred at (x, y, z); container = s_full x canonical unit-edge container solid, centred at the origin, canonical orientation",
  "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
- "date": "2026-10-28",
+ "date": "2026-11-06",
  "pieces": [
   [
-   0.11529960607104488,
-   0.29593086253401424,
-   -0.7702288028133878,
-   0.6183718803404931,
-   0.44625704581263176,
-   -0.6465711788536254,
-   0.02041022642155256
+   0.11632734148369979,
+   0.2949574627193893,
+   -0.7698105482944504,
+   0.6184030468408718,
+   0.4470274116323734,
+   -0.6459629137500714,
+   0.02181923387071994
   ],
   [
-   0.07232650630556377,
-   0.4610786233885483,
-   0.75179143348206,
-   0.4398065200669535,
-   0.2937120347911326,
-   -0.7548994312614762,
-   -0.38785347001999226
+   0.07257700214435119,
+   0.4611798337125538,
+   0.7517466421196771,
+   0.438625732349964,
+   0.29332088553321933,
+   -0.7555362508197974,
+   -0.3882464407146961
   ],
   [
-   0.4947421742686288,
-   0.742404790608523,
-   -0.133705499627734,
-   0.08917229471097708,
-   0.46668184806639235,
-   0.6138013669957877,
-   -0.6304793703329379
+   0.496362665226125,
+   0.7414002473127266,
+   -0.133295473064277,
+   0.09044581019496653,
+   0.466092643365656,
+   0.6140128324912286,
+   -0.6305279095763249
   ],
   [
-   -0.42404896891871363,
-   -0.7827163037208531,
-   0.11061318926532608,
-   0.1680684900921094,
-   -0.2711298697310263,
-   -0.7104251754811123,
-   0.6273257896981648
+   -0.4234758523666408,
+   -0.7831353761421136,
+   0.11069795458408858,
+   0.16824350226590581,
+   -0.2716551100303004,
+   -0.7102666724742972,
+   0.6272311209689909
   ],
   [
-   -0.3792556509055133,
-   0.8075857850415779,
-   0.03282575533839704,
-   0.838507805531978,
-   0.34360611923683915,
-   -0.18376079976311574,
-   -0.38088247971699335
+   -0.37811021959751784,
+   0.8084534278609203,
+   0.031432385622005184,
+   0.8382824278201824,
+   0.34532477445360715,
+   -0.18310885609358202,
+   -0.3801374990402366
   ],
   [
-   -0.7193289832563332,
-   -0.03988838489532673,
-   -0.5132904204051408,
-   0.28755678822985326,
-   -0.7401606684501898,
-   -0.42254679692409425,
-   0.4369524949367928
+   -0.719854341870216,
+   -0.03930721810729247,
+   -0.5121659287647683,
+   0.2867376279943678,
+   -0.7405875298957636,
+   -0.42273520414202836,
+   0.4365851468316951
   ],
   [
-   -0.8045187319637704,
-   -0.029753365650488653,
-   0.3721731817437767,
-   0.15965957684408974,
-   -0.4194889150666366,
-   0.6992499226018781,
-   0.5564058010116807
+   -0.8044310811421537,
+   -0.02988927241031894,
+   0.3723879763185552,
+   0.1593746101637138,
+   -0.4198156578880575,
+   0.6994381271840069,
+   0.55600436443297
   ],
   [
-   0.7962224987061963,
-   -0.05776397479477684,
-   0.11981839405507545,
-   0.0833415466022349,
-   0.4516278150897005,
-   0.6158602124844261,
-   -0.6401583412921279
+   0.7955302784575763,
+   -0.05917299966722944,
+   0.11970094178947603,
+   0.08440465489334836,
+   0.45064897319978764,
+   0.6153966377908919,
+   -0.6411539092776225
   ],
   [
-   0.1100511631656569,
-   -0.4550650082994562,
-   0.7508588863250877,
-   0.3792562098503952,
-   0.5326226597962137,
-   -0.7046897390147033,
-   0.27548176217112674
+   0.10913966424315426,
+   -0.4545729640025445,
+   0.7522491318157117,
+   0.37938999911586774,
+   0.5325396745058224,
+   -0.7047164613248056,
+   0.2753896018115763
   ],
   [
-   0.2221287734001129,
-   -0.6041689489123181,
-   -0.4965653234998436,
-   0.18340122240996362,
-   -0.3522714438699428,
-   -0.6869702362558846,
-   0.608556255370735
+   0.22198737232321672,
+   -0.6045628341079239,
+   -0.49647053378021905,
+   0.18257454026095654,
+   -0.3510107119864637,
+   -0.6870028813109496,
+   0.6094957410759402
   ]
  ],
  "record_id": "octinico_n10",
  "title": "10 unit octahedra in an icosahedron",
  "source": {
-  "hash": "6f650e11d89ee9dc",
+  "hash": "4491107d72dc9adb",
   "clear": 1e-07,
   "cap": 1.6888220441851
  },
- "s_tight": 1.666890385952,
+ "s_tight": 1.66687965878,
  "closed_form_conjecture": null,
  "volume_lower_bound": 1.2928056344339702,
- "found_by": "PolyPack (Michael Sinko using Opus 5.5) (community contribution, https://github.com/alejandrozu/platonic-packing/issues/102; search started from the packing of Berthold, Kamp, Mexi, Pokutta and P\u00f3lik)",
+ "found_by": "konoha-ily2 (Hirotaka Nakano) (community contribution, https://github.com/alejandrozu/platonic-packing/issues/105; refinement of the packing by Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik)",
  "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
  "search": {
   "move": "community",
-  "lineage": "PolyPack (Michael Sinko using Opus 5.5)",
-  "issue": "https://github.com/alejandrozu/platonic-packing/issues/102",
-  "submitted_by": "sinkomr",
-  "record_file": "records/community/octinico/octinico_n10_submission_102_d8481d3dec75.json",
-  "started_from": "Berthold, Kamp, Mexi, Pokutta and P\u00f3lik"
+  "lineage": "konoha-ily2 (Hirotaka Nakano)",
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "record_file": "records/community/octinico/octinico_n10_submission_105_7f9102ece6cf.json",
+  "refines": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik"
  },
- "density": 0.46652882259364253
+ "density": 0.4665378295618566
 }

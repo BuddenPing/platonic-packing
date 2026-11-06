@@ -1,5 +1,5 @@
-10 unit-edge tetrahedra in s_full x unit-edge cube,  s_full = 1.368973779849
+10 unit-edge tetrahedra in s_full x unit-edge cube,  s_full = 1.3689684179163
 exact solid self-check: edges = 1 exactly, 4 + 6 faces verified; arithmetic in Q(sqrt2) (exact arithmetic in Q(sqrt2, sqrt3, sqrt5, sqrt7))
-(1) containment, exact, 240 vertex/face tests: ok;  min wall gap ~ 1.000000352525e-07
-(2) separation, exact, 45 pairs, each with an explicit rational plane: ok;  min plane margin ~ 1.000221113157e-07
+(1) containment, exact, 240 vertex/face tests: ok;  min wall gap ~ 1.000000277029e-07
+(2) separation, exact, 45 pairs, each with an explicit rational plane: ok;  min plane margin ~ 1.235443269909e-07
 CERTIFIED

@@ -1,4 +1,4 @@
-73 unit cubes in a dodecahedron of edge s = 2.5658530208990999
-min wall gap = 1.000000531270e-07
-min pair gap = 2.999999987319e-07
+73 unit cubes in a dodecahedron of edge s = 2.5644531175676999
+min wall gap = 1.000000877660e-07
+min pair gap = 2.999999992870e-07
 VALID

@@ -3,121 +3,121 @@
  "piece": "octahedron",
  "container": "icosahedron",
  "n": 9,
- "s": 1.6298,
- "s_plus": "1.62980+",
- "s_full": 1.6298009710214,
+ "s": 1.62979,
+ "s_plus": "1.62979+",
+ "s_full": 1.629792293324,
  "measure": "edge length of the container divided by the edge length of the pieces",
  "clearance": {
   "min_pair_gap_target": 1e-07,
   "wall_gap_target": 1e-07,
-  "min_pair_gap": 1.0000301720047844e-07,
-  "min_wall_gap": 1.0000003602961272e-07
+  "min_pair_gap": 2.4795709273328637e-07,
+  "min_wall_gap": 1.0000005157273506e-07
  },
  "format": "[x, y, z, qw, qx, qy, qz] per piece: unit-edge copy of the canonical piece solid (solids.py) rotated by the scalar-first quaternion q and centred at (x, y, z); container = s_full x canonical unit-edge container solid, centred at the origin, canonical orientation",
  "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
- "date": "2026-10-28",
+ "date": "2026-11-06",
  "pieces": [
   [
-   -0.6871429440146369,
-   0.11936084435398048,
-   -0.5197816798288244,
-   0.5383762845164847,
-   0.09720868567799107,
-   -0.8362002950228311,
-   0.038347285467331564
+   -0.6874467385899443,
+   0.11942631766675983,
+   -0.5191395985607402,
+   0.5379505142742478,
+   0.09720425600641275,
+   -0.8364704095198505,
+   0.03844256500295013
   ],
   [
-   0.6348953525260542,
-   0.13866282768750435,
-   0.5671753190058848,
-   0.8539704628289303,
-   0.4773976108143624,
-   -0.20603760239109975,
-   0.019351387686891413
+   0.6350554231162898,
+   0.13828060650088392,
+   0.5671971643783381,
+   0.8541013966832917,
+   0.47723024050797674,
+   -0.20587765856672954,
+   0.019403387112314083
   ],
   [
-   -0.051290600198082674,
-   -0.3794720546276509,
-   -0.7637650792539445,
-   0.4438701539533164,
-   0.5824493262338089,
-   -0.009715814131620327,
-   -0.6809094446069911
+   -0.05196711423076927,
+   -0.37989232024282454,
+   -0.7634879345017413,
+   0.44354286894294587,
+   0.5831089160704502,
+   -0.009840695170302385,
+   -0.6805562990139542
   ],
   [
-   0.7519399186430051,
-   -0.08615499390016654,
-   -0.4007198488230031,
-   0.3446555806770016,
-   0.8842267069408699,
-   0.17188474565281947,
-   -0.2642182727454132
+   0.7522131696967225,
+   -0.08570293998353319,
+   -0.4002385868967419,
+   0.34354635999004,
+   0.8845462278373534,
+   0.17139804285737967,
+   -0.2649086262486798
   ],
   [
-   -0.5664230106404458,
-   -0.6587767263879037,
-   0.05455197772604587,
-   0.7413479379801436,
-   0.355110258262115,
-   0.20285548508223428,
-   0.5321180240338176
+   -0.5664346079771084,
+   -0.658810529303038,
+   0.055115794417336,
+   0.7413107387076828,
+   0.3551720589327313,
+   0.20245108232837727,
+   0.5322825908239182
   ],
   [
-   -0.4132141916176758,
-   0.7053730604270684,
-   0.15503321769446626,
-   0.2519944155004115,
-   0.7802678511476951,
-   0.2133045256391881,
-   -0.5312081271627961
+   -0.4124998349895498,
+   0.7064916031127982,
+   0.15470254631226477,
+   0.2522554806907052,
+   0.7802602560126302,
+   0.2135753241300157,
+   -0.5309865217417152
   ],
   [
-   0.42690558321465233,
-   -0.7443836103249133,
-   0.14074224392891174,
-   0.856917315457292,
-   0.20011620159210297,
-   0.005211530266314741,
-   -0.4749937476242187
+   0.4264869326944556,
+   -0.744569813854627,
+   0.14038733940038717,
+   0.8568873722129685,
+   0.20097449618122293,
+   0.004513707061149372,
+   -0.4746924369265044
   ],
   [
-   -0.3332018660402633,
-   -0.10480317148180296,
-   0.6710318336351638,
-   0.26911111504699514,
-   -0.9072946343081414,
-   -0.31630032839980765,
-   0.06595268431226148
+   -0.3333714101064266,
+   -0.10300112523891207,
+   0.6709355365652481,
+   0.2692662599059506,
+   -0.9073440502082998,
+   -0.316068684791137,
+   0.06574984655693554
   ],
   [
-   0.3775645919115041,
-   0.7262844896464895,
-   -0.1731369659358311,
-   0.20142500821272213,
-   0.3238756672434267,
-   0.924180231966043,
-   0.02057710079969648
+   0.37786821750247385,
+   0.7258861635480163,
+   -0.17326758507621454,
+   0.2012961086790459,
+   0.3242287654399146,
+   0.9240830727688233,
+   0.020641194590246898
   ]
  ],
  "record_id": "octinico_n09",
  "title": "9 unit octahedra in an icosahedron",
  "source": {
-  "hash": "f1c7cb2d1da04ab4",
+  "hash": "5aa3a43034ddc775",
   "clear": 1e-07,
-  "cap": 1.6668905182645
+  "cap": 1.6668797912126
  },
- "s_tight": 1.62980083872,
+ "s_tight": 1.629792166748,
  "closed_form_conjecture": null,
  "volume_lower_bound": 1.2481901164043445,
- "found_by": "PolyPack (Michael Sinko using Opus 5.5) (community contribution, https://github.com/alejandrozu/platonic-packing/issues/102; search started from the packing of Berthold, Kamp, Mexi, Pokutta and P\u00f3lik)",
+ "found_by": "konoha-ily2 (Hirotaka Nakano) (community contribution, https://github.com/alejandrozu/platonic-packing/issues/105; refinement of the packing by Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik)",
  "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
  "search": {
   "move": "community",
-  "lineage": "PolyPack (Michael Sinko using Opus 5.5)",
-  "issue": "https://github.com/alejandrozu/platonic-packing/issues/102",
-  "submitted_by": "sinkomr",
-  "record_file": "records/community/octinico/octinico_n09_submission_102_c73215cdd896.json",
-  "started_from": "Berthold, Kamp, Mexi, Pokutta and P\u00f3lik"
+  "lineage": "konoha-ily2 (Hirotaka Nakano)",
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "record_file": "records/community/octinico/octinico_n09_submission_105_b7574f9b0560.json",
+  "refines": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik"
  },
- "density": 0.44919871109162746
+ "density": 0.4492058862965746
 }

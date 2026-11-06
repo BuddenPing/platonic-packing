@@ -1,4 +1,4 @@
-48 unit cubes in a octahedron of edge s = 5.6726161699419997
-min wall gap = 1.000000122708e-07
-min pair gap = 2.999999993980e-07
+48 unit cubes in a octahedron of edge s = 5.6725176186580999
+min wall gap = 1.000000340312e-07
+min pair gap = 2.999999990649e-07
 VALID

@@ -1,4 +1,4 @@
-77 unit octahedra in a cube of edge s = 3.9097320569674001
-min wall gap = 1.000000138252e-07
-min pair gap = 1.000000002804e-07
+77 unit octahedra in a cube of edge s = 3.9095947930983002
+min wall gap = 1.000000104945e-07
+min pair gap = 2.449489736045e-07
 VALID

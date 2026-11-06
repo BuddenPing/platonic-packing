@@ -1,4 +1,4 @@
-29 unit octahedra in a tetrahedron of edge s = 5.9423998195532999
-min wall gap = 1.000000058315e-07
-min pair gap = 1.000073319157e-07
+29 unit octahedra in a tetrahedron of edge s = 5.8666683165647999
+min wall gap = 1.000000142692e-07
+min pair gap = 2.449489003853e-07
 VALID

@@ -1,4 +1,4 @@
-10 unit cubes in a octahedron of edge s = 3.6742489192184000
-min wall gap = 1.000000111606e-07
-min pair gap = 1.000001992324e-07
+10 unit cubes in a octahedron of edge s = 3.6742355939758999
+min wall gap = 1.000000080520e-07
+min pair gap = 2.999983397256e-07
 VALID

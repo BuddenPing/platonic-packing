@@ -1,4 +1,4 @@
-74 unit cubes in a cube of edge s = 4.8110534219475998
-min wall gap = 1.000000064977e-07
-min pair gap = 7.093776275946e-06
+74 unit cubes in a cube of edge s = 4.8109821644724002
+min wall gap = 1.000000096063e-07
+min pair gap = 2.999986756236e-07
 VALID

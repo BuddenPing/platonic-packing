@@ -3,113 +3,112 @@
  "piece": "dodecahedron",
  "container": "icosahedron",
  "n": 8,
- "s": 3.9651,
- "s_plus": "3.96510+",
- "s_full": 3.965106377817,
+ "s": 3.96508,
+ "s_plus": "3.96508+",
+ "s_full": 3.9650825338338,
  "measure": "edge length of the container divided by the edge length of the pieces",
  "clearance": {
   "min_pair_gap_target": 1e-07,
   "wall_gap_target": 1e-07,
-  "min_pair_gap": 1.000001977891074e-07,
-  "min_wall_gap": 1.0000000072452053e-07
+  "min_pair_gap": 6.743200933190252e-07,
+  "min_wall_gap": 1.0000000427723421e-07
  },
  "format": "[x, y, z, qw, qx, qy, qz] per piece: unit-edge copy of the canonical piece solid (solids.py) rotated by the scalar-first quaternion q and centred at (x, y, z); container = s_full x canonical unit-edge container solid, centred at the origin, canonical orientation",
  "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
- "date": "2026-10-13",
+ "date": "2026-11-06",
  "pieces": [
   [
-   -1.7996596822822988,
-   -0.10296257810714064,
-   -0.17366964236899354,
-   0.45873718947263525,
-   0.49111669592606055,
-   -0.7090598385519924,
-   -0.21353858510826448
+   -1.7992220079969163,
+   -0.10055010059610747,
+   -0.1697580869606444,
+   0.4581161806885744,
+   0.49286191516176936,
+   -0.7086185712599561,
+   -0.2123120769996022
   ],
   [
-   1.0417328663559886,
-   -1.7827719923851035,
-   0.12037754373963722,
-   0.7893244476913929,
-   -0.3671495609992319,
-   0.4846989356620789,
-   -0.0850591435578618
+   1.0412951831689274,
+   -1.7828868917623428,
+   0.1210984240132173,
+   0.7889997155421868,
+   -0.36699751346948445,
+   0.48543734158468177,
+   -0.08451545052096165
   ],
   [
-   -0.3787040340474582,
-   1.1449914729603756,
-   -1.5746773350209697,
-   0.05054969277691775,
-   0.8915096295951446,
-   -0.41557482261585504,
-   -0.17306899117718397
+   -0.37929240717066615,
+   1.1449137342426707,
+   -1.5739980775474005,
+   0.04935035284364034,
+   0.8922360957995488,
+   -0.4144172755460365,
+   -0.1724459734397628
   ],
   [
-   1.5802086079375832,
-   0.43132712612634283,
-   1.1513713678134292,
-   0.02307527404051174,
-   -0.07126915123234677,
-   -0.8845150810901138,
-   0.4604577191607561
+   1.5800650866011026,
+   0.4317330840900369,
+   1.1512527807363027,
+   0.022947269999361936,
+   -0.07152185493213131,
+   -0.8844608302681457,
+   0.46052913782737587
   ],
   [
-   -0.4329716899342718,
-   1.5779850870499843,
-   0.7902632187515592,
-   0.8990113366186782,
-   -0.011549722833431546,
-   0.2997801540332663,
-   -0.3190252024235077
+   -0.4316551063478755,
+   1.574267108166745,
+   0.7849210803554132,
+   0.9023097382699691,
+   -0.011194872009064794,
+   0.2941183390110481,
+   -0.31497017909837544
   ],
   [
-   -0.1804539374959766,
-   -1.1137625210561837,
-   -1.7038337115812268,
-   0.38690295514232526,
-   0.5222638463384558,
-   -0.7297607032662986,
-   -0.2121223563846464
+   -0.18114384942841097,
+   -1.1137279128682576,
+   -1.703509924151422,
+   0.38701508256737,
+   0.5232051388843996,
+   -0.7288389889551024,
+   -0.21276615494300846
   ],
   [
-   1.7663053760032623,
-   0.00244321848788278,
-   -1.1435343107268114,
-   0.6274163598685714,
-   0.5923324046074089,
-   0.37405891689815457,
-   -0.3399572921857328
+   1.7662293916863014,
+   0.0023268846799844242,
+   -1.1434610735512987,
+   0.6277688395539152,
+   0.5920911369650624,
+   0.37432307208347726,
+   -0.3394357189786287
   ],
   [
-   -0.49910081067215006,
-   -0.5836968768834383,
-   1.7266939299002872,
-   0.03856470894804783,
-   0.5123815312155666,
-   0.40109132302249273,
-   0.7583559060817092
+   -0.49846126142834535,
+   -0.5824465486018382,
+   1.727941957837018,
+   0.03795927825844988,
+   0.511114331843748,
+   0.4019953085871787,
+   0.75876281198535
   ]
  ],
  "record_id": "dodinico_n08",
  "title": "8 unit dodecahedra in an icosahedron",
  "source": {
-  "hash": "03d0fef75c420935",
+  "hash": "0b16178aaf031e38",
   "clear": 1e-07,
   "cap": 4.0220636743941
  },
- "s_tight": 3.9651062455,
+ "s_tight": 3.965082401517,
  "closed_form_conjecture": null,
  "volume_lower_bound": 3.040188463543939,
- "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting point; not improved yet)",
+ "found_by": "konoha-ily2 (Hirotaka Nakano) (community contribution, https://github.com/alejandrozu/platonic-packing/issues/105; refinement of the packing by Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik)",
  "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
  "search": {
-  "move": "literature",
-  "lineage": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik",
-  "issue": null,
-  "submitted_by": null,
-  "record_file": "records/external/dodinico/dodinico_n08_kamp.json",
-  "source": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik",
-  "url": "https://github.com/DominikKamp/Packing/blob/27f71632d8655ae4b6a049410a401976748b94e3/platonic/l4/m5/n8/platonic_n8_m5_l4.html"
+  "move": "community",
+  "lineage": "konoha-ily2 (Hirotaka Nakano)",
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "record_file": "records/community/dodinico/dodinico_n08_submission_105_7758f2bf27b4.json",
+  "refines": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik"
  },
- "density": 0.4507513023712377
+ "density": 0.45075943418515646
 }

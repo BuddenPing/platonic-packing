@@ -1,4 +1,4 @@
-17 unit octahedra in a dodecahedron of edge s = 1.2372357096113000
-min wall gap = 1.000001048634e-07
-min pair gap = 1.000000039997e-07
+17 unit octahedra in a dodecahedron of edge s = 1.2372200806536999
+min wall gap = 1.000000029450e-07
+min pair gap = 2.449489736600e-07
 VALID

@@ -1,4 +1,4 @@
-50 unit icosahedra in a icosahedron of edge s = 4.3508371886455999
-min wall gap = 1.000000491302e-07
-min pair gap = 1.000000000584e-07
+50 unit icosahedra in a icosahedron of edge s = 4.3508195449888003
+min wall gap = 1.000000287021e-07
+min pair gap = 4.534406723433e-07
 VALID

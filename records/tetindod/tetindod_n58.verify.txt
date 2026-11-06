@@ -1,4 +1,4 @@
-58 unit tetrahedra in a dodecahedron of edge s = 1.1771397119352001
-min wall gap = 1.000000193763e-07
-min pair gap = 9.999999994736e-08
+58 unit tetrahedra in a dodecahedron of edge s = 1.1771300032683001
+min wall gap = 1.000000817708e-07
+min pair gap = 1.224632643279e-07
 VALID

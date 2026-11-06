@@ -1,4 +1,4 @@
-65 unit octahedra in a icosahedron of edge s = 2.9775912810570002
-min wall gap = 1.000000198204e-07
-min pair gap = 1.000000002804e-07
+65 unit octahedra in a icosahedron of edge s = 2.9775433793390000
+min wall gap = 1.000000096063e-07
+min pair gap = 2.449430097640e-07
 VALID

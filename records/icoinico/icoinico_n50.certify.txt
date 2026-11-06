@@ -1,5 +1,5 @@
-50 unit-edge icosahedra in s_full x unit-edge icosahedron,  s_full = 4.3508371886456
+50 unit-edge icosahedra in s_full x unit-edge icosahedron,  s_full = 4.3508195449888
 exact solid self-check: edges = 1 exactly, 20 + 20 faces verified; arithmetic in Q(sqrt5) (exact arithmetic in Q(sqrt2, sqrt3, sqrt5, sqrt7))
-(1) containment, exact, 12000 vertex/face tests: ok;  min wall gap ~ 1.000000490797e-07
-(2) separation, exact, 1225 pairs, each with an explicit rational plane: ok;  min plane margin ~ 9.999999983634e-08
+(1) containment, exact, 12000 vertex/face tests: ok;  min wall gap ~ 1.000000285681e-07
+(2) separation, exact, 1225 pairs, each with an explicit rational plane: ok;  min plane margin ~ 4.534406725654e-07
 CERTIFIED

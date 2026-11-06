@@ -5,93 +5,92 @@
  "n": 6,
  "s": 0.97789,
  "s_plus": "0.97789+",
- "s_full": 0.9778955523968,
+ "s_full": 0.9778943053853,
  "measure": "edge length of the container divided by the edge length of the pieces",
  "clearance": {
   "min_pair_gap_target": 1e-07,
   "wall_gap_target": 1e-07,
-  "min_pair_gap": 1.0000020093936524e-07,
-  "min_wall_gap": 1.0000004246890626e-07
+  "min_pair_gap": 2.567038885001316e-07,
+  "min_wall_gap": 1.0000002559351628e-07
  },
  "format": "[x, y, z, qw, qx, qy, qz] per piece: unit-edge copy of the canonical piece solid (solids.py) rotated by the scalar-first quaternion q and centred at (x, y, z); container = s_full x canonical unit-edge container solid, centred at the origin, canonical orientation",
  "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
- "date": "2026-10-13",
+ "date": "2026-11-06",
  "pieces": [
   [
-   0.09662475165536077,
-   0.21182080944346166,
-   -0.6367575765575633,
-   0.45586473734168126,
-   -0.3665562777539374,
-   0.6986742036159523,
-   -0.4119201302305984
+   0.09661122432147157,
+   0.21177649016359498,
+   -0.6367739549366133,
+   0.45591678618703946,
+   -0.3665558964450731,
+   0.6986623509400133,
+   -0.4118829666703929
   ],
   [
-   -0.6540415021621863,
-   -0.1109816556652107,
-   -0.18411929297527235,
-   0.3829034486601063,
-   0.6477267985654065,
-   -0.6571605674436731,
-   0.044440207262299775
+   -0.6540445137418585,
+   -0.11097671887806534,
+   -0.18410609672756187,
+   0.38289936948511344,
+   0.6477297349679054,
+   -0.6571608903677898,
+   0.04442777799219169
   ],
   [
-   -0.1651856060755106,
-   0.6533603740054744,
-   0.04898103405810301,
-   0.7915873129695683,
-   -0.3198816918524988,
-   0.15686114366157836,
-   -0.49644718830141793
+   -0.1651523593221297,
+   0.6533729115797755,
+   0.04893974258627445,
+   0.7916236336531078,
+   -0.3198272453743535,
+   0.15684932706197244,
+   -0.49642808578716574
   ],
   [
-   0.6540421300775846,
-   0.11098069225409891,
-   0.18411934066996513,
-   0.21838849977578223,
-   0.8216757227605908,
-   0.208954928021291,
-   0.48321145252069636
+   0.6540444725894418,
+   0.1109767077065685,
+   0.18410615468676242,
+   0.2183791514385954,
+   0.8216811084143082,
+   0.20894799603871075,
+   0.4832095169213869
   ],
   [
-   0.16518535082239277,
-   -0.6533605935281019,
-   -0.048978893129927197,
-   0.15686298048101924,
-   -0.49644651678864243,
-   -0.7915868935236903,
-   0.31988287125844894
+   0.165152318169713,
+   -0.6533729227512727,
+   -0.04893968462707459,
+   0.1568493270619726,
+   -0.4964280857871657,
+   -0.7916236336531078,
+   0.3198272453743538
   ],
   [
-   -0.09662481103096071,
-   -0.21182164764718558,
-   0.6367580246607004,
-   0.1880302315799064,
-   -0.9665075422559741,
-   0.1440885945072614,
-   0.09872324805862759
+   -0.09661126547388771,
+   -0.2117765013350922,
+   0.6367740128958131,
+   0.18807013700579345,
+   -0.9665090001212593,
+   0.14403631748914714,
+   0.09870924726382686
   ]
  ],
  "record_id": "octindod_n06",
  "title": "6 unit octahedra in a dodecahedron",
  "source": {
-  "hash": "ae671a66c3305895",
+  "hash": "89d4a1e5f9f04465",
   "clear": 1e-07,
-  "cap": 1.0130601803446
+  "cap": 1.0130586337093
  },
- "s_tight": 0.977895462591,
+ "s_tight": 0.977894199157,
  "closed_form_conjecture": null,
  "volume_lower_bound": 0.7173203339484373,
- "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting point; not improved yet)",
+ "found_by": "konoha-ily2 (Hirotaka Nakano) (community contribution, https://github.com/alejandrozu/platonic-packing/issues/105; refinement of the packing by Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik)",
  "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
  "search": {
-  "move": "literature",
-  "lineage": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik",
-  "issue": null,
-  "submitted_by": null,
-  "record_file": "records/external/octindod/octindod_n06_kamp.json",
-  "source": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik",
-  "url": "https://github.com/DominikKamp/Packing/blob/27f71632d8655ae4b6a049410a401976748b94e3/platonic/l5/m2/n6/platonic_n6_m2_l5.html"
+  "move": "community",
+  "lineage": "konoha-ily2 (Hirotaka Nakano)",
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "record_file": "records/community/octindod/octindod_n06_submission_105_9902f0491cc8.json",
+  "refines": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik"
  },
- "density": 0.3946953530783009
+ "density": 0.3946968630275947
 }

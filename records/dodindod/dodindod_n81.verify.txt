@@ -1,4 +1,4 @@
-81 unit dodecahedra in a dodecahedron of edge s = 5.2007098830712000
-min wall gap = 1.000000615647e-07
-min pair gap = 6.681098154715e-07
+81 unit dodecahedra in a dodecahedron of edge s = 5.1996686941251999
+min wall gap = 1.000000260376e-07
+min pair gap = 6.681098168038e-07
 VALID

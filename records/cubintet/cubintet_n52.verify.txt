@@ -1,4 +1,4 @@
-52 unit cubes in a tetrahedron of edge s = 9.4084152240211001
-min wall gap = 1.000000013907e-07
-min pair gap = 2.999997332775e-07
+52 unit cubes in a tetrahedron of edge s = 9.3598202470375007
+min wall gap = 1.000000175999e-07
+min pair gap = 2.999999991760e-07
 VALID

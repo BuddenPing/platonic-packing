@@ -1,4 +1,4 @@
-92 unit dodecahedra in a icosahedron of edge s = 8.2118872524001993
-min wall gap = 1.000000606766e-07
-min pair gap = 1.000000002804e-07
+92 unit dodecahedra in a icosahedron of edge s = 8.2118785497708000
+min wall gap = 1.000000375839e-07
+min pair gap = 6.681021301747e-07
 VALID

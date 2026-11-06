@@ -1,4 +1,4 @@
-47 unit octahedra in a octahedron of edge s = 4.1272127010266999
-min wall gap = 1.000000180440e-07
-min pair gap = 9.999999994736e-08
+47 unit octahedra in a octahedron of edge s = 4.1271854319088002
+min wall gap = 1.000000080520e-07
+min pair gap = 2.449489698853e-07
 VALID
