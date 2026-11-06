@@ -14,3 +14,12 @@ import PackingOptimality
 #print axioms PackingOptimality.pr3inpr3_n08
 #print axioms PackingOptimality.pr3inpr3_n27
 #print axioms PackingOptimality.pr3inpr3_n64
+#print axioms PackingOptimality.CubeCentre.core
+#print axioms PackingOptimality.CubeCentre.centre3
+#print axioms PackingOptimality.cubincub_plateau
+#print axioms PackingOptimality.cubincub_n02
+#print axioms PackingOptimality.cubincub_n03
+#print axioms PackingOptimality.cubincub_n04
+#print axioms PackingOptimality.cubincub_n05
+#print axioms PackingOptimality.cubincub_n06
+#print axioms PackingOptimality.cubincub_n07
