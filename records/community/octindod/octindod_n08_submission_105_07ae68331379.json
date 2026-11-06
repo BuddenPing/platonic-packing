@@ -1,0 +1,125 @@
+{
+ "problem": "min/octahedron_in_dodecahedron",
+ "piece": "octahedron",
+ "container": "dodecahedron",
+ "n": 8,
+ "s_full": 1.038593735769,
+ "pieces": [
+  [
+   -0.1857582661402212,
+   -0.37203326048815216,
+   -0.6818686465488475,
+   0.1391212135328607,
+   0.020903993411627898,
+   0.6104403489309276,
+   -0.7794683389347372
+  ],
+  [
+   0.6961907306384741,
+   0.206378976081753,
+   0.37397633299798605,
+   0.17476722649151027,
+   -0.04104073095844559,
+   0.3723619923842042,
+   0.9105595101774114
+  ],
+  [
+   -0.12178157996338138,
+   0.4098948965363906,
+   0.666273037681636,
+   0.30870921898544307,
+   0.16234295475660535,
+   -0.6957360221924848,
+   -0.6279289534478173
+  ],
+  [
+   0.5350023461716337,
+   0.25261983444158076,
+   -0.4870620316955554,
+   0.7021172076964138,
+   -0.29692067908412795,
+   0.21630178586465912,
+   0.6099861264164705
+  ],
+  [
+   -0.23082905513030844,
+   0.7113405130670077,
+   -0.26052237379381066,
+   0.6144534025123858,
+   0.44700092574794864,
+   0.15880361464247747,
+   0.6304114533365591
+  ],
+  [
+   -0.7928356423276643,
+   0.023001606568606874,
+   -0.097016041391487,
+   0.3142043000984182,
+   0.6629224241828687,
+   -0.599275714412789,
+   -0.3204342919074256
+  ],
+  [
+   0.3129858296889895,
+   -0.6860945204494688,
+   0.06254292625537829,
+   0.6659854171683636,
+   0.7312334666909271,
+   0.09758140803270883,
+   0.11062960777569304
+  ],
+  [
+   -0.3290329398797352,
+   -0.43455820540319096,
+   0.5608513963176394,
+   0.3001207824343114,
+   -0.276418051719137,
+   -0.4821847778315225,
+   0.7752537756518045
+  ]
+ ],
+ "s": 1.03859,
+ "s_plus": "1.03859+",
+ "measure": "edge length of the container divided by the edge length of the pieces",
+ "clearance": {
+  "min_pair_gap": 2.449922e-07,
+  "min_wall_gap": 2.000001e-07
+ },
+ "format": "[x, y, z, qw, qx, qy, qz] per canonical piece; scalar-first quaternion; container = s_full times canonical container",
+ "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
+ "date": "2026-11-06",
+ "record_id": "octindod_n08_submission_105_07ae68331379",
+ "title": "8 octahedra in a dodecahedron",
+ "family": "platonic",
+ "source": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2"
+ },
+ "s_tight": null,
+ "closed_form_conjecture": null,
+ "volume_lower_bound": 0.7895131856168461,
+ "density": 0.43927963119507035,
+ "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting poi",
+ "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
+ "certificate": "exact certificate: certify_general.py (src/solids_exact.json)",
+ "contribution": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "credit": "konoha-ily2 (Hirotaka Nakano)",
+  "kind": "construction",
+  "replayed_on": "2026-11-06",
+  "witness_sha256": "ffaf1af8a10ad5ddac4d4ec01bf0a9fd861ef5205aeea31695c924bbb5b47acc",
+  "method": "Batch of 1013 witnesses in 25 problems (`MANIFEST.json` + `records/<record_id>.json` + `SUMMARY.tsv`), each below the current `records/SUMMARY.csv` entry (main at 8ce7b488, checked 2026-10-31). Every record passes `verify_general.py` (VALID) and `certify_general.py` (CERTIFIED) from that commit locally, run on the files extracted from the archive. The changes against the current records: median -0.01 %, largest -3.49 %; 52 records improve by \u2265 1 %, 316 by \u2265 0.1 %.\n\n**Relation to earlier submissions.** #104 was merged and the public records rebuilt in 8ce7b488 (2026-10-30); every record here is below the value in that archive and below the values in open submissions.\n\n**Against PolyPack.** I also compared with PolyPack's published records (https://github.com/sinkomr/PolyPack, `data/polyhedra/records.json`, fetched 2026-10-31) and kept only records that are below both the archive and PolyPack (322 of these records have a PolyPack value; `SUMMARY.tsv` lists both values, `polypack_s`, `change_vs_best`).\n\n**How the records were made.** `found_by`, `credit` and `method` identify where each record starts; `method` or `refinement` gives the steps.\n\n- *Refinements of catalogue records* (703): a contact-preserving descent (sequential linear programming with the contacts as inequalities) started from the catalogue record named in `refinement` (for some, a randomised multi-start search from perturbed copies of that record comes first; `refinement` says so). `found_by`, `credit` and `method` are the catalogue record's own, copied verbatim; my part is in `refined_by` and `refinement_credit`. For 96 of them the start was the record for a different n and the first n pieces were kept (`derived_from`). Rigidity analysis and code: https://doi.org/10.5281/zenodo.23630728\n- *Lattice cuts* (214): all pieces in one orientation at the points of a lattice inside the container, orientation and position of the container optimised, then a descent as above.\n- *Cell compositions* (63): the conta",
+  "archive": "https://github.com/user-attachments/files/34213797/platonic_lattice_1013.zip",
+  "archive_sha256": "e4d9c308c2a16e7b1356537bc33870e75826797940a257501c60223238d31edf"
+ },
+ "refined_by": "konoha-ily2 (Hirotaka Nakano)",
+ "refinement_credit": "computed with Claude (Anthropic)",
+ "refinement": "starting from octindod_n08 (catalogue at cbf76f2f): contact-preserving descent (rigidity analysis: https://doi.org/10.5281/zenodo.23630728); centres expanded by 3e-7 and the container sized for a 2e-7 wall gap",
+ "previous_record": {
+  "s_full": 1.0385950958753,
+  "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting point; not improved yet)",
+  "date": "2026-10-28"
+ },
+ "case_id": "octindod_n08"
+}

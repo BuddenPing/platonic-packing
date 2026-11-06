@@ -1,0 +1,125 @@
+{
+ "problem": "min/tetrahedron_in_octahedron",
+ "piece": "tetrahedron",
+ "container": "octahedron",
+ "n": 8,
+ "s_full": 1.716463845837,
+ "pieces": [
+  [
+   0.21692147029925646,
+   -0.10496077729673348,
+   -0.5193430131097989,
+   -4.1861441232293457e-13,
+   -0.4192630974472554,
+   -0.8052558042248448,
+   0.4192630974473332
+  ],
+  [
+   0.26828877043161925,
+   0.32359194718600076,
+   0.2682887704316543,
+   0.5516035621197889,
+   -2.3716336760132714e-14,
+   -0.24554276210952872,
+   -0.7971463242293624
+  ],
+  [
+   -0.2169214702888963,
+   0.10496077727210007,
+   0.5193430131135419,
+   0.5694018397424504,
+   -0.5929275586408728,
+   -0.5694018397424505,
+   1.0200823077739459e-16
+  ],
+  [
+   0.047281742075534115,
+   0.49710161293724886,
+   -0.22111251843623878,
+   0.3290644082715568,
+   0.8614488843954654,
+   0.20332006785268286,
+   0.3290644082715091
+  ],
+  [
+   -0.04728174204251333,
+   -0.49710161296953453,
+   0.22111251839785057,
+   0.8418200223471384,
+   0.37645267325027737,
+   -0.0889146758465767,
+   0.37645267325027965
+  ],
+  [
+   0.6182035307705166,
+   -0.11158753929267104,
+   0.08891021312628439,
+   0.3058847856981638,
+   -0.30588478569853517,
+   0.8652317225421565,
+   0.2534621511454569
+  ],
+  [
+   -0.26828877043136423,
+   -0.3235919471864501,
+   -0.26828877043139465,
+   0.39004261930142303,
+   -0.7372925236196217,
+   -0.3900426193013914,
+   0.3900426193015383
+  ],
+  [
+   -0.6182035307332618,
+   0.11158753934328425,
+   -0.08891021313886545,
+   4.213931123767318e-14,
+   0.4325864124466098,
+   -0.43258641244672513,
+   -0.7910360241689651
+  ]
+ ],
+ "s": 1.71646,
+ "s_plus": "1.71646+",
+ "measure": "edge length of the container divided by the edge length of the pieces",
+ "clearance": {
+  "min_pair_gap": 1.224746e-07,
+  "min_wall_gap": 2e-07
+ },
+ "format": "[x, y, z, qw, qx, qy, qz] per canonical piece; scalar-first quaternion; container = s_full times canonical container",
+ "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
+ "date": "2026-11-06",
+ "record_id": "tetinoct_n08_submission_105_8116477a73a5",
+ "title": "8 tetrahedra in an octahedron",
+ "family": "platonic",
+ "source": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2"
+ },
+ "s_tight": null,
+ "closed_form_conjecture": null,
+ "volume_lower_bound": 1.2599210498948732,
+ "density": 0.39548135634013376,
+ "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting poi",
+ "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
+ "certificate": "exact certificate: certify_general.py (src/solids_exact.json)",
+ "contribution": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "credit": "konoha-ily2 (Hirotaka Nakano)",
+  "kind": "construction",
+  "replayed_on": "2026-11-06",
+  "witness_sha256": "d4e85bf4294500b7646c2f49bd6e2814cf09f905a127a520f5c7521db8597149",
+  "method": "Batch of 1013 witnesses in 25 problems (`MANIFEST.json` + `records/<record_id>.json` + `SUMMARY.tsv`), each below the current `records/SUMMARY.csv` entry (main at 8ce7b488, checked 2026-10-31). Every record passes `verify_general.py` (VALID) and `certify_general.py` (CERTIFIED) from that commit locally, run on the files extracted from the archive. The changes against the current records: median -0.01 %, largest -3.49 %; 52 records improve by \u2265 1 %, 316 by \u2265 0.1 %.\n\n**Relation to earlier submissions.** #104 was merged and the public records rebuilt in 8ce7b488 (2026-10-30); every record here is below the value in that archive and below the values in open submissions.\n\n**Against PolyPack.** I also compared with PolyPack's published records (https://github.com/sinkomr/PolyPack, `data/polyhedra/records.json`, fetched 2026-10-31) and kept only records that are below both the archive and PolyPack (322 of these records have a PolyPack value; `SUMMARY.tsv` lists both values, `polypack_s`, `change_vs_best`).\n\n**How the records were made.** `found_by`, `credit` and `method` identify where each record starts; `method` or `refinement` gives the steps.\n\n- *Refinements of catalogue records* (703): a contact-preserving descent (sequential linear programming with the contacts as inequalities) started from the catalogue record named in `refinement` (for some, a randomised multi-start search from perturbed copies of that record comes first; `refinement` says so). `found_by`, `credit` and `method` are the catalogue record's own, copied verbatim; my part is in `refined_by` and `refinement_credit`. For 96 of them the start was the record for a different n and the first n pieces were kept (`derived_from`). Rigidity analysis and code: https://doi.org/10.5281/zenodo.23630728\n- *Lattice cuts* (214): all pieces in one orientation at the points of a lattice inside the container, orientation and position of the container optimised, then a descent as above.\n- *Cell compositions* (63): the conta",
+  "archive": "https://github.com/user-attachments/files/34213797/platonic_lattice_1013.zip",
+  "archive_sha256": "e4d9c308c2a16e7b1356537bc33870e75826797940a257501c60223238d31edf"
+ },
+ "refined_by": "konoha-ily2 (Hirotaka Nakano)",
+ "refinement_credit": "computed with Claude (Anthropic)",
+ "refinement": "starting from tetinoct_n08 (catalogue at e0fc3211): contact-preserving descent (rigidity analysis: https://doi.org/10.5281/zenodo.23630728); centres expanded by 3e-7 and the container sized for a 2e-7 wall gap",
+ "previous_record": {
+  "s_full": 1.7164664204785,
+  "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting point; not improved yet)",
+  "date": "2026-10-28"
+ },
+ "case_id": "tetinoct_n08"
+}

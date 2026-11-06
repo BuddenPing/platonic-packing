@@ -1,0 +1,134 @@
+{
+ "problem": "min/octahedron_in_icosahedron",
+ "piece": "octahedron",
+ "container": "icosahedron",
+ "n": 9,
+ "s_full": 1.6297924140082,
+ "pieces": [
+  [
+   -0.6874467339847096,
+   0.11942633726655245,
+   -0.5191395956859254,
+   0.5379505142742478,
+   0.09720425600641275,
+   -0.8364704095198505,
+   0.03844256500295013
+  ],
+  [
+   0.6350554277215246,
+   0.13828062610067654,
+   0.5671971672531531,
+   0.8541013966832917,
+   0.47723024050797674,
+   -0.20587765856672954,
+   0.019403387112314083
+  ],
+  [
+   -0.051967109625534524,
+   -0.37989230064303187,
+   -0.7634879316269264,
+   0.44354286894294587,
+   0.5831089160704502,
+   -0.009840695170302385,
+   -0.6805562990139542
+  ],
+  [
+   0.7522131743019572,
+   -0.08570292038374057,
+   -0.4002385840219271,
+   0.34354635999004,
+   0.8845462278373534,
+   0.17139804285737967,
+   -0.2649086262486798
+  ],
+  [
+   -0.5664346033718736,
+   -0.6588105097032453,
+   0.055115797292150846,
+   0.7413107387076828,
+   0.3551720589327313,
+   0.20245108232837727,
+   0.5322825908239182
+  ],
+  [
+   -0.412499830384315,
+   0.7064916227125909,
+   0.15470254918707965,
+   0.2522554806907052,
+   0.7802602560126302,
+   0.2135753241300157,
+   -0.5309865217417152
+  ],
+  [
+   0.42648693729969034,
+   -0.7445697942548343,
+   0.14038734227520205,
+   0.8568873722129685,
+   0.20097449618122293,
+   0.004513707061149372,
+   -0.4746924369265044
+  ],
+  [
+   -0.3333714055011919,
+   -0.10300110563911945,
+   0.6709355394400629,
+   0.2692662599059506,
+   -0.9073440502082998,
+   -0.316068684791137,
+   0.06574984655693554
+  ],
+  [
+   0.3778682221077086,
+   0.7258861831478088,
+   -0.17326758220139968,
+   0.2012961086790459,
+   0.3242287654399146,
+   0.9240830727688233,
+   0.020641194590246898
+  ]
+ ],
+ "s": 1.62979,
+ "s_plus": "1.62979+",
+ "measure": "edge length of the container divided by the edge length of the pieces",
+ "clearance": {
+  "min_pair_gap": 2.479571e-07,
+  "min_wall_gap": 2.000001e-07
+ },
+ "format": "[x, y, z, qw, qx, qy, qz] per canonical piece; scalar-first quaternion; container = s_full times canonical container",
+ "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
+ "date": "2026-11-06",
+ "record_id": "octinico_n09_submission_105_b7574f9b0560",
+ "title": "9 octahedra in an icosahedron",
+ "family": "platonic",
+ "source": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2"
+ },
+ "s_tight": null,
+ "closed_form_conjecture": null,
+ "volume_lower_bound": 1.2481901164043445,
+ "density": 0.4492057865070888,
+ "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting poi",
+ "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
+ "certificate": "exact certificate: certify_general.py (src/solids_exact.json)",
+ "contribution": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "credit": "konoha-ily2 (Hirotaka Nakano)",
+  "kind": "construction",
+  "replayed_on": "2026-11-06",
+  "witness_sha256": "de98029ede40c68926031cad3995eb4f930cc1176ad7d75e7440e42fbc724515",
+  "method": "Batch of 1013 witnesses in 25 problems (`MANIFEST.json` + `records/<record_id>.json` + `SUMMARY.tsv`), each below the current `records/SUMMARY.csv` entry (main at 8ce7b488, checked 2026-10-31). Every record passes `verify_general.py` (VALID) and `certify_general.py` (CERTIFIED) from that commit locally, run on the files extracted from the archive. The changes against the current records: median -0.01 %, largest -3.49 %; 52 records improve by \u2265 1 %, 316 by \u2265 0.1 %.\n\n**Relation to earlier submissions.** #104 was merged and the public records rebuilt in 8ce7b488 (2026-10-30); every record here is below the value in that archive and below the values in open submissions.\n\n**Against PolyPack.** I also compared with PolyPack's published records (https://github.com/sinkomr/PolyPack, `data/polyhedra/records.json`, fetched 2026-10-31) and kept only records that are below both the archive and PolyPack (322 of these records have a PolyPack value; `SUMMARY.tsv` lists both values, `polypack_s`, `change_vs_best`).\n\n**How the records were made.** `found_by`, `credit` and `method` identify where each record starts; `method` or `refinement` gives the steps.\n\n- *Refinements of catalogue records* (703): a contact-preserving descent (sequential linear programming with the contacts as inequalities) started from the catalogue record named in `refinement` (for some, a randomised multi-start search from perturbed copies of that record comes first; `refinement` says so). `found_by`, `credit` and `method` are the catalogue record's own, copied verbatim; my part is in `refined_by` and `refinement_credit`. For 96 of them the start was the record for a different n and the first n pieces were kept (`derived_from`). Rigidity analysis and code: https://doi.org/10.5281/zenodo.23630728\n- *Lattice cuts* (214): all pieces in one orientation at the points of a lattice inside the container, orientation and position of the container optimised, then a descent as above.\n- *Cell compositions* (63): the conta",
+  "archive": "https://github.com/user-attachments/files/34213797/platonic_lattice_1013.zip",
+  "archive_sha256": "e4d9c308c2a16e7b1356537bc33870e75826797940a257501c60223238d31edf"
+ },
+ "refined_by": "konoha-ily2 (Hirotaka Nakano)",
+ "refinement_credit": "computed with Claude (Anthropic)",
+ "refinement": "starting from octinico_n09 (catalogue at cbf76f2f): contact-preserving descent (rigidity analysis: https://doi.org/10.5281/zenodo.23630728); centres expanded by 3e-7 and the container sized for a 2e-7 wall gap",
+ "previous_record": {
+  "s_full": 1.6298009710182904,
+  "found_by": "PolyPack (Michael Sinko using Opus 5.5) (search started from the packing of Berthold, Kamp, Mexi, Pokutta and P\u00f3lik)",
+  "date": "2026-10-28"
+ },
+ "case_id": "octinico_n09"
+}

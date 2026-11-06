@@ -1,0 +1,125 @@
+{
+ "problem": "min/dodecahedron_in_octahedron",
+ "piece": "dodecahedron",
+ "container": "octahedron",
+ "n": 8,
+ "s_full": 6.7765258298153,
+ "pieces": [
+  [
+   -0.614832937009853,
+   -1.828669929664147,
+   -0.0065323397792138626,
+   0.325848189503918,
+   -0.7402438658175211,
+   -0.3269787504642213,
+   0.4888219238755635
+  ],
+  [
+   1.5342311420912103,
+   -1.2424869284171698,
+   -0.0039285890713729585,
+   0.3288620832633195,
+   0.07602475215986564,
+   0.5831394558018247,
+   -0.7389305395894071
+  ],
+  [
+   -0.6237608936086835,
+   1.8199953956436912,
+   -0.010817671529573103,
+   0.3215423942613309,
+   0.7424735883901726,
+   -0.32473254037004534,
+   -0.48978795050565327
+  ],
+  [
+   1.5293505851866924,
+   1.2473761608892155,
+   -0.004727022120281725,
+   0.25417148186633837,
+   0.2504580391936319,
+   -0.6595169340976851,
+   -0.6615928068287477
+  ],
+  [
+   0.6148329370098695,
+   -0.006532339779237547,
+   -1.828669929664132,
+   0.4715621027849605,
+   -0.6424175313349894,
+   -0.17522471904410503,
+   -0.5781221293865153
+  ],
+  [
+   -1.5342311420912014,
+   -0.003928589071396663,
+   -1.242486928417179,
+   0.6450154129943652,
+   -0.645977767653839,
+   0.28697002669405863,
+   0.29037225155975727
+  ],
+  [
+   -1.5293505851866984,
+   -0.004727022120288189,
+   1.2473761608892089,
+   0.1101402199754636,
+   0.9349807868116183,
+   -0.285814814352998,
+   0.17885735135365521
+  ],
+  [
+   0.6237608936086716,
+   -0.010817671529599912,
+   1.8199953956437054,
+   0.5795248731694912,
+   0.17145389848439926,
+   -0.6400958520890624,
+   0.4743751492339833
+  ]
+ ],
+ "s": 6.77652,
+ "s_plus": "6.77652+",
+ "measure": "edge length of the container divided by the edge length of the pieces",
+ "clearance": {
+  "min_pair_gap": 6.681098e-07,
+  "min_wall_gap": 2e-07
+ },
+ "format": "[x, y, z, qw, qx, qy, qz] per canonical piece; scalar-first quaternion; container = s_full times canonical container",
+ "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
+ "date": "2026-11-06",
+ "record_id": "dodinoct_n08_submission_105_92024a5b2daf",
+ "title": "8 dodecahedra in an octahedron",
+ "family": "platonic",
+ "source": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2"
+ },
+ "s_tight": null,
+ "closed_form_conjecture": null,
+ "volume_lower_bound": 5.066413168102826,
+ "density": 0.41790783865177256,
+ "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting poi",
+ "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
+ "certificate": "exact certificate: certify_general.py (src/solids_exact.json)",
+ "contribution": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "credit": "konoha-ily2 (Hirotaka Nakano)",
+  "kind": "construction",
+  "replayed_on": "2026-11-06",
+  "witness_sha256": "3d4a24e13cadd99e9932bfff5c04b1a8564ee90c3842364f8e1c7a007819ca2a",
+  "method": "Batch of 1013 witnesses in 25 problems (`MANIFEST.json` + `records/<record_id>.json` + `SUMMARY.tsv`), each below the current `records/SUMMARY.csv` entry (main at 8ce7b488, checked 2026-10-31). Every record passes `verify_general.py` (VALID) and `certify_general.py` (CERTIFIED) from that commit locally, run on the files extracted from the archive. The changes against the current records: median -0.01 %, largest -3.49 %; 52 records improve by \u2265 1 %, 316 by \u2265 0.1 %.\n\n**Relation to earlier submissions.** #104 was merged and the public records rebuilt in 8ce7b488 (2026-10-30); every record here is below the value in that archive and below the values in open submissions.\n\n**Against PolyPack.** I also compared with PolyPack's published records (https://github.com/sinkomr/PolyPack, `data/polyhedra/records.json`, fetched 2026-10-31) and kept only records that are below both the archive and PolyPack (322 of these records have a PolyPack value; `SUMMARY.tsv` lists both values, `polypack_s`, `change_vs_best`).\n\n**How the records were made.** `found_by`, `credit` and `method` identify where each record starts; `method` or `refinement` gives the steps.\n\n- *Refinements of catalogue records* (703): a contact-preserving descent (sequential linear programming with the contacts as inequalities) started from the catalogue record named in `refinement` (for some, a randomised multi-start search from perturbed copies of that record comes first; `refinement` says so). `found_by`, `credit` and `method` are the catalogue record's own, copied verbatim; my part is in `refined_by` and `refinement_credit`. For 96 of them the start was the record for a different n and the first n pieces were kept (`derived_from`). Rigidity analysis and code: https://doi.org/10.5281/zenodo.23630728\n- *Lattice cuts* (214): all pieces in one orientation at the points of a lattice inside the container, orientation and position of the container optimised, then a descent as above.\n- *Cell compositions* (63): the conta",
+  "archive": "https://github.com/user-attachments/files/34213797/platonic_lattice_1013.zip",
+  "archive_sha256": "e4d9c308c2a16e7b1356537bc33870e75826797940a257501c60223238d31edf"
+ },
+ "refined_by": "konoha-ily2 (Hirotaka Nakano)",
+ "refinement_credit": "computed with Claude (Anthropic)",
+ "refinement": "starting from dodinoct_n08 (catalogue at e0fc3211): contact-preserving descent (rigidity analysis: https://doi.org/10.5281/zenodo.23630728); centres expanded by 3e-7 and the container sized for a 2e-7 wall gap",
+ "previous_record": {
+  "s_full": 6.776535234872,
+  "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting point; not improved yet)",
+  "date": "2026-10-28"
+ },
+ "case_id": "dodinoct_n08"
+}

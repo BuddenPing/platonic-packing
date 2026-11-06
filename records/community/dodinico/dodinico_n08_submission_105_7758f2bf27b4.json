@@ -1,0 +1,125 @@
+{
+ "problem": "min/dodecahedron_in_icosahedron",
+ "piece": "dodecahedron",
+ "container": "icosahedron",
+ "n": 8,
+ "s_full": 3.9650826625098,
+ "pieces": [
+  [
+   -1.7992220385733546,
+   -0.10055008562272186,
+   -0.16975807612360985,
+   0.4581161806885744,
+   0.49286191516176936,
+   -0.7086185712599561,
+   -0.2123120769996022
+  ],
+  [
+   1.041295152592489,
+   -1.7828868767889574,
+   0.12109843485025183,
+   0.7889997155421868,
+   -0.36699751346948445,
+   0.48543734158468177,
+   -0.08451545052096165
+  ],
+  [
+   -0.37929243774710447,
+   1.1449137492160564,
+   -1.5739980667103661,
+   0.04935035284364034,
+   0.8922360957995488,
+   -0.4144172755460365,
+   -0.1724459734397628
+  ],
+  [
+   1.580065056024664,
+   0.4317330990634225,
+   1.151252791573337,
+   0.022947269999361936,
+   -0.07152185493213131,
+   -0.8844608302681457,
+   0.46052913782737587
+  ],
+  [
+   -0.43165513692431373,
+   1.5742671231401306,
+   0.7849210911924477,
+   0.9023097382699691,
+   -0.011194872009064794,
+   0.2941183390110481,
+   -0.31497017909837544
+  ],
+  [
+   -0.1811438800048493,
+   -1.1137278978948721,
+   -1.7035099133143874,
+   0.38701508256737,
+   0.5232051388843996,
+   -0.7288389889551024,
+   -0.21276615494300846
+  ],
+  [
+   1.766229361109863,
+   0.0023268996533700385,
+   -1.1434610627142643,
+   0.6277688395539152,
+   0.5920911369650624,
+   0.37432307208347726,
+   -0.3394357189786287
+  ],
+  [
+   -0.4984612920047837,
+   -0.5824465336284526,
+   1.7279419686740527,
+   0.03795927825844988,
+   0.511114331843748,
+   0.4019953085871787,
+   0.75876281198535
+  ]
+ ],
+ "s": 3.96508,
+ "s_plus": "3.96508+",
+ "measure": "edge length of the container divided by the edge length of the pieces",
+ "clearance": {
+  "min_pair_gap": 6.743201e-07,
+  "min_wall_gap": 2e-07
+ },
+ "format": "[x, y, z, qw, qx, qy, qz] per canonical piece; scalar-first quaternion; container = s_full times canonical container",
+ "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
+ "date": "2026-11-06",
+ "record_id": "dodinico_n08_submission_105_7758f2bf27b4",
+ "title": "8 dodecahedra in an icosahedron",
+ "family": "platonic",
+ "source": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2"
+ },
+ "s_tight": null,
+ "closed_form_conjecture": null,
+ "volume_lower_bound": 3.040188463543939,
+ "density": 0.45075939030063444,
+ "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting poi",
+ "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
+ "certificate": "exact certificate: certify_general.py (src/solids_exact.json)",
+ "contribution": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "credit": "konoha-ily2 (Hirotaka Nakano)",
+  "kind": "construction",
+  "replayed_on": "2026-11-06",
+  "witness_sha256": "a06a90b6e351b21462e7b4f9baa535824a6a1b2ebcff8d098e4cbc965adfdcf8",
+  "method": "Batch of 1013 witnesses in 25 problems (`MANIFEST.json` + `records/<record_id>.json` + `SUMMARY.tsv`), each below the current `records/SUMMARY.csv` entry (main at 8ce7b488, checked 2026-10-31). Every record passes `verify_general.py` (VALID) and `certify_general.py` (CERTIFIED) from that commit locally, run on the files extracted from the archive. The changes against the current records: median -0.01 %, largest -3.49 %; 52 records improve by \u2265 1 %, 316 by \u2265 0.1 %.\n\n**Relation to earlier submissions.** #104 was merged and the public records rebuilt in 8ce7b488 (2026-10-30); every record here is below the value in that archive and below the values in open submissions.\n\n**Against PolyPack.** I also compared with PolyPack's published records (https://github.com/sinkomr/PolyPack, `data/polyhedra/records.json`, fetched 2026-10-31) and kept only records that are below both the archive and PolyPack (322 of these records have a PolyPack value; `SUMMARY.tsv` lists both values, `polypack_s`, `change_vs_best`).\n\n**How the records were made.** `found_by`, `credit` and `method` identify where each record starts; `method` or `refinement` gives the steps.\n\n- *Refinements of catalogue records* (703): a contact-preserving descent (sequential linear programming with the contacts as inequalities) started from the catalogue record named in `refinement` (for some, a randomised multi-start search from perturbed copies of that record comes first; `refinement` says so). `found_by`, `credit` and `method` are the catalogue record's own, copied verbatim; my part is in `refined_by` and `refinement_credit`. For 96 of them the start was the record for a different n and the first n pieces were kept (`derived_from`). Rigidity analysis and code: https://doi.org/10.5281/zenodo.23630728\n- *Lattice cuts* (214): all pieces in one orientation at the points of a lattice inside the container, orientation and position of the container optimised, then a descent as above.\n- *Cell compositions* (63): the conta",
+  "archive": "https://github.com/user-attachments/files/34213797/platonic_lattice_1013.zip",
+  "archive_sha256": "e4d9c308c2a16e7b1356537bc33870e75826797940a257501c60223238d31edf"
+ },
+ "refined_by": "konoha-ily2 (Hirotaka Nakano)",
+ "refinement_credit": "computed with Claude (Anthropic)",
+ "refinement": "starting from dodinico_n08 (catalogue at cbf76f2f): contact-preserving descent (rigidity analysis: https://doi.org/10.5281/zenodo.23630728); centres expanded by 3e-7 and the container sized for a 2e-7 wall gap",
+ "previous_record": {
+  "s_full": 3.965106377817,
+  "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting point; not improved yet)",
+  "date": "2026-10-13"
+ },
+ "case_id": "dodinico_n08"
+}

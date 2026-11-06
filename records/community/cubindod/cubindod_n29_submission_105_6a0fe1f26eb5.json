@@ -1,0 +1,314 @@
+{
+ "problem": "min/cube_in_dodecahedron",
+ "piece": "cube",
+ "container": "dodecahedron",
+ "n": 29,
+ "s_full": 1.8595187795909,
+ "pieces": [
+  [
+   -1.0039079648465845,
+   -1.0055050905437772,
+   -1.002652745185847,
+   0.9999993677406956,
+   0.0008226966053565584,
+   0.0005078017465350017,
+   0.0005743047018318574
+  ],
+  [
+   -1.0065724145172763,
+   -0.005035091360479257,
+   -1.0077732878276329,
+   0.5054121235669792,
+   0.5063478500328888,
+   -0.4939334940087628,
+   0.49416610933458727
+  ],
+  [
+   -1.009986063757065,
+   0.9949572040275572,
+   -1.0008339952322536,
+   0.9999997429575243,
+   0.00035857050453067256,
+   -0.0002218962171980174,
+   0.0005798914964773853
+  ],
+  [
+   -0.0034886890995209827,
+   -1.0038902245108725,
+   -1.0053928727147188,
+   0.9999993407566528,
+   0.00034717438988661654,
+   0.000931247091996019,
+   0.0005750956934461119
+  ],
+  [
+   0.0174290200893264,
+   -0.0034319383192247146,
+   -1.6256712122740322,
+   0.9996039417144317,
+   0.0003654255187059145,
+   -0.028133737106690294,
+   0.0005648093244395117
+  ],
+  [
+   -0.009980319435875705,
+   0.99679337352299,
+   -1.0161455688045948,
+   0.9999997548023991,
+   -0.00032385623760002155,
+   -0.00022229234349314017,
+   0.0005797399357069215
+  ],
+  [
+   1.002242425480918,
+   -1.0048751332393444,
+   -1.0037432909328665,
+   0.9999952306338609,
+   0.00025685183448155726,
+   -0.0026185327610585224,
+   -0.0016174123921223792
+  ],
+  [
+   0.9861836808262031,
+   -0.0034701203170689615,
+   -1.027651914216624,
+   0.9996041092500216,
+   0.00017266133688875117,
+   -0.028133721368229874,
+   -0.0002977927274699939
+  ],
+  [
+   0.9911425968466859,
+   0.9982706753074034,
+   -1.0109867639124184,
+   0.999998754702833,
+   -0.001480414813293334,
+   -0.00038163066582077275,
+   -0.0003915645526681315
+  ],
+  [
+   -1.003889111986769,
+   -1.0051191448928856,
+   0.9995558464711198,
+   0.9999996615792409,
+   0.000726049308123808,
+   0.0003415541312393484,
+   0.00018175417813717486
+  ],
+  [
+   -1.0048745506894905,
+   -0.003059144147378884,
+   1.00344611518861,
+   0.9999968181717999,
+   0.0009988050541170218,
+   0.0016654185195432642,
+   -0.0016100981010763688
+  ],
+  [
+   -1.0045332075616318,
+   1.003558191102775,
+   1.0023223254304876,
+   0.9999985446701725,
+   -0.0012490293836805526,
+   0.0010348040199416007,
+   -0.0005289270046949451
+  ],
+  [
+   -0.0034948403958898833,
+   -1.0068799191321776,
+   1.0003405199217303,
+   0.9999999199645211,
+   7.125664069373434e-08,
+   0.00034033573806600213,
+   -0.00021033908722540106
+  ],
+  [
+   -0.0028530985557004515,
+   -0.005838325680614158,
+   1.6030828679830367,
+   0.9999957126019855,
+   0.0017724997943759765,
+   0.001682165521985509,
+   -0.001613487304896336
+  ],
+  [
+   -0.0029800313122338978,
+   0.9962646699759428,
+   1.0025312182041128,
+   0.9999961681276472,
+   -0.0014905091143599238,
+   0.001025533510476992,
+   -0.00209532661445087
+  ],
+  [
+   0.9965190441696283,
+   -1.0071526713544718,
+   0.9998989980396626,
+   0.9999999199641059,
+   3.937362938626078e-07,
+   0.00034033633502660927,
+   -0.00021033973935292898
+  ],
+  [
+   1.003466703519389,
+   -0.00495548380971658,
+   1.0014369321978014,
+   0.9999792893906939,
+   -0.00017557426530388792,
+   -0.006018657409359763,
+   -0.0022728234311200075
+  ],
+  [
+   1.00167172223613,
+   0.99531865302489,
+   1.0032464624972413,
+   0.999992266257517,
+   -9.991816153361659e-05,
+   -0.003107438971518053,
+   -0.002408581440252298
+  ],
+  [
+   -0.6729193668843518,
+   -1.5407000883994275,
+   -0.0024661409005241526,
+   1.0,
+   1.6250772209268005e-17,
+   -1.4005292767201067e-16,
+   2.465183998546586e-16
+  ],
+  [
+   0.32708093311564823,
+   -1.6251243879851656,
+   1.4275414374568655e-16,
+   1.0,
+   -2.8693539513011617e-16,
+   -2.2032794930688556e-16,
+   1.971053394152832e-16
+  ],
+  [
+   -0.7841463277166042,
+   -0.4459648443750331,
+   -0.0008258605317441753,
+   0.9942872246374637,
+   -7.154004097077998e-17,
+   -6.454137895447914e-17,
+   -0.10673759844932733
+  ],
+  [
+   0.2711415922871183,
+   -0.4987579324798107,
+   -0.004574104263152357,
+   0.9885571080258149,
+   -3.451076506998026e-16,
+   8.652600001100182e-18,
+   -0.15084708870786148
+  ],
+  [
+   1.3243302629582132,
+   -0.8446557033778309,
+   -0.0004418499036436443,
+   0.9619383577839176,
+   -2.3382207749443206e-16,
+   -1.395728513642706e-17,
+   -0.27326652891267145
+  ],
+  [
+   -1.7459504583723362,
+   0.16245989685440776,
+   0.004274960675237156,
+   0.6801931358724596,
+   0.19322861566545976,
+   0.6801931358724593,
+   -0.19322861566545987
+  ],
+  [
+   -0.5577591416794613,
+   0.6251240879851659,
+   -0.0004602701151748896,
+   1.0,
+   -5.979723119342317e-17,
+   1.1427387452406873e-17,
+   -1.4895711574286645e-16
+  ],
+  [
+   0.45109338086762524,
+   0.6186105960952296,
+   -0.009492995884168642,
+   0.9999601056466457,
+   -3.2590581717059207e-16,
+   -1.6409384628644765e-17,
+   -0.00893236335742985
+  ],
+  [
+   1.6372593363281256,
+   0.3383258265973035,
+   -6.765480852868896e-05,
+   0.8734217515379193,
+   -1.9584098263942908e-16,
+   -1.1996271182388646e-16,
+   -0.48696452020699943
+  ],
+  [
+   -0.5644080891659295,
+   1.6251243879851656,
+   1.8582006754139207e-17,
+   1.0,
+   1.2693878511094432e-17,
+   -1.1301187539019828e-16,
+   -1.037374034900911e-16
+  ],
+  [
+   0.5910028278115114,
+   1.6251243879851656,
+   7.798094412667639e-17,
+   1.0,
+   -3.610705624040786e-16,
+   1.191292047260876e-16,
+   -4.0939297436925236e-17
+  ]
+ ],
+ "s": 1.85951,
+ "s_plus": "1.85951+",
+ "measure": "edge length of the container divided by the edge length of the pieces",
+ "clearance": {
+  "min_pair_gap": 3e-07,
+  "min_wall_gap": 2.000001e-07
+ },
+ "format": "[x, y, z, qw, qx, qy, qz] per canonical piece; scalar-first quaternion; container = s_full times canonical container",
+ "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
+ "date": "2026-11-06",
+ "record_id": "cubindod_n29_submission_105_6a0fe1f26eb5",
+ "title": "29 cubes in a dodecahedron",
+ "family": "platonic",
+ "source": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2"
+ },
+ "s_tight": null,
+ "closed_form_conjecture": null,
+ "volume_lower_bound": 1.5583469074488787,
+ "density": 0.5885599744834515,
+ "found_by": "PolyPack (Michael Sinko using Opus 5.5) (community contribution, https://github.com/alejandrozu/platonic-packing/issues/",
+ "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
+ "certificate": "exact certificate: certify_general.py (src/solids_exact.json)",
+ "contribution": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "credit": "konoha-ily2 (Hirotaka Nakano)",
+  "kind": "construction",
+  "replayed_on": "2026-11-06",
+  "witness_sha256": "bc77d60e2aba82d7a33c5a29dbe5bbd572a1d28107ce027da9ff84eff4a24695",
+  "method": "Batch of 1013 witnesses in 25 problems (`MANIFEST.json` + `records/<record_id>.json` + `SUMMARY.tsv`), each below the current `records/SUMMARY.csv` entry (main at 8ce7b488, checked 2026-10-31). Every record passes `verify_general.py` (VALID) and `certify_general.py` (CERTIFIED) from that commit locally, run on the files extracted from the archive. The changes against the current records: median -0.01 %, largest -3.49 %; 52 records improve by \u2265 1 %, 316 by \u2265 0.1 %.\n\n**Relation to earlier submissions.** #104 was merged and the public records rebuilt in 8ce7b488 (2026-10-30); every record here is below the value in that archive and below the values in open submissions.\n\n**Against PolyPack.** I also compared with PolyPack's published records (https://github.com/sinkomr/PolyPack, `data/polyhedra/records.json`, fetched 2026-10-31) and kept only records that are below both the archive and PolyPack (322 of these records have a PolyPack value; `SUMMARY.tsv` lists both values, `polypack_s`, `change_vs_best`).\n\n**How the records were made.** `found_by`, `credit` and `method` identify where each record starts; `method` or `refinement` gives the steps.\n\n- *Refinements of catalogue records* (703): a contact-preserving descent (sequential linear programming with the contacts as inequalities) started from the catalogue record named in `refinement` (for some, a randomised multi-start search from perturbed copies of that record comes first; `refinement` says so). `found_by`, `credit` and `method` are the catalogue record's own, copied verbatim; my part is in `refined_by` and `refinement_credit`. For 96 of them the start was the record for a different n and the first n pieces were kept (`derived_from`). Rigidity analysis and code: https://doi.org/10.5281/zenodo.23630728\n- *Lattice cuts* (214): all pieces in one orientation at the points of a lattice inside the container, orientation and position of the container optimised, then a descent as above.\n- *Cell compositions* (63): the conta",
+  "archive": "https://github.com/user-attachments/files/34213797/platonic_lattice_1013.zip",
+  "archive_sha256": "e4d9c308c2a16e7b1356537bc33870e75826797940a257501c60223238d31edf"
+ },
+ "refined_by": "konoha-ily2 (Hirotaka Nakano)",
+ "refinement_credit": "computed with Claude (Anthropic)",
+ "refinement": "starting from cubindod_n29 (catalogue at 176e2c2e): randomised multi-start search started from perturbed copies of that configuration; contact-preserving descent (rigidity analysis: https://doi.org/10.5281/zenodo.23630728); centres expanded by 3e-7 and the container sized for a 2e-7 wall gap",
+ "previous_record": {
+  "s_full": 1.8701600933196647,
+  "found_by": "PolyPack (Michael Sinko using Opus 5.5) (search started from the packing of PingYou Ltd)",
+  "date": "2026-10-28"
+ },
+ "case_id": "cubindod_n29"
+}

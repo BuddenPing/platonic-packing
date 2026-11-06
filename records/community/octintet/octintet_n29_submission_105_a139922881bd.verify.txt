@@ -1,0 +1,2 @@
+/home/runner/work/_temp/out/candidate-0665.json: 29 pieces, 93 near pairs tested; min wall gap 2.000000e-07, min pair separation 2.449489e-07
+VALID

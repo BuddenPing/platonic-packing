@@ -1,0 +1,197 @@
+{
+ "problem": "min/icosahedron_in_tetrahedron",
+ "piece": "icosahedron",
+ "container": "tetrahedron",
+ "n": 16,
+ "s_full": 8.6347104148262,
+ "pieces": [
+  [
+   -0.5814262844587561,
+   -0.5619975934763574,
+   1.7243851121853364,
+   0.02137960190488169,
+   0.475753945268056,
+   0.30219838971923835,
+   -0.8257585781784939
+  ],
+  [
+   1.7438138031677357,
+   1.7438138031677357,
+   1.7438138031677355,
+   -2.0921665143465988e-16,
+   0.8090169943749472,
+   -0.5000000000000001,
+   0.3090169943749477
+  ],
+  [
+   1.743813803167736,
+   -1.7438138031677353,
+   -1.7438138031677353,
+   0.13504537836886296,
+   0.5720614028176844,
+   -0.5720614028176845,
+   0.5720614028176841
+  ],
+  [
+   1.7438138031677353,
+   0.4831509945106103,
+   0.48315099451061005,
+   0.5000000000000001,
+   -0.8090169943749475,
+   -0.3090169943749475,
+   -2.2692721299302483e-17
+  ],
+  [
+   -1.7223303458485117,
+   0.5790825804023052,
+   -0.5688550939336918,
+   0.809600881047786,
+   -0.0349244805743195,
+   0.3150576472580867,
+   -0.49402972882961366
+  ],
+  [
+   -0.49004589006118554,
+   -1.7386254904923208,
+   0.4952342027366001,
+   1.1371046843372135e-17,
+   0.3132401929824873,
+   0.8096211961267807,
+   0.49638100314429334
+  ],
+  [
+   -0.5310228833284947,
+   1.651375795469989,
+   -0.5932437894396411,
+   0.51688427503994,
+   -0.5104710363262068,
+   -0.4980291451572155,
+   -0.4735155096324274
+  ],
+  [
+   -0.33535489019046455,
+   0.3155126206148532,
+   0.3281097958917051,
+   0.22721741581769456,
+   0.3947738258154095,
+   0.5950068255668315,
+   -0.6621878509373875
+  ],
+  [
+   -1.6832339407403631,
+   -0.5810690806631602,
+   0.5519554256329244,
+   -0.017177099928653856,
+   0.3073529338020898,
+   0.8251248148823628,
+   0.47371738535400615
+  ],
+  [
+   0.5852274469021684,
+   0.5476845418572268,
+   1.6743962955075944,
+   0.48799451943914124,
+   -0.8099697260539561,
+   -0.32393429679807434,
+   0.029613564989345236
+  ],
+  [
+   -0.46162933692992003,
+   0.46162933692992,
+   -1.7438138031677353,
+   0.8090169943749473,
+   -1.548758318747099e-16,
+   -0.30901699437494745,
+   -0.4999999999999999
+  ],
+  [
+   -1.743813803167735,
+   -1.743813803167735,
+   1.743813803167735,
+   0.8090169943749476,
+   -0.5000000000000001,
+   1.620987412606503e-16,
+   -0.3090169943749473
+  ],
+  [
+   -1.7438138031677357,
+   1.743813803167736,
+   -1.743813803167736,
+   0.3090169943749474,
+   -0.5000000000000001,
+   -0.8090169943749475,
+   -2.2155687420777e-17
+  ],
+  [
+   0.5647272624618285,
+   1.7255490517939471,
+   0.5800291228089128,
+   0.3021734819065523,
+   0.4745661688213688,
+   0.826515529960204,
+   -0.018714084997179657
+  ],
+  [
+   0.8473880501501259,
+   0.07055936044817376,
+   -0.8258663925694358,
+   0.21850801222441063,
+   -0.21850801222441046,
+   0.9256147934109582,
+   0.21850801222441038
+  ],
+  [
+   0.4841511962247959,
+   -1.412805645583017,
+   -0.8107399199063114,
+   0.35402486147554396,
+   0.3552537452499878,
+   0.7916497209774548,
+   0.3489296393535473
+  ]
+ ],
+ "s": 8.63471,
+ "s_plus": "8.63471+",
+ "measure": "edge length of the container divided by the edge length of the pieces",
+ "clearance": {
+  "min_pair_gap": 4.534568e-07,
+  "min_wall_gap": 2e-07
+ },
+ "format": "[x, y, z, qw, qx, qy, qz] per canonical piece; scalar-first quaternion; container = s_full times canonical container",
+ "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
+ "date": "2026-11-06",
+ "record_id": "icointet_n16_submission_105_7c0a8ba7d5c2",
+ "title": "16 icosahedra in a tetrahedron",
+ "family": "platonic",
+ "source": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2"
+ },
+ "s_tight": null,
+ "closed_form_conjecture": null,
+ "volume_lower_bound": 6.665919864976952,
+ "density": 0.4600837920736537,
+ "found_by": "Timo Berthold, Dominik Kamp, Gioni Mexi, Sebastian Pokutta and Imre P\u00f3lik (published packing, imported as a starting poi",
+ "credit": "soft-to-rigid method by Yohei Nakajima (2026); generalization to Platonic solids, basin-hopping search and exact certification developed with Claude (Anthropic) under Alejandro Zarzuelo's direction",
+ "certificate": "exact certificate: certify_general.py (src/solids_exact.json)",
+ "contribution": {
+  "issue": "https://github.com/alejandrozu/platonic-packing/issues/105",
+  "submitted_by": "konoha-ily2",
+  "credit": "konoha-ily2 (Hirotaka Nakano)",
+  "kind": "construction",
+  "replayed_on": "2026-11-06",
+  "witness_sha256": "309684a4fe2563f50734214ae283c15bf04928293bd79d115ef9a2e0920c22aa",
+  "method": "Batch of 1013 witnesses in 25 problems (`MANIFEST.json` + `records/<record_id>.json` + `SUMMARY.tsv`), each below the current `records/SUMMARY.csv` entry (main at 8ce7b488, checked 2026-10-31). Every record passes `verify_general.py` (VALID) and `certify_general.py` (CERTIFIED) from that commit locally, run on the files extracted from the archive. The changes against the current records: median -0.01 %, largest -3.49 %; 52 records improve by \u2265 1 %, 316 by \u2265 0.1 %.\n\n**Relation to earlier submissions.** #104 was merged and the public records rebuilt in 8ce7b488 (2026-10-30); every record here is below the value in that archive and below the values in open submissions.\n\n**Against PolyPack.** I also compared with PolyPack's published records (https://github.com/sinkomr/PolyPack, `data/polyhedra/records.json`, fetched 2026-10-31) and kept only records that are below both the archive and PolyPack (322 of these records have a PolyPack value; `SUMMARY.tsv` lists both values, `polypack_s`, `change_vs_best`).\n\n**How the records were made.** `found_by`, `credit` and `method` identify where each record starts; `method` or `refinement` gives the steps.\n\n- *Refinements of catalogue records* (703): a contact-preserving descent (sequential linear programming with the contacts as inequalities) started from the catalogue record named in `refinement` (for some, a randomised multi-start search from perturbed copies of that record comes first; `refinement` says so). `found_by`, `credit` and `method` are the catalogue record's own, copied verbatim; my part is in `refined_by` and `refinement_credit`. For 96 of them the start was the record for a different n and the first n pieces were kept (`derived_from`). Rigidity analysis and code: https://doi.org/10.5281/zenodo.23630728\n- *Lattice cuts* (214): all pieces in one orientation at the points of a lattice inside the container, orientation and position of the container optimised, then a descent as above.\n- *Cell compositions* (63): the conta",
+  "archive": "https://github.com/user-attachments/files/34213797/platonic_lattice_1013.zip",
+  "archive_sha256": "e4d9c308c2a16e7b1356537bc33870e75826797940a257501c60223238d31edf"
+ },
+ "refined_by": "konoha-ily2 (Hirotaka Nakano)",
+ "refinement_credit": "computed with Claude (Anthropic)",
+ "refinement": "starting from icointet_n16 (catalogue at cbf76f2f): contact-preserving descent (rigidity analysis: https://doi.org/10.5281/zenodo.23630728); centres expanded by 3e-7 and the container sized for a 2e-7 wall gap",
+ "previous_record": {
+  "s_full": 8.634906013788662,
+  "found_by": "PolyPack (Michael Sinko using Opus 5.5) (search started from the packing of Berthold, Kamp, Mexi, Pokutta and P\u00f3lik)",
+  "date": "2026-10-28"
+ },
+ "case_id": "icointet_n16"
+}
