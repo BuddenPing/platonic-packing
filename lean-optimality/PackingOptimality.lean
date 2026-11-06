@@ -14,3 +14,5 @@ import PackingOptimality.BallBound
 import PackingOptimality.Polytopes4
 import PackingOptimality.TetInOct
 import PackingOptimality.TetInDod
+import PackingOptimality.Cells120
+import PackingOptimality.Cells600

@@ -114,6 +114,10 @@ region is about −0.10.
 | 2 16-cells in a tesseract (`c16inc8_n02`) | 3√2/4 | `Polytopes4.c16inc8_n02` |
 | 2 24-cells in a tesseract (`c24inc8_n02`) | 3√2/2 | `Polytopes4.c24inc8_n02` |
 | 2 24-cells in a 16-cell (`c24inc16_n02`) | 3 | `Polytopes4.c24inc16_n02` |
+| 2 120-cells in a tesseract (`c120inc8_n02`) | (21 + 9√5)/4 | `Cells120.c120inc8_n02` |
+| 2 120-cells in a 16-cell (`c120inc16_n02`) | 3√2(7 + 3√5)/4 | `Cells120.c120inc16_n02` |
+| 2 600-cells in a tesseract (`c600inc8_n02`) | (6√2 + 3√10)/4 | `Cells600.c600inc8_n02` |
+| 2 600-cells in a 16-cell (`c600inc16_n02`) | (6 + 3√5)/2 | `Cells600.c600inc16_n02` |
 
 **2 octahedra in a cube, side √2.** For n = 2 and a centrally symmetric container, s(2) is the smallest scale at
 which one piece fits beside the centre; the piece and its point reflection then form the packing. The lower bound
@@ -141,8 +145,16 @@ contains the centre.
 - **Two balls** (`BallBound`). Each piece contains its inscribed ball (radius k), and two disjoint balls of
   radius k need s ≥ 2k(1 + 1/√d) in a hypercube, and s ≥ k(1 + √d)/ρ in the cross-polytope {‖x‖₁ ≤ ρ}. The
   16-cell, 24-cell, 120-cell and 600-cell attain this bound in the tesseract, and the 24-cell, 120-cell and
-  600-cell in the 16-cell. The three cases proven so far use a translation, or, for 16-cells, the reflection
-  I − ½𝟙𝟙ᵀ, followed by the point reflection.
+  600-cell in the 16-cell. All seven cases are proven. The 24-cell and 120-cell need only a translation, the
+  16-cell the reflection I − ½𝟙𝟙ᵀ, and the 600-cell the rotation M = (1/√2)[[1, 1, 0, 0], [1, −1, 0, 0],
+  [0, 0, 1, 1], [0, 0, 1, −1]]; the point reflection gives the second piece.
+- **120-cells and 600-cells in Lean.** Each is written as the polar of the other. The 120-cell of edge 1 is
+  {⟨n, y⟩ ≤ (7 + 3√5)/4} over the 120 vertices n of the unit 600-cell. The 600-cell of edge 1 is
+  {⟨v, y⟩ ≤ 2 + √5} over the 600 vertices v of the standard 120-cell of circumradius 2√2
+  (`scripts/optimality/check_polar_hreps.py` checks both descriptions numerically). The proofs use only that
+  the normals have equal length, for the inscribed ball, and nine of the facets, for the construction. For the
+  600-cell these are the facets with normals (0, 0, ±2, ±2) and their permutations, which M turns into ±eᵢ
+  and (±½)⁴.
 
 These lower bounds are elementary. What is new is that the records attain them exactly.
 

@@ -751,6 +751,38 @@
    "argument": "two-ball lemma (cross-polytope) + translation construction",
    "lean": "lean-optimality/PackingOptimality/Polytopes4.lean#c24inc16_n02",
    "novel": true
+  },
+  {
+   "record_id": "c120inc8_n02",
+   "status": "proven",
+   "value": "(21 + 9√5)/4",
+   "argument": "two-ball lemma (hypercube) + translation construction",
+   "lean": "lean-optimality/PackingOptimality/Cells120.lean#c120inc8_n02",
+   "novel": true
+  },
+  {
+   "record_id": "c120inc16_n02",
+   "status": "proven",
+   "value": "3√2(7 + 3√5)/4",
+   "argument": "two-ball lemma (cross-polytope) + translation construction",
+   "lean": "lean-optimality/PackingOptimality/Cells120.lean#c120inc16_n02",
+   "novel": true
+  },
+  {
+   "record_id": "c600inc8_n02",
+   "status": "proven",
+   "value": "3√2(2 + √5)/4 = (6√2 + 3√10)/4",
+   "argument": "two-ball lemma (hypercube) + rotation and translation construction",
+   "lean": "lean-optimality/PackingOptimality/Cells600.lean#c600inc8_n02",
+   "novel": true
+  },
+  {
+   "record_id": "c600inc16_n02",
+   "status": "proven",
+   "value": "3(2 + √5)/2",
+   "argument": "two-ball lemma (cross-polytope) + rotation and translation construction",
+   "lean": "lean-optimality/PackingOptimality/Cells600.lean#c600inc16_n02",
+   "novel": true
   }
  ]
 }
