@@ -17,3 +17,4 @@ import PackingOptimality.TetInDod
 import PackingOptimality.Cells120
 import PackingOptimality.Cells600
 import PackingOptimality.TetInIco
+import PackingOptimality.Simplex5

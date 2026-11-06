@@ -119,6 +119,7 @@ region is about −0.10.
 | 2 120-cells in a 16-cell (`c120inc16_n02`) | 3√2(7 + 3√5)/4 | `Cells120.c120inc16_n02` |
 | 2 600-cells in a tesseract (`c600inc8_n02`) | (6√2 + 3√10)/4 | `Cells600.c600inc8_n02` |
 | 2 600-cells in a 16-cell (`c600inc16_n02`) | (6 + 3√5)/2 | `Cells600.c600inc16_n02` |
+| 2 5-simplices in a 5-cube (`sx5inhc5_n02`) | 2√3/5 | `sx5inhc5_n02` (`Simplex5.lean`) |
 
 **2 octahedra in a cube, side √2.** For n = 2 and a centrally symmetric container, s(2) is the smallest scale at
 which one piece fits beside the centre; the piece and its point reflection then form the packing. The lower bound
@@ -147,6 +148,10 @@ contains the centre.
   centre perpendicular to it, with one base edge parallel to an axis. With ι = 1/√(3(φ + 2)), the rotation has
   entries in ℚ(√2, φ, ι). Each base vertex is an explicit combination, with weights in [0, 1], of three
   icosahedron vertices and the centre.
+  For 2 5-simplices in a 5-cube (2√3/5), the apex is the corner (√3/5)𝟙 and the base lies in Σxᵢ = 0. Its five
+  vertices are the rows of the order-5 Paley matrix, M_ij = χ(j − i) with χ the quadratic character mod 5,
+  divided by √10. The rows have entries 0, ±1, sum zero and pairwise inner product −1, so they form a regular
+  simplex of edge 1 with every coordinate at most 1/√10 < √3/5.
 - **Two balls** (`BallBound`). Each piece contains its inscribed ball (radius k), and two disjoint balls of
   radius k need s ≥ 2k(1 + 1/√d) in a hypercube, and s ≥ k(1 + √d)/ρ in the cross-polytope {‖x‖₁ ≤ ρ}. The
   16-cell, 24-cell, 120-cell and 600-cell attain this bound in the tesseract, and the 24-cell, 120-cell and

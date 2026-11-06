@@ -57,6 +57,7 @@ import PackingOptimality
 #print axioms PackingOptimality.tetinoct_n02
 #print axioms PackingOptimality.tetindod_n02
 #print axioms PackingOptimality.tetinico_n02
+#print axioms PackingOptimality.sx5inhc5_n02
 #print axioms PackingOptimality.Cells120.c120inc8_n02
 #print axioms PackingOptimality.Cells120.c120inc16_n02
 #print axioms PackingOptimality.Cells600.c600inc8_n02

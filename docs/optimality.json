@@ -786,6 +786,14 @@
    "argument": "two-ball lemma (cross-polytope) + rotation and translation construction",
    "lean": "lean-optimality/PackingOptimality/Cells600.lean#c600inc16_n02",
    "novel": true
+  },
+  {
+   "record_id": "sx5inhc5_n02",
+   "status": "proven",
+   "value": "2√3/5",
+   "argument": "facet-width lemma + apex at a corner, base = order-5 Paley matrix rows / √10 in the hyperplane Σx = 0",
+   "lean": "lean-optimality/PackingOptimality/Simplex5.lean#sx5inhc5_n02",
+   "novel": true
   }
  ]
 }
