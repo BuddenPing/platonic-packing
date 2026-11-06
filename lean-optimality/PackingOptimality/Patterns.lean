@@ -173,4 +173,37 @@ noncomputable def lattice_window {K C : Set E} {s : ℝ} {n : ℕ} (Λ : AddSubg
       simpa [add_sub_cancel_left, sub_sub_eq_add_sub, add_comm, add_sub_assoc] using this)
     (by rintro i _ ⟨x, hx, rfl⟩; exact hin i x hx)
 
+/-! ## Separator certificates (PingYou's F step) -/
+
+/-- **Separator certificates.** Placements inside `s • C` such that every pair is split by a hyperplane (a
+nonzero functional `f i j` with `g i '' K ≤ c i j ≤ g j '' K`) form a packing. This is the soundness of the
+fixed-orientation step F: an LP solution with one separating axis per pair is a packing. -/
+noncomputable def Packing.of_separators {K C : Set E} {s : ℝ} {n : ℕ} (g : Fin n → E ≃ᵃⁱ[ℝ] E)
+    (hin : ∀ i, g i '' K ⊆ s • C) (f : Fin n → Fin n → E →L[ℝ] ℝ) (hf : ∀ i j, i ≠ j → Function.Surjective (f i j))
+    (c : Fin n → Fin n → ℝ) (hlo : ∀ i j, i < j → ∀ y ∈ K, f i j (g i y) ≤ c i j)
+    (hhi : ∀ i j, i < j → ∀ y ∈ K, c i j ≤ f i j (g j y)) : Packing K C s n where
+  g := g
+  inside := hin
+  disjoint i j hij := by
+    rcases lt_or_gt_of_ne hij with h | h
+    · exact interior_disjoint_of_separated (f i j) (hf i j hij) (c := c i j)
+        (by rintro _ ⟨y, hy, rfl⟩; exact hlo i j h y hy) (by rintro _ ⟨y, hy, rfl⟩; exact hhi i j h y hy)
+    · exact (interior_disjoint_of_separated (f j i) (hf j i (Ne.symm hij)) (c := c j i)
+        (by rintro _ ⟨y, hy, rfl⟩; exact hlo j i h y hy) (by rintro _ ⟨y, hy, rfl⟩; exact hhi j i h y hy)).symm
+
+/-- **Common rescaling.** A packing of `K` in `s • C` is one of `b • K` in `s • (b • C)`. -/
+noncomputable def Packing.smulBoth {K C : Set E} {s : ℝ} {n : ℕ} (P : Packing K C s n) (b : ℝ) (hb : b ≠ 0) :
+    Packing (b • K) (b • C) s n where
+  g i := dil b (P.g i)
+  inside i := by
+    rw [dil_image_smul]
+    intro x hx
+    obtain ⟨y, hy, rfl⟩ := hx
+    obtain ⟨c, hc, rfl⟩ := P.inside i hy
+    exact ⟨b • c, ⟨c, hc, rfl⟩, by show s • b • c = b • s • c; rw [smul_smul, smul_smul, mul_comm]⟩
+  disjoint i j hij := by
+    show Disjoint (interior (dil b (P.g i) '' (b • K))) (interior (dil b (P.g j) '' (b • K)))
+    rw [dil_image_smul, dil_image_smul, interior_smul₀ hb, interior_smul₀ hb, ← Set.image_smul, ← Set.image_smul]
+    exact (Set.disjoint_image_iff (smul_right_injective E hb)).mpr (P.disjoint hij)
+
 end PackingOptimality

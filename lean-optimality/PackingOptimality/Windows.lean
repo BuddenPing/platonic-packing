@@ -313,6 +313,15 @@ noncomputable def rdo93 : Packing R1 R1 5 93 := by
 /-- **56 truncated cubes in a truncated cube of edge 4** (the Cartesian shell `4³ - 2³`). -/
 noncomputable def tcu56 : Packing T T 4 56 := tcu_window W56 (inj_of_code W56 (by decide)) (by decide)
 
+/-- The catalogue's canonical rhombic dodecahedron (`src/solids.json`): `(3√2/4) R`. -/
+noncomputable def rdoC : Set P3 := (3 * Real.sqrt 2 / 4) • R1
+
+theorem rdoC_ne : (3 * Real.sqrt 2 / 4 : ℝ) ≠ 0 := by positivity
+
+noncomputable def rdo19C : Packing rdoC rdoC 3 19 := rdo19.smulBoth _ rdoC_ne
+noncomputable def rdo44C : Packing rdoC rdoC 4 44 := rdo44.smulBoth _ rdoC_ne
+noncomputable def rdo93C : Packing rdoC rdoC 5 93 := rdo93.smulBoth _ rdoC_ne
+
 end PackingOptimality.Windows
 
 namespace PackingOptimality

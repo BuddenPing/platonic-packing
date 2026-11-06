@@ -21,3 +21,4 @@ import PackingOptimality.Simplex5
 import PackingOptimality.C5inC24
 import PackingOptimality.Patterns
 import PackingOptimality.Windows
+import PackingOptimality.Triakis

@@ -73,3 +73,10 @@ import PackingOptimality
 #print axioms PackingOptimality.Windows.rdo93
 #print axioms PackingOptimality.Windows.tcu56
 #print axioms PackingOptimality.lattice_windows
+#print axioms PackingOptimality.Triakis.ktt4
+#print axioms PackingOptimality.triakis_recursion
+#print axioms PackingOptimality.ktt16
+#print axioms PackingOptimality.ktt64
+#print axioms PackingOptimality.Packing.of_separators
+#print axioms PackingOptimality.Packing.smulBoth
+#print axioms PackingOptimality.Windows.rdo93C
