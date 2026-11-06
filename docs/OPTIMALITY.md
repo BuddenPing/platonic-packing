@@ -103,6 +103,24 @@ Hosono's spectral bound replaces √2 Σᵢ xᵢ(1 − xᵢ²) by √2 Tr √(di
 it is what extends to 5D. The elementary bound here is weaker and fails in 5D, where its minimum on the far
 region is about −0.10.
 
+### New optimality results (not previously proven by anyone, as far as we found)
+
+| Record | Optimal side | Lean theorem |
+|---|---|---|
+| 2 octahedra in a cube (`octincub_n02`) | √2 | `octincub_n02` (`OctInCube.lean`) |
+
+**2 octahedra in a cube, side √2.** For n = 2 and a centrally symmetric container, s(2) is the smallest scale at
+which one piece fits beside the centre; the piece and its point reflection then form the packing. The lower bound
+is the **octahedron centre lemma** (`centre_oct`): a regular octahedron of edge 1 inside a cube of edge s < √2
+contains the centre.
+- **Reduction.** It comes down to **Lemma O**: for an orthogonal 3×3 matrix with rows ρᵢ, signs σ ∈ {±1}³ and
+  mᵢ ≥ ‖ρᵢ‖∞, Σᵢ |⟨ρᵢ, σ⟩| (1 − mᵢ) ≤ 1.
+- **Per row.** With r = |⟨ρ, σ⟩|, a unit row gives 1 ≤ 6m² − 4mr + r² (substitute dₖ = m ∓ ρₖσₖ ≥ 0).
+- **Summing.** Then r(1 − m) lies below the tangent line 1/4 + r²/12, which is exact at r = 1, while r² ≤ 2.09.
+  It lies below ten other exact lines for larger r² (`OctBands.lean`). Σrᵢ² = 3 lets at most one row be large.
+- **Equality.** It holds for the reflection H = I − (2/3)𝟙𝟙ᵀ. The packing places H(octahedron) + (√2/6)(1, 1, 1)
+  and its point reflection in the two opposite corners of the cube, separated by the hexagonal plane x + y + z = 0.
+
 ## 2. Proven with computer assistance elsewhere, not in Lean (57 records)
 
 Hiroaki Hosono (wand125) has computer-assisted proofs of the following results. Each was checked by two

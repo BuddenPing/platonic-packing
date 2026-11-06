@@ -44,3 +44,6 @@ import PackingOptimality
 #print axioms PackingOptimality.c8inc8_n13
 #print axioms PackingOptimality.c8inc8_n14
 #print axioms PackingOptimality.c8inc8_n15
+#print axioms PackingOptimality.OctInCube.lemmaO
+#print axioms PackingOptimality.OctInCube.centre_oct
+#print axioms PackingOptimality.octincub_n02

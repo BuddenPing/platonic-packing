@@ -6,3 +6,5 @@ import PackingOptimality.NearAxis
 import PackingOptimality.LemmaF4
 import PackingOptimality.CentreGeneral
 import PackingOptimality.Tesseracts
+import PackingOptimality.OctBands
+import PackingOptimality.OctInCube

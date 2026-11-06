@@ -590,8 +590,11 @@
   },
   {
    "record_id": "octincub_n02",
-   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
-   "value": "√2"
+   "status": "proven",
+   "value": "√2",
+   "argument": "octahedron centre lemma (Lemma O, per-row reduction + exact line certificates) + common-point lemma + explicit packing",
+   "lean": "lean-optimality/PackingOptimality/OctInCube.lean#octincub_n02",
+   "novel": true
   },
   {
    "record_id": "dodinico_n02",
