@@ -1,0 +1,42 @@
+name: Lean optimality proofs
+
+on:
+  push:
+    paths:
+      - 'lean-optimality/**'
+      - '.github/workflows/lean-optimality.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: lean-optimality
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: lean-optimality
+          fetch-depth: 1
+      - name: Install pinned Lean
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --no-modify-path --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          "$HOME/.elan/bin/elan" toolchain install "$(tr -d '\r\n' < lean-toolchain)"
+      - name: Restore pinned mathlib
+        run: lake exe cache get
+      - name: Build every proof
+        run: lake build
+      - name: Axiom audit (standard axioms only, no sorry)
+        run: |
+          lake env lean Axioms.lean | tee axioms.txt
+          if grep -v "depends on axioms: \[propext, Classical.choice, Quot.sound\]" axioms.txt | grep -q .; then
+            echo "A theorem depends on a non-standard axiom (or sorry)"; exit 1
+          fi
+          if grep -rn "sorry" PackingOptimality; then echo "sorry found"; exit 1; fi
+          echo "All theorems depend only on propext, Classical.choice and Quot.sound."

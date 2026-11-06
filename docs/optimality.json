@@ -1,0 +1,689 @@
+{
+ "about": "Optimality status of catalogue records (docs/OPTIMALITY.md)",
+ "records": [
+  {
+   "record_id": "cubincub_n08",
+   "status": "proven",
+   "value": "2",
+   "argument": "volume bound + grid tiling",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cubincub_n08"
+  },
+  {
+   "record_id": "cubincub_n27",
+   "status": "proven",
+   "value": "3",
+   "argument": "volume bound + grid tiling",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cubincub_n27"
+  },
+  {
+   "record_id": "cubincub_n64",
+   "status": "proven",
+   "value": "4",
+   "argument": "volume bound + grid tiling",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cubincub_n64"
+  },
+  {
+   "record_id": "c8inc8_n16",
+   "status": "proven",
+   "value": "2",
+   "argument": "volume bound + grid tiling",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#c8inc8_n16"
+  },
+  {
+   "record_id": "hc5inhc5_n32",
+   "status": "proven",
+   "value": "2",
+   "argument": "volume bound + grid tiling",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#hc5inhc5_n32"
+  },
+  {
+   "record_id": "pr3inpr3_n08",
+   "status": "proven on paper (Lean lower bound applies; tiling to be formalized)",
+   "value": "2",
+   "argument": "volume bound + triangular subdivision tiling"
+  },
+  {
+   "record_id": "pr3inpr3_n27",
+   "status": "proven on paper (Lean lower bound applies; tiling to be formalized)",
+   "value": "3",
+   "argument": "volume bound + triangular subdivision tiling"
+  },
+  {
+   "record_id": "pr3inpr3_n64",
+   "status": "proven on paper (Lean lower bound applies; tiling to be formalized)",
+   "value": "4",
+   "argument": "volume bound + triangular subdivision tiling"
+  },
+  {
+   "record_id": "cubincub_n02",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "cubincub_n03",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "cubincub_n04",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "cubincub_n05",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "cubincub_n06",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "cubincub_n07",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n02",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n03",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n04",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n05",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n06",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n07",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n08",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n09",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n10",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n11",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n12",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n13",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n14",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "c8inc8_n15",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n02",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n03",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n04",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n05",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n06",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n07",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n08",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n09",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n10",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n11",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n12",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n13",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n14",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n15",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n16",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n17",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n18",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n19",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n20",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n21",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n22",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n23",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n24",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n25",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n26",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n27",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n28",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n29",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n30",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc5inhc5_n31",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n02",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n03",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n04",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n05",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n06",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n07",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n08",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n09",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n10",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n11",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n12",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n13",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n14",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n15",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n16",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n17",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n18",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n19",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n20",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n21",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n22",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n23",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "hc6inhc6_n24",
+   "status": "conditional on the cube centre lemma",
+   "value": "2",
+   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+  },
+  {
+   "record_id": "octinoct_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "1.933119581"
+  },
+  {
+   "record_id": "icoinico_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "1.963086047"
+  },
+  {
+   "record_id": "dodindod_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "1.987598086"
+  },
+  {
+   "record_id": "cubinoct_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "1 + \u221a2"
+  },
+  {
+   "record_id": "octincub_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "\u221a2"
+  },
+  {
+   "record_id": "dodinico_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "(10 + 2\u221a5)/5"
+  },
+  {
+   "record_id": "icoindod_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "-1 + \u221a5"
+  },
+  {
+   "record_id": "tetincub_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "0.942809105"
+  },
+  {
+   "record_id": "tetinoct_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "1.154700618"
+  },
+  {
+   "record_id": "tetindod_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "0.582688072"
+  },
+  {
+   "record_id": "tetinico_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "0.858515366"
+  },
+  {
+   "record_id": "cubintet_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "2 + \u221a(72\u221a2 + 102)/6"
+  },
+  {
+   "record_id": "cubindod_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "0.915543919"
+  },
+  {
+   "record_id": "cubinico_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "-53/38 + 49\u221a5/38"
+  },
+  {
+   "record_id": "octindod_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "-4/3 + (2\u221a(3 - \u221a5) + 2\u221a5)/3"
+  },
+  {
+   "record_id": "octinico_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "\u221a(28 - 12\u221a5)"
+  },
+  {
+   "record_id": "dodincub_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "16/267 + (334\u221a2 + \u221a(63020\u221a2 + 198270))/267"
+  },
+  {
+   "record_id": "dodinoct_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "\u221a(64527\u221a5 + 146083)/114"
+  },
+  {
+   "record_id": "icoincub_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "1 + 2\u221a5/3"
+  },
+  {
+   "record_id": "icoinoct_n02",
+   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
+   "value": "\u221a(2\u221a5 + 9/2)"
+  },
+  {
+   "record_id": "tetintet_n02",
+   "status": "open (centre argument fails)",
+   "value": "1.953564245"
+  },
+  {
+   "record_id": "octintet_n02",
+   "status": "open (centre argument fails)",
+   "value": "3"
+  },
+  {
+   "record_id": "dodintet_n02",
+   "status": "open (centre argument fails)",
+   "value": "8.477789849"
+  },
+  {
+   "record_id": "icointet_n02",
+   "status": "open (centre argument fails)",
+   "value": "\u221a(32\u221a5/5 + 72/5)"
+  }
+ ]
+}
