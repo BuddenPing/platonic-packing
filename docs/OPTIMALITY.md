@@ -110,6 +110,7 @@ region is about −0.10.
 | 2 octahedra in a cube (`octincub_n02`) | √2 | `octincub_n02` (`OctInCube.lean`) |
 | 2 tetrahedra in a cube (`tetincub_n02`) | 2√2/3 | `tetincub_n02` (`TetInCube.lean`) |
 | 2 tetrahedra in an octahedron (`tetinoct_n02`) | 2/√3 | `tetinoct_n02` (`TetInOct.lean`) |
+| 2 tetrahedra in a dodecahedron (`tetindod_n02`) | 2√2/(3φ) = √2(√5 − 1)/3 | `tetindod_n02` (`TetInDod.lean`) |
 | 2 16-cells in a tesseract (`c16inc8_n02`) | 3√2/4 | `Polytopes4.c16inc8_n02` |
 | 2 24-cells in a tesseract (`c24inc8_n02`) | 3√2/2 | `Polytopes4.c24inc8_n02` |
 | 2 24-cells in a 16-cell (`c24inc16_n02`) | 3 | `Polytopes4.c24inc16_n02` |
@@ -131,7 +132,12 @@ contains the centre.
   its facet planes separates them. The opposite vertex is then at least the piece's width in that direction away
   from the centre, so s(2) ≥ min_f w_f / R_C, with R_C the container's circumradius. For 2 tetrahedra in a cube
   this is height/(√3/2) = 2√2/3. The packing translates the tetrahedron by (√2/12)(1, 1, 1), putting its apex at
-  a corner and its base in the plane x + y + z = 0, and adds its point reflection.
+  a corner and its base in the plane x + y + z = 0, and adds its point reflection. The same bound is attained
+  for 2 tetrahedra in an octahedron (2/√3) and in a dodecahedron (√2(√5 − 1)/3). In the dodecahedron, the 8
+  vertices (±φ/2)(±1, ±1, ±1) form an inscribed cube, and at the optimal scale this cube is exactly the cube of
+  the tetrahedron-in-cube packing, so that packing fits unchanged. Each tetrahedron vertex is a corner of that
+  cube or the combination ½A + ¼B + ¼C of three corners, which puts it in the convex hull of the dodecahedron's
+  vertices.
 - **Two balls** (`BallBound`). Each piece contains its inscribed ball (radius k), and two disjoint balls of
   radius k need s ≥ 2k(1 + 1/√d) in a hypercube, and s ≥ k(1 + √d)/ρ in the cross-polytope {‖x‖₁ ≤ ρ}. The
   16-cell, 24-cell, 120-cell and 600-cell attain this bound in the tesseract, and the 24-cell, 120-cell and
@@ -174,6 +180,9 @@ proves that implication (`cube_plateau_of_centre_lemma`). Status by dimension:
 axis-aligned placements, in every dimension d = 2–6 (`scripts/optimality/center_lemma.py`, `center_nd.py`).
 
 ## 3. n = 2: numerical evidence for 20 Platonic records
+
+Four of these records are now proven in Lean (section 1): `octincub_n02`, `tetincub_n02`, `tetinoct_n02` and
+`tetindod_n02`. The table keeps them so the numerical method can be compared with the proofs.
 
 For n = 2 a stronger fact holds. Let s_c be the scale below which every placement of a single piece contains
 the container's centre in its interior. The common-point lemma gives s(2) ≥ s_c. When the container is

@@ -624,8 +624,11 @@
   },
   {
    "record_id": "tetindod_n02",
-   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
-   "value": "0.582688072"
+   "status": "proven",
+   "value": "√2(√5 − 1)/3",
+   "argument": "facet-width lemma + the tetrahedron-in-cube packing inside the dodecahedron's inscribed cube",
+   "lean": "lean-optimality/PackingOptimality/TetInDod.lean#tetindod_n02",
+   "novel": true
   },
   {
    "record_id": "tetinico_n02",
