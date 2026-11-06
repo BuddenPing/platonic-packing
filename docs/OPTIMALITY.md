@@ -14,23 +14,20 @@ Machine-readable list: [`optimality.json`](optimality.json). Lean proofs: [`lean
 | 64 cubes in a cube (`cubincub_n64`) | 4 | volume bound + 4×4×4 grid | `cubincub_n64` |
 | 16 tesseracts in a tesseract (`c8inc8_n16`) | 2 | volume bound + grid | `c8inc8_n16` |
 | 32 5-cubes in a 5-cube (`hc5inhc5_n32`) | 2 | volume bound + grid | `hc5inhc5_n32` |
+| 8 triangular prisms in a triangular prism (`pr3inpr3_n08`) | 2 | volume bound + tiling | `pr3inpr3_n08` |
+| 27 triangular prisms in a triangular prism (`pr3inpr3_n27`) | 3 | volume bound + tiling | `pr3inpr3_n27` |
+| 64 triangular prisms in a triangular prism (`pr3inpr3_n64`) | 4 | volume bound + tiling | `pr3inpr3_n64` |
 
 All five are instances of one theorem, `cubes_in_cube_optimal`: in every dimension d ≥ 1, the smallest cube
 holding k^d unit cubes has side exactly k. The proof works for any rigid motions, reflections included, and only
 requires disjoint interiors, so touching is allowed. Its lower bound is the general volume theorem
 `card_mul_volume_le`, for congruent convex bodies in any finite-dimensional Euclidean space; its upper bound is
-the grid. Every theorem depends only on Lean's standard axioms (`Axioms.lean`, checked in CI).
+the grid. The prism results are instances of `prisms_in_prism_optimal`. The scale-k prism is tiled by k³ unit
+prisms: k layers of k² triangles, upward ones placed as translates and downward ones as point reflections.
+Distinct tiles have disjoint interiors because an interior point determines its tile. Every theorem depends only
+on Lean's standard axioms (`Axioms.lean`, checked in CI).
 
-## 2. Proven on paper, Lean in progress
-
-| Record | Optimal side | Argument |
-|---|---|---|
-| `pr3inpr3_n08`, `_n27`, `_n64` (triangular prisms) | 2, 3, 4 | volume bound (Lean: `card_le_of_packing_self`) + tiling of the scale-k prism by k² triangles × k layers |
-
-The lower bound is already covered by the Lean volume theorem. Only the tiling construction remains to be
-formalized.
-
-## 3. Optimal if the cube centre lemma holds: cubes, 2 ≤ n ≤ 2^d (76 records)
+## 2. Optimal if the cube centre lemma holds: cubes, 2 ≤ n ≤ 2^d (76 records)
 
 **Cube centre lemma.** A unit d-cube inside a cube of side less than 2 contains that cube's centre in its
 interior.
@@ -44,7 +41,7 @@ Status of the lemma:
 - **Reformulation.** If the cube is placed by an orthogonal matrix R, the lemma is equivalent to
   Σᵢ |Rᵢⱼ| (2 − Σₖ |Rᵢₖ|) ≤ 1 for every column j.
 - **Numerical check.** The maximum over all rotations is exactly 1/2, attained at axis-aligned placements, in
-  every dimension d = 2–6 (scratch scripts `center_lemma.py`, `center_nd.py`).
+  every dimension d = 2–6 (`scripts/optimality/center_lemma.py`, `center_nd.py`).
 - **d = 2.** The inequality is (u − 1)² ≥ 0 with u = |cos θ| + |sin θ|.
 - **d = 3: proof on paper.**
   1. Write the other two columns as (b, c) = rotation by θ of a fixed orthonormal pair.
@@ -56,7 +53,7 @@ Status of the lemma:
 - **General d.** Open. An equivalent minimax form: there is μ ∈ [0,1]^d with Σₖ Rᵢₖ⁻ + (Rμ)ᵢ ≥ 1 for every row
   i, where Rᵢₖ⁻ = max(−Rᵢₖ, 0).
 
-## 4. n = 2: numerical evidence for 20 Platonic records
+## 3. n = 2: numerical evidence for 20 Platonic records
 
 For n = 2 a stronger fact holds. Let s_c be the scale below which every placement of a single piece contains
 the container's centre in its interior. The common-point lemma gives s(2) ≥ s_c. When the container is
@@ -64,7 +61,7 @@ centrally symmetric (cube, octahedron, dodecahedron, icosahedron), equality hold
 avoids the centre, together with its reflection through the centre, is a 2-packing. So **s(2) is a one-piece
 problem**, the best fit of one piece beside the centre.
 
-A global search over rotations, with exact linear programming over translations (`center_all.py`), finds
+A global search over rotations, with exact linear programming over translations (`scripts/optimality/center_all.py`), finds
 s_c equal to the record value to about 7 significant digits in all 20 cases below. That includes 2 cubes in a
 tetrahedron, whose container is not centrally symmetric. So each of these n = 2 records is optimal to within
 about 10⁻⁷, as far as the search can tell. This is evidence, not proof: the search over rotations could miss
@@ -98,9 +95,8 @@ pieces: a single piece can avoid the centroid at the record scale. The plateaus 
 a tetrahedron at s = 3 for n = 2–4 and icosahedra in a tetrahedron at s = 5.3582 for n = 2–4, need a different
 argument.
 
-## 5. Next targets
+## 4. Next targets
 
-- Formalize the triangular-prism tiling (closes section 2).
 - Formalize the cube centre lemma for d = 3 (closes cubincub n = 2–7), then look for a general-d proof.
 - n = 2: certify s_c rigorously for one pair, for example 2 octahedra in a cube at √2. That needs a rigorous
   global bound over all rotations.

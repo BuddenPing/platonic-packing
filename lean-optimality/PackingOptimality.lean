@@ -1,2 +1,3 @@
 import PackingOptimality.Basic
 import PackingOptimality.Cubes
+import PackingOptimality.Prisms

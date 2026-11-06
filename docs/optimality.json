@@ -38,21 +38,24 @@
   },
   {
    "record_id": "pr3inpr3_n08",
-   "status": "proven on paper (Lean lower bound applies; tiling to be formalized)",
+   "status": "proven",
    "value": "2",
-   "argument": "volume bound + triangular subdivision tiling"
+   "argument": "volume bound + triangular subdivision tiling",
+   "lean": "lean-optimality/PackingOptimality/Prisms.lean#pr3inpr3_n08"
   },
   {
    "record_id": "pr3inpr3_n27",
-   "status": "proven on paper (Lean lower bound applies; tiling to be formalized)",
+   "status": "proven",
    "value": "3",
-   "argument": "volume bound + triangular subdivision tiling"
+   "argument": "volume bound + triangular subdivision tiling",
+   "lean": "lean-optimality/PackingOptimality/Prisms.lean#pr3inpr3_n27"
   },
   {
    "record_id": "pr3inpr3_n64",
-   "status": "proven on paper (Lean lower bound applies; tiling to be formalized)",
+   "status": "proven",
    "value": "4",
-   "argument": "volume bound + triangular subdivision tiling"
+   "argument": "volume bound + triangular subdivision tiling",
+   "lean": "lean-optimality/PackingOptimality/Prisms.lean#pr3inpr3_n64"
   },
   {
    "record_id": "cubincub_n02",

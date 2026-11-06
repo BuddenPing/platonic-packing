@@ -10,3 +10,7 @@ import PackingOptimality
 #print axioms PackingOptimality.c8inc8_n16
 #print axioms PackingOptimality.hc5inhc5_n32
 #print axioms PackingOptimality.cube_plateau_of_centre_lemma
+#print axioms PackingOptimality.prisms_in_prism_optimal
+#print axioms PackingOptimality.pr3inpr3_n08
+#print axioms PackingOptimality.pr3inpr3_n27
+#print axioms PackingOptimality.pr3inpr3_n64
