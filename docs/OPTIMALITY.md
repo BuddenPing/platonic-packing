@@ -111,6 +111,7 @@ region is about −0.10.
 | 2 tetrahedra in a cube (`tetincub_n02`) | 2√2/3 | `tetincub_n02` (`TetInCube.lean`) |
 | 2 tetrahedra in an octahedron (`tetinoct_n02`) | 2/√3 | `tetinoct_n02` (`TetInOct.lean`) |
 | 2 tetrahedra in a dodecahedron (`tetindod_n02`) | 2√2/(3φ) = √2(√5 − 1)/3 | `tetindod_n02` (`TetInDod.lean`) |
+| 2 tetrahedra in an icosahedron (`tetinico_n02`) | 2√((5 − √5)/15) | `tetinico_n02` (`TetInIco.lean`) |
 | 2 16-cells in a tesseract (`c16inc8_n02`) | 3√2/4 | `Polytopes4.c16inc8_n02` |
 | 2 24-cells in a tesseract (`c24inc8_n02`) | 3√2/2 | `Polytopes4.c24inc8_n02` |
 | 2 24-cells in a 16-cell (`c24inc16_n02`) | 3 | `Polytopes4.c24inc16_n02` |
@@ -142,6 +143,10 @@ contains the centre.
   the tetrahedron-in-cube packing, so that packing fits unchanged. Each tetrahedron vertex is a corner of that
   cube or the combination ½A + ¼B + ¼C of three corners, which puts it in the convex hull of the dodecahedron's
   vertices.
+  In the icosahedron (2√((5 − √5)/15) ≈ 0.8585) the apex is a vertex and the base lies in the plane through the
+  centre perpendicular to it, with one base edge parallel to an axis. With ι = 1/√(3(φ + 2)), the rotation has
+  entries in ℚ(√2, φ, ι). Each base vertex is an explicit combination, with weights in [0, 1], of three
+  icosahedron vertices and the centre.
 - **Two balls** (`BallBound`). Each piece contains its inscribed ball (radius k), and two disjoint balls of
   radius k need s ≥ 2k(1 + 1/√d) in a hypercube, and s ≥ k(1 + √d)/ρ in the cross-polytope {‖x‖₁ ≤ ρ}. The
   16-cell, 24-cell, 120-cell and 600-cell attain this bound in the tesseract, and the 24-cell, 120-cell and
@@ -193,8 +198,8 @@ axis-aligned placements, in every dimension d = 2–6 (`scripts/optimality/cente
 
 ## 3. n = 2: numerical evidence for 20 Platonic records
 
-Four of these records are now proven in Lean (section 1): `octincub_n02`, `tetincub_n02`, `tetinoct_n02` and
-`tetindod_n02`. The table keeps them so the numerical method can be compared with the proofs.
+Five of these records are now proven in Lean (section 1): `octincub_n02`, `tetincub_n02`, `tetinoct_n02`,
+`tetindod_n02` and `tetinico_n02`. The table keeps them so the numerical method can be compared with the proofs.
 
 For n = 2 a stronger fact holds. Let s_c be the scale below which every placement of a single piece contains
 the container's centre in its interior. The common-point lemma gives s(2) ≥ s_c. When the container is

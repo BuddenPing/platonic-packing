@@ -632,8 +632,11 @@
   },
   {
    "record_id": "tetinico_n02",
-   "status": "numerical evidence (n = 2 reduces to a one-piece problem)",
-   "value": "0.858515366"
+   "status": "proven",
+   "value": "2√((5 − √5)/15)",
+   "argument": "facet-width lemma + explicit rotation placing the apex at a vertex and the base in the plane through the centre",
+   "lean": "lean-optimality/PackingOptimality/TetInIco.lean#tetinico_n02",
+   "novel": true
   },
   {
    "record_id": "cubintet_n02",
