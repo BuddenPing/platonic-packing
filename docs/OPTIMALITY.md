@@ -93,7 +93,8 @@ a column j and write xᵢ = |Rᵢⱼ| and S = Σᵢ xᵢ.
      coordinate is small (xᵢ² ≤ 2/5), middle (2/5 to 3/5) or big (≥ 3/5). On each range φ lies above an
      explicit line in t², a one-variable cubic inequality with an exact certificate (`phi_small`, `phi_large`,
      `phi_large2`). At most two coordinates exceed 2/5, and `linarith` closes all 81 combinations
-     (`far_poly`). The tightest margin is ≈ 0.0008, near p = (2/3, 1/9, 1/9, 1/9).
+     (`far_poly`). Lean uses 140/99 ≤ √2. The inequality's true minimum is ≈ 0.009 above −2, at
+     p = xᵢ² = (2/3, 1/9, 1/9, 1/9); the certificates leave about 0.0008 of slack each.
 
 The final step, from Lemma F to the centre lemma, is proved once for every dimension
 (`CentreGeneral.centre_of_lemmaF`).
