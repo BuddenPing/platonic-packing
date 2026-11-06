@@ -15,7 +15,7 @@
  },
  "format": "[x, y, z, qw, qx, qy, qz] per piece: unit-edge copy of the canonical piece solid (solids.py) rotated by the scalar-first quaternion q and centred at (x, y, z); container = s_full x canonical unit-edge container solid, centred at the origin, canonical orientation",
  "method": "soft-to-rigid homotopy (inscribed balls hardened into the solid under inward pressure), then SLSQP tightening with per-pair separating planes",
- "date": "2026-10-16",
+ "date": "2026-11-06",
  "pieces": [
   [
    -0.4714045785261698,
@@ -680,7 +680,7 @@
  "source": {
   "hash": "e1075f7d885c7464",
   "clear": 1e-07,
-  "cap": 3.8248583790335
+  "cap": 3.8248327730044
  },
  "s_tight": 3.771236166328,
  "closed_form_conjecture": "(8\u221a2)/3",
@@ -696,7 +696,6 @@
   "raw": 3.813795745016676,
   "host": "actions"
  },
- "density": 0.6416012836169475,
  "closed_form_confirmation": {
   "name": "Hirotaka Nakano (konoha-ily2)",
   "work": "zerogap-packing v1.1.1",
@@ -704,5 +703,6 @@
   "issue": "https://github.com/alejandrozu/platonic-packing/issues/99",
   "digits": 117,
   "exact_touching_check": true
- }
+ },
+ "density": 0.6416012836169475
 }
