@@ -63,3 +63,13 @@ import PackingOptimality
 #print axioms PackingOptimality.Cells120.c120inc16_n02
 #print axioms PackingOptimality.Cells600.c600inc8_n02
 #print axioms PackingOptimality.Cells600.c600inc16_n02
+#print axioms PackingOptimality.Packing.mono
+#print axioms PackingOptimality.Packing.compose
+#print axioms PackingOptimality.Packing.pow
+#print axioms PackingOptimality.voronoi_packing
+#print axioms PackingOptimality.lattice_window
+#print axioms PackingOptimality.Windows.rdo19
+#print axioms PackingOptimality.Windows.rdo44
+#print axioms PackingOptimality.Windows.rdo93
+#print axioms PackingOptimality.Windows.tcu56
+#print axioms PackingOptimality.lattice_windows

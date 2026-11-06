@@ -19,3 +19,5 @@ import PackingOptimality.Cells600
 import PackingOptimality.TetInIco
 import PackingOptimality.Simplex5
 import PackingOptimality.C5inC24
+import PackingOptimality.Patterns
+import PackingOptimality.Windows
