@@ -101,472 +101,472 @@
   },
   {
    "record_id": "c8inc8_n02",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n03",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n04",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n05",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n06",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n07",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n08",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n09",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n10",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n11",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n12",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n13",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n14",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "c8inc8_n15",
-   "status": "conditional on the cube centre lemma in dimension 4",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 4 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n02",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n03",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n04",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n05",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n06",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n07",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n08",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n09",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n10",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n11",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n12",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n13",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n14",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n15",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n16",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n17",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n18",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n19",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n20",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n21",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n22",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n23",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n24",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n25",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n26",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n27",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n28",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n29",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n30",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc5inhc5_n31",
-   "status": "conditional on the cube centre lemma in dimension 5",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 5 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n02",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n03",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n04",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n05",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n06",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n07",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n08",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n09",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n10",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n11",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n12",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n13",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n14",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n15",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n16",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n17",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n18",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n19",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n20",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n21",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n22",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n23",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "hc6inhc6_n24",
-   "status": "conditional on the cube centre lemma in dimension 6",
+   "status": "proven with computer assistance (external, not in Lean)",
    "value": "2",
-   "argument": "common-point lemma (unit cube in a cube of side < 2 contains the centre) + grid",
-   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma"
+   "argument": "cube centre lemma in dimension 6 (Lemma F, computer-assisted by Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim) + common-point lemma + grid (Lean: cube_plateau_of_centre_lemma)",
+   "lean": "lean-optimality/PackingOptimality/Cubes.lean#cube_plateau_of_centre_lemma (implication only)"
   },
   {
    "record_id": "octinoct_n02",
@@ -687,6 +687,34 @@
    "record_id": "icointet_n02",
    "status": "open (centre argument fails)",
    "value": "√(32√5/5 + 72/5)"
+  },
+  {
+   "record_id": "cubincub_n09",
+   "status": "proven with computer assistance (external, not in Lean)",
+   "value": "2 + 1/√2",
+   "argument": "8-point lemma, interval branch and bound, two independent checkers, not peer reviewed (Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-in-cube)",
+   "lean": null
+  },
+  {
+   "record_id": "cubincub_n10",
+   "status": "proven with computer assistance (external, not in Lean)",
+   "value": "2 + 1/√2",
+   "argument": "8-point lemma (n = 9) + monotonicity, interval branch and bound, two independent checkers, not peer reviewed (Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-in-cube)",
+   "lean": null
+  },
+  {
+   "record_id": "cubincub_n25",
+   "status": "proven with computer assistance (external, not in Lean)",
+   "value": "3",
+   "argument": "closed counting measure, interval branch and bound, two independent checkers, not peer reviewed (Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-in-cube/closed-measure)",
+   "lean": null
+  },
+  {
+   "record_id": "cubincub_n26",
+   "status": "proven with computer assistance (external, not in Lean)",
+   "value": "3",
+   "argument": "closed counting measure (n = 25) + monotonicity, interval branch and bound, two independent checkers, not peer reviewed (Hiroaki Hosono (wand125), https://github.com/wand125/square-packing/tree/main/problems/cubes-in-cube/closed-measure)",
+   "lean": null
   }
  ]
 }

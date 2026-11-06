@@ -2,7 +2,8 @@
 
 _6 November 2026._ A record gives an upper bound: its packing fits in a container of scale s. It is **optimal**
 when no packing of the same n pieces fits in a smaller container. This file tracks which low-n records are
-proven optimal, which are optimal conditional on a single lemma, and which have strong numerical evidence.
+proven optimal in Lean, which are proven elsewhere with computer assistance, and which have strong numerical
+evidence.
 Machine-readable list: [`optimality.json`](optimality.json). Lean proofs: [`lean-optimality/`](../lean-optimality).
 
 ## 1. Proven in Lean
@@ -54,32 +55,49 @@ The proof has two steps.
      values that average to the minimum divided by √(1 + t²). One of them is below the minimum, which is
      impossible.
 
+The Lean proof uses no computer search. Hiroaki Hosono had proved the same inequality ("Lemma F") with
+computer assistance; see section 2.
+
 The geometric step (`centre3`) takes an image vertex in each coordinate direction. This shows the image centre
 is within (s − wᵢ)/2 of s/2 in coordinate i, where wᵢ is the cube's width along that axis. Pulled back through
 the isometry and combined with `core`, the container's centre lies strictly inside the unit cube.
 
-## 2. Optimal if the cube centre lemma holds in dimensions 4–6: cubes, 2 ≤ n ≤ 2^d (67 records)
+## 2. Proven with computer assistance elsewhere, not in Lean (71 records)
 
-**Cube centre lemma.** A unit d-cube inside a cube of side less than 2 contains that cube's centre in its
-interior.
+Hiroaki Hosono (wand125) has computer-assisted proofs of the following results. Each was checked by two
+independent checkers, and none has been peer reviewed. They are in
+[wand125/square-packing](https://github.com/wand125/square-packing) (MIT; read at commit `ea1c454`,
+31 Oct 2026). The catalogue records equal these values.
 
-If the lemma holds, no two unit cubes fit in a cube of side below 2 (the common-point lemma, proven in Lean). The
-2×2×…×2 grid then shows that side 2 is optimal for every 2 ≤ n ≤ 2^d. Lean proves this implication
-(`cube_plateau_of_centre_lemma`). In dimension 3 the lemma is proven (section 1). In
-dimensions 4–6 it would settle `c8inc8_n02`–`n15`, `hc5inhc5_n02`–`n31` and `hc6inhc6_n02`–`n24`; the catalogue
-stops at n = 24 in 6D.
+| Result | Records | Method |
+|---|---|---|
+| s_d(2) = 2 for d = 4, 5, 6 | `c8inc8_n02`–`n15`, `hc5inhc5_n02`–`n31`, `hc6inhc6_n02`–`n24` (67 records, side 2) | the cube centre lemma in dimension d (see below), then the plateau argument |
+| s₃(9) = s₃(10) = 2 + 1/√2 | `cubincub_n09`, `cubincub_n10` | an 8-point lemma by interval branch and bound ([`problems/cubes-in-cube`](https://github.com/wand125/square-packing/tree/main/problems/cubes-in-cube)) |
+| s₃(25) = s₃(26) = 3 | `cubincub_n25`, `cubincub_n26` | a closed counting measure by interval branch and bound ([`closed-measure`](https://github.com/wand125/square-packing/tree/main/problems/cubes-in-cube/closed-measure)) |
 
-Status of the lemma:
-- **Reformulation.** If the cube is placed by an orthogonal matrix R, the lemma is equivalent to
-  Σᵢ |Rᵢⱼ| (2 − Σₖ |Rᵢₖ|) ≤ 1 for every column j.
-- **Numerical check.** The maximum of the left side over all rotations is exactly 1, attained at axis-aligned
-  placements, in every dimension d = 2–6 (`scripts/optimality/center_lemma.py`, `center_nd.py`).
+**The cube centre lemma.** A unit d-cube inside a cube of side less than 2 contains that cube's centre in its
+interior. For a cube placed by an orthogonal matrix R, it follows from "Lemma F": Σᵢ |Rᵢⱼ| (2 − Σₖ |Rᵢₖ|) ≤ 1 for
+every column j. With the common-point lemma and the 2×2×…×2 grid, it gives side 2 for every 2 ≤ n ≤ 2^d. Lean
+proves that implication (`cube_plateau_of_centre_lemma`). Status by dimension:
+
 - **d = 2.** The inequality is (u − 1)² ≥ 0 with u = |cos θ| + |sin θ|.
-- **d = 3.** Proven in Lean (`CubeCentre.lean`).
-- **General d.** Open. The rotation step of the Lean proof works in any dimension: at a minimiser, every pair of
-  the other columns has a zero entry in a row where the first column is nonzero. But in higher dimensions the
-  zero-entry case no longer reduces to a single identity. An equivalent minimax form: there is μ ∈ [0,1]^d with
-  Σₖ Rᵢₖ⁻ + (Rμ)ᵢ ≥ 1 for every row i, where Rᵢₖ⁻ = max(−Rᵢₖ, 0).
+- **d = 3.** Proven in Lean here (`CubeCentre.core`, section 1). Hosono proved it earlier with computer
+  assistance: a hand proof near the axes plus interval checks elsewhere, and later a 5-simplex spectral
+  certificate. The Lean proof here uses no computer search.
+- **d = 4, 5, 6.** Hosono, [`problems/cubes-n-dim`](https://github.com/wand125/square-packing/tree/main/problems/cubes-n-dim).
+  - **Near an axis:** a polar-decomposition step reduces the claim to Lemma F one dimension down. It is
+    formalized in Lean there for any dimension, with that lower-dimensional Lemma F as a hypothesis.
+  - **Elsewhere:** a spectral bound with exact rational certificates: 557 simplices in 4D, 21,502 in 5D and
+    about 2.8 million in 6D. 4D also has an interval branch-and-bound proof.
+- **All d.** Open.
+
+**Towards Lean in 4D.** Hosono's Lean theorem `near_region` takes Lemma F in dimension 3 as a hypothesis, and that
+lemma is now `CubeCentre.core`. Combining the two developments, which use different Lean and Mathlib versions,
+would put the 4D near-axis region in Lean. The far region, with its 557-simplex certificate, would then be the
+only part of s₄(2) = 2 still outside Lean.
+
+**Numerical check here.** The maximum of the left side of Lemma F over all rotations is exactly 1, attained at
+axis-aligned placements, in every dimension d = 2–6 (`scripts/optimality/center_lemma.py`, `center_nd.py`).
 
 ## 3. n = 2: numerical evidence for 20 Platonic records
 
@@ -125,7 +143,8 @@ argument.
 
 ## 4. Next targets
 
-- The cube centre lemma for d = 4–6 (67 records).
+- Lean proofs for the 71 records of section 2. The nearest target is s₄(2) = 2 (14 records): Hosono's near-axis
+  step plus `CubeCentre.core`, and a Lean check of the 557-simplex far-region certificate.
 - n = 2: certify s_c rigorously for one pair, for example 2 octahedra in a cube at √2. That needs a rigorous
   global bound over all rotations.
 - Plateaus starting above n = 2, which need new ideas:
